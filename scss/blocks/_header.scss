@@ -1,6 +1,7 @@
 .header {
     &__inner {
         display: flex;
+        flex-wrap: wrap;
         align-items: center;
         padding: 45px 0;
     }
@@ -8,6 +9,7 @@
 
 .menu {
     display: flex;
+    flex-wrap: wrap;
     margin: 0 auto;
     padding-left: 178px;
 
