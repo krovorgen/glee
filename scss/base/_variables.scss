@@ -1,0 +1,17 @@
+$main-color: #a3bbc8;
+$white: #fff;
+$title-color: #243f4d;
+$text-color: #436372;
+$bg-color: #fcd7b6;
+
+%hover-nav-header {
+    transition: background-color 0.5s, fill 0.5s;
+
+    &:hover {
+        background-color: $title-color;
+
+        svg {
+            fill: $white;
+        }
+    }
+}

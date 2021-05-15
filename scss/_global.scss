@@ -1,0 +1,29 @@
+body {
+    overflow-x: hidden;
+    font-family: "Rubik", sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 120%;
+    color: $text-color;
+}
+
+.container {
+    margin: 0 auto;
+    padding: 0 15px;
+    min-width: 320px;
+    max-width: 1200px;
+
+    &--long {
+        max-width: 1800px;
+    }
+}
+
+button,
+a,
+textarea,
+input,
+iframe {
+    &:focus {
+        outline: 1px solid $title-color;
+    }
+}
