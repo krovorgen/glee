@@ -4,5 +4,14 @@
 @import "libs/reset";
 @import "global";
 
-// blocks
+// main page
 @import "blocks/header";
+
+.hero {
+
+
+    &__items {
+        background-color: $bg-color;
+        min-height: calc(100vh - 142px);
+    }
+}
