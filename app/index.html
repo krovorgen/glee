@@ -1,17 +1,536 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Glee</title>
+        <link rel="stylesheet" href="css/style.min.css" />
+    </head>
 
-<head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
-    <link rel="stylesheet" href="css/style.min.css" />
-</head>
+    <body>
+        <!-- prettier-ignore -->
+        <a class="style-map" href="style-map/" target="_blank" style="position: fixed;right: 0;top: 0;display: flex;align-items: center;justify-content: center;width: 30px;height: 30px;border-radius: 50%;color: #ffffff;background-color: #a3bbc8;">s</a>
 
-<body>
-<!--    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>-->
-<!--    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>-->
-    <script src='js/index.min.js'></script>
-</body>
+        <header class="header">
+            <div class="container container--long">
+                <nav class="header__inner">
+                    <a class="logo" href="#">
+                        <img class="logo__img" src="images/logo.png" alt="Logo Glee" />
+                    </a>
+                    <ul class="menu">
+                        <li class="menu__item">
+                            <a class="menu__link" href="#" target="_blank">Home +</a>
+                        </li>
+                        <li class="menu__item">
+                            <a class="menu__link" href="#" target="_blank">About</a>
+                        </li>
+                        <li class="menu__item">
+                            <a class="menu__link" href="#" target="_blank">Services</a>
+                        </li>
+                        <li class="menu__item">
+                            <a class="menu__link" href="#" target="_blank">Pages +</a>
+                        </li>
+                        <li class="menu__item">
+                            <a class="menu__link" href="#" target="_blank">News</a>
+                        </li>
+                        <li class="menu__item">
+                            <a class="menu__link" href="#" target="_blank">Contact</a>
+                        </li>
+                    </ul>
+                    <div class="user-nav">
+                        <button class="user-nav__search">
+                            <svg>
+                                <use xlink:href="images/sprite.svg#search"></use>
+                            </svg>
+                        </button>
 
+                        <button class="user-nav__item">
+                            <span class="user-nav__wrap">
+                                <svg>
+                                    <use xlink:href="images/sprite.svg#heart"></use>
+                                </svg>
+                                <span class="user-nav__count">0</span>
+                            </span>
+                        </button>
+
+                        <button class="user-nav__item">
+                            <span class="user-nav__wrap">
+                                <svg>
+                                    <use xlink:href="images/sprite.svg#cart"></use>
+                                </svg>
+                                <span class="user-nav__count">0</span>
+                            </span>
+                        </button>
+
+                        <button class="user-nav__menu">
+                            <svg>
+                                <use xlink:href="images/sprite.svg#menu"></use>
+                            </svg>
+                        </button>
+                    </div>
+                </nav>
+            </div>
+        </header>
+
+        <main>
+            <div class="hero">
+                <div class="container container--long">
+                    <div class="hero__items">
+                        <div class="hero__item">
+                            <div class="hero__wrap">
+                                <div class="hero__info">
+                                    <p class="hero__title">Smart and trendy</p>
+                                    <p class="hero__text">
+                                        Dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                                        tempor incididunt
+                                    </p>
+                                    <a class="hero__link" href="#">
+                                        <span>Shop Now</span>
+                                        <svg>
+                                            <use xlink:href="images/sprite.svg#arrow-right"></use>
+                                        </svg>
+                                    </a>
+                                </div>
+                                <img
+                                    class="hero__img"
+                                    alt="Шикарный диван"
+                                    src="images/main-img-slider-1.png"
+                                />
+                            </div>
+                        </div>
+                        <div class="hero__item">
+                            <div class="hero__wrap">
+                                <div class="hero__info">
+                                    <p class="hero__title">Smart and trendy</p>
+                                    <p class="hero__text">
+                                        Dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                                        tempor incididunt
+                                    </p>
+                                    <a class="hero__link" href="#">
+                                        <span>Shop Now</span>
+                                        <svg>
+                                            <use xlink:href="images/sprite.svg#arrow-right"></use>
+                                        </svg>
+                                    </a>
+                                </div>
+                                <img
+                                    class="hero__img"
+                                    alt="Шикарный диван"
+                                    src="images/main-img-slider-1.png"
+                                />
+                            </div>
+                        </div>
+                        <div class="hero__item">
+                            <div class="hero__wrap">
+                                <div class="hero__info">
+                                    <p class="hero__title">Smart and trendy</p>
+                                    <p class="hero__text">
+                                        Dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                                        tempor incididunt
+                                    </p>
+                                    <a class="hero__link" href="#">
+                                        <span>Shop Now</span>
+                                        <svg>
+                                            <use xlink:href="images/sprite.svg#arrow-right"></use>
+                                        </svg>
+                                    </a>
+                                </div>
+                                <img
+                                    class="hero__img"
+                                    alt="Шикарный диван"
+                                    src="images/main-img-slider-1.png"
+                                />
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="advantages">
+                <div class="container container--long">
+                    <div class="advantages__items">
+                        <div class="advantages__item">
+                            <div class="advantages__info advantages__info--support">
+                                <div class="advantages__title">Support 24/7.</div>
+                                <div class="advantages__text">
+                                    Contact us 24 hours a day, 7 days a week.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="advantages__item">
+                            <div class="advantages__info advantages__info--delivery">
+                                <div class="advantages__title">Delivery.</div>
+                                <div class="advantages__text">Free shipping on all US order.</div>
+                            </div>
+                        </div>
+                        <div class="advantages__item">
+                            <div class="advantages__info advantages__info--cart">
+                                <div class="advantages__title">100% Payment secure.</div>
+                                <div class="advantages__text">
+                                    We ensure secure payment with PEV.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <section class="gallery">
+                <div class="container">
+                    <h2 class="gallery__title">Products of the week</h2>
+                    <ul class="gallery__navigation">
+                        <li class="gallery__item">
+                            <button class="gallery__button" data-filter="all">All</button>
+                        </li>
+                        <li class="gallery__item">
+                            <button class="gallery__button" data-filter=".furnitures">
+                                Furnitures
+                            </button>
+                        </li>
+                        <li class="gallery__item">
+                            <button class="gallery__button" data-filter=".chairs">Chairs</button>
+                        </li>
+                        <li class="gallery__item">
+                            <button class="gallery__button" data-filter=".lighting">
+                                Lighting
+                            </button>
+                        </li>
+                        <li class="gallery__item">
+                            <button class="gallery__button" data-filter=".decor">Decor</button>
+                        </li>
+                    </ul>
+                    <ul class="gallery__items">
+                        <li class="card mix furnitures">
+                            <img class="card__img" src="images/card/1.png" alt="Wooden radio" />
+                            <p class="card__title">Wooden radio</p>
+                            <p class="card__price">$29.00</p>
+                            <ul class="card__navigation">
+                                <li class="card__item">
+                                    <button class="card__btn">
+                                        <svg>
+                                            <use xlink:href="images/sprite.svg#search"></use>
+                                        </svg>
+                                    </button>
+                                </li>
+                                <li class="card__item">
+                                    <button class="card__btn">
+                                        <svg>
+                                            <use xlink:href="images/sprite.svg#cart"></use>
+                                        </svg>
+                                    </button>
+                                </li>
+                                <li class="card__item">
+                                    <button class="card__btn">
+                                        <svg>
+                                            <use xlink:href="images/sprite.svg#heart"></use>
+                                        </svg>
+                                    </button>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="card mix furnitures">
+                            <img class="card__img" src="images/card/2.png" alt="Wooden chair" />
+                            <p class="card__title">Wooden chair</p>
+                            <p class="card__price">$29.00</p>
+                            <ul class="card__navigation">
+                                <li class="card__item">
+                                    <button class="card__btn">
+                                        <svg>
+                                            <use xlink:href="images/sprite.svg#search"></use>
+                                        </svg>
+                                    </button>
+                                </li>
+                                <li class="card__item">
+                                    <button class="card__btn">
+                                        <svg>
+                                            <use xlink:href="images/sprite.svg#cart"></use>
+                                        </svg>
+                                    </button>
+                                </li>
+                                <li class="card__item">
+                                    <button class="card__btn">
+                                        <svg>
+                                            <use xlink:href="images/sprite.svg#heart"></use>
+                                        </svg>
+                                    </button>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="card mix chairs">
+                            <img class="card__img" src="images/card/3.png" alt="White chair" />
+                            <p class="card__title">White chair</p>
+                            <p class="card__price">$29.00</p>
+                            <ul class="card__navigation">
+                                <li class="card__item">
+                                    <button class="card__btn">
+                                        <svg>
+                                            <use xlink:href="images/sprite.svg#search"></use>
+                                        </svg>
+                                    </button>
+                                </li>
+                                <li class="card__item">
+                                    <button class="card__btn">
+                                        <svg>
+                                            <use xlink:href="images/sprite.svg#cart"></use>
+                                        </svg>
+                                    </button>
+                                </li>
+                                <li class="card__item">
+                                    <button class="card__btn">
+                                        <svg>
+                                            <use xlink:href="images/sprite.svg#heart"></use>
+                                        </svg>
+                                    </button>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="card mix chairs">
+                            <img class="card__img" src="images/card/4.png" alt="Retro table" />
+                            <p class="card__title">Retro table</p>
+                            <p class="card__price">$29.00</p>
+                            <ul class="card__navigation">
+                                <li class="card__item">
+                                    <button class="card__btn">
+                                        <svg>
+                                            <use xlink:href="images/sprite.svg#search"></use>
+                                        </svg>
+                                    </button>
+                                </li>
+                                <li class="card__item">
+                                    <button class="card__btn">
+                                        <svg>
+                                            <use xlink:href="images/sprite.svg#cart"></use>
+                                        </svg>
+                                    </button>
+                                </li>
+                                <li class="card__item">
+                                    <button class="card__btn">
+                                        <svg>
+                                            <use xlink:href="images/sprite.svg#heart"></use>
+                                        </svg>
+                                    </button>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="card mix lighting">
+                            <img class="card__img" src="images/card/5.png" alt="Wooden radio" />
+                            <p class="card__title">Wooden radio</p>
+                            <p class="card__price">$29.00</p>
+                            <ul class="card__navigation">
+                                <li class="card__item">
+                                    <button class="card__btn">
+                                        <svg>
+                                            <use xlink:href="images/sprite.svg#search"></use>
+                                        </svg>
+                                    </button>
+                                </li>
+                                <li class="card__item">
+                                    <button class="card__btn">
+                                        <svg>
+                                            <use xlink:href="images/sprite.svg#cart"></use>
+                                        </svg>
+                                    </button>
+                                </li>
+                                <li class="card__item">
+                                    <button class="card__btn">
+                                        <svg>
+                                            <use xlink:href="images/sprite.svg#heart"></use>
+                                        </svg>
+                                    </button>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="card mix lighting">
+                            <img class="card__img" src="images/card/6.png" alt="Wooden chair" />
+                            <p class="card__title">Wooden chair</p>
+                            <p class="card__price">$29.00</p>
+                            <ul class="card__navigation">
+                                <li class="card__item">
+                                    <button class="card__btn">
+                                        <svg>
+                                            <use xlink:href="images/sprite.svg#search"></use>
+                                        </svg>
+                                    </button>
+                                </li>
+                                <li class="card__item">
+                                    <button class="card__btn">
+                                        <svg>
+                                            <use xlink:href="images/sprite.svg#cart"></use>
+                                        </svg>
+                                    </button>
+                                </li>
+                                <li class="card__item">
+                                    <button class="card__btn">
+                                        <svg>
+                                            <use xlink:href="images/sprite.svg#heart"></use>
+                                        </svg>
+                                    </button>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="card mix decor">
+                            <img class="card__img" src="images/card/7.png" alt="White chair" />
+                            <p class="card__title">White chair</p>
+                            <p class="card__price">$29.00</p>
+                            <ul class="card__navigation">
+                                <li class="card__item">
+                                    <button class="card__btn">
+                                        <svg>
+                                            <use xlink:href="images/sprite.svg#search"></use>
+                                        </svg>
+                                    </button>
+                                </li>
+                                <li class="card__item">
+                                    <button class="card__btn">
+                                        <svg>
+                                            <use xlink:href="images/sprite.svg#cart"></use>
+                                        </svg>
+                                    </button>
+                                </li>
+                                <li class="card__item">
+                                    <button class="card__btn">
+                                        <svg>
+                                            <use xlink:href="images/sprite.svg#heart"></use>
+                                        </svg>
+                                    </button>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="card mix decor">
+                            <img class="card__img" src="images/card/8.png" alt="Retro table" />
+                            <p class="card__title">Retro table</p>
+                            <p class="card__price">$29.00</p>
+                            <ul class="card__navigation">
+                                <li class="card__item">
+                                    <button class="card__btn">
+                                        <svg>
+                                            <use xlink:href="images/sprite.svg#search"></use>
+                                        </svg>
+                                    </button>
+                                </li>
+                                <li class="card__item">
+                                    <button class="card__btn">
+                                        <svg>
+                                            <use xlink:href="images/sprite.svg#cart"></use>
+                                        </svg>
+                                    </button>
+                                </li>
+                                <li class="card__item">
+                                    <button class="card__btn">
+                                        <svg>
+                                            <use xlink:href="images/sprite.svg#heart"></use>
+                                        </svg>
+                                    </button>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </section>
+        </main>
+
+        <footer class="footer">
+            <div class="container">
+                <div class="footer__items">
+                    <address class="address">
+                        <a class="logo footer__logo" href="#">
+                            <img class="logo__img" src="images/logo.png" alt="Logo Glee" />
+                        </a>
+                        <div class="address__item">
+                            <p>ADDRESS: 4772 Wines Lane</p>
+                            <p>Houston, TX 77032</p>
+                        </div>
+                        <div class="address__item">
+                            <p>Telephone: <a href="tel:+8323475843">+832-347-5843</a></p>
+                            <p>Email: <a href="mailto:contact@Glee.com">contact@Glee.com</a></p>
+                        </div>
+                    </address>
+                    <div class="footer__item">
+                        <h2 class="footer__title">Services</h2>
+                        <ul class="footer__list">
+                            <li class="footer__box">
+                                <a class="footer__link" href="#">About us</a>
+                            </li>
+                            <li class="footer__box">
+                                <a class="footer__link" href="#">Return Policy</a>
+                            </li>
+                            <li class="footer__box">
+                                <a class="footer__link" href="#">Our Blog</a>
+                            </li>
+                            <li class="footer__box">
+                                <a class="footer__link" href="#">Contact Us</a>
+                            </li>
+                            <li class="footer__box">
+                                <a class="footer__link" href="#">Terms & Condition</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="footer__item">
+                        <h2 class="footer__title">Account</h2>
+                        <ul class="footer__list">
+                            <li class="footer__box">
+                                <a class="footer__link" href="#">Your Account</a>
+                            </li>
+                            <li class="footer__box">
+                                <a class="footer__link" href="#">Checkout</a>
+                            </li>
+                            <li class="footer__box">
+                                <a class="footer__link" href="#">Login</a>
+                            </li>
+                            <li class="footer__box">
+                                <a class="footer__link" href="#">Register</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="footer__item">
+                        <h2 class="footer__title">Newsletter</h2>
+                        <p class="footer__text">
+                            Subscribe by our newsletter and get update protidin.
+                        </p>
+                        <form class="form">
+                            <label class="visually-hidden" for="email_input">
+                                Enter your email
+                            </label>
+                            <input
+                                class="form__input"
+                                type="email"
+                                id="email_input"
+                                pattern="^([a-z0-9_-]+\.)*[a-z0-9_-]+@[a-z0-9_-]+(\.[a-z0-9_-]+)*\.[a-z]{2,6}$"
+                                name="request[email]"
+                                placeholder="Email address"
+                            />
+                            <button class="form__btn" type="submit">Subscribe</button>
+                        </form>
+                    </div>
+                </div>
+                <div class="footer__bottom">
+                    <p class="footer__copyright">©2020 CopyRight Example. All rights reserved.</p>
+                    <ul class="footer__navigation">
+                        <!-- Тут думаю имеет смысл писать длинные классы-->
+                        <li class="footer__navigation-item">
+                            <a class="footer__navigation-link" href="#">Home</a>
+                        </li>
+                        <li class="footer__navigation-item">
+                            <a class="footer__navigation-link" href="#">About</a>
+                        </li>
+                        <li class="footer__navigation-item">
+                            <a class="footer__navigation-link" href="#">Blog</a>
+                        </li>
+                        <li class="footer__navigation-item">
+                            <a class="footer__navigation-link" href="#">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </footer>
+
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+        <script
+            src="https://cdnjs.cloudflare.com/ajax/libs/mixitup/3.3.1/mixitup.min.js"
+            integrity="sha512-nKZDK+ztK6Ug+2B6DZx+QtgeyAmo9YThZob8O3xgjqhw2IVQdAITFasl/jqbyDwclMkLXFOZRiytnUrXk/PM6A=="
+            crossorigin="anonymous"
+        ></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+        <script src="js/index.min.js"></script>
+    </body>
 </html>

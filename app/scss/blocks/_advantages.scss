@@ -1,0 +1,51 @@
+.advantages {
+    margin-bottom: 70px;
+
+    &__items {
+        display: flex;
+    }
+
+    &__item {
+        display: flex;
+        justify-content: center;
+        padding: 48px;
+        width: 100%;
+        font-family: "DM Sans", sans-serif;
+        background-color: rgba($bg-color, 0.2);
+
+        &:not(:last-child) {
+            border-right: 1px solid rgba($title-color, 0.1);
+        }
+    }
+
+    &__info {
+        padding-left: 80px;
+        max-width: 306px;
+        background-position: top left;
+        background-repeat: no-repeat;
+
+        &--support {
+            background-image: url("#{$img-path}support.svg");
+        }
+
+        &--delivery {
+            background-image: url("#{$img-path}delivery.svg");
+        }
+
+        &--cart {
+            background-image: url("#{$img-path}credit.svg");
+        }
+    }
+
+    &__title {
+        margin-bottom: 10px;
+        font-weight: 700;
+        font-size: 18px;
+        color: #414141;
+    }
+
+    &__text {
+        line-height: 1.4;
+        color: #585858;
+    }
+}

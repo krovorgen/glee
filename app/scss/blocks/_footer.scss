@@ -1,0 +1,116 @@
+.footer {
+    padding: 80px 0 40px;
+    font-size: 14px;
+    color: $footer-color;
+
+    &__items {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        margin-bottom: 35px;
+        padding-bottom: 75px;
+        border-bottom: 1px solid rgba($main-color, 0.4);
+    }
+
+    &__logo {
+        display: block;
+        margin-bottom: 30px;
+    }
+
+    &__item {
+        padding-top: 18px;
+    }
+
+    &__title {
+        margin-bottom: 25px;
+        font-family: "DM Sans", sans-serif;
+        font-weight: 700;
+        font-size: 16px;
+        text-transform: uppercase;
+        color: #1f2044;
+    }
+
+    &__box {
+        &:not(:last-child) {
+            margin-bottom: 16px;
+        }
+
+        a {
+            @extend %hover-link;
+        }
+    }
+
+    &__text {
+        margin-bottom: 35px;
+        max-width: 270px;
+    }
+
+    &__bottom {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &__navigation {
+        display: flex;
+    }
+
+    &__navigation-item {
+        &:not(:first-child) {
+            padding-left: 15px;
+            border-left: 1px solid $footer-color;
+        }
+
+        &:not(:last-child) {
+            padding-right: 15px;
+        }
+    }
+
+    &__navigation-link {
+        @extend %hover-link;
+    }
+}
+
+.form {
+    display: flex;
+
+    &__input {
+        padding: 12px 15px;
+        width: 100%;
+        max-width: 170px;
+        border: none;
+        background-color: rgba($bg-color, 0.2);
+
+        &::placeholder {
+            font-family: "DM Sans", sans-serif;
+            font-weight: 400;
+            font-size: 12px;
+            color: #234969;
+        }
+    }
+
+    &__btn {
+        padding: 12px 16px;
+        border: none;
+        font-family: "DM Sans", sans-serif;
+        color: $white;
+        background-color: $main-color;
+    }
+}
+
+.address {
+    font-style: normal;
+
+    &__item {
+        &:not(:last-child) {
+            margin-bottom: 20px;
+        }
+
+        p:not(:last-child) {
+            margin-bottom: 7px;
+        }
+
+        a {
+            @extend %hover-link;
+        }
+    }
+}

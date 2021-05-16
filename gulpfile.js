@@ -19,7 +19,7 @@ const browsersync = () => {
 };
 
 const watching = () => {
-    watch(['app/*.html']).on('change', browserSync.reload);
+    watch(['app/*.html', 'app/style-map/*.html']).on('change', browserSync.reload);
     watch(['app/scss/**/*.scss'], styles);
     watch(['app/js/index.js', '!app/js/index.min.js', '!app/js/index.min.js.map'], scripts);
 };

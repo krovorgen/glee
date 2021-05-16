@@ -12,10 +12,11 @@
     </head>
     <body>
         <div class="color__wrapper">
-            <div class="color__item color__item--main">$main-color: #a3bbc8;</div>
             <div class="color__item color__item--white">$white: #fff;</div>
-            <div class="color__item color__item--title">$title-color: #243f4d;</div>
+            <div class="color__item color__item--main">$main-color: #a3bbc8;</div>
             <div class="color__item color__item--text">$text-color: #436372;</div>
+            <div class="color__item color__item--title">$title-color: #243f4d;</div>
+            <div class="color__item color__item--bg">$bg-color: #fcd7b6;</div>
         </div>
 
         <div class="svg__wrapper">
@@ -39,6 +40,18 @@
                 <use xlink:href="../images/sprite.svg#search"></use>
             </svg>
             <span class="svg__descr">#search fill="#243f4d"</span>
+            <svg class="svg__item">
+                <use xlink:href="../images/sprite.svg#support"></use>
+            </svg>
+            <span class="svg__descr">#support fill="#a3bbc8"</span>
+            <svg class="svg__item">
+                <use xlink:href="../images/sprite.svg#delivery"></use>
+            </svg>
+            <span class="svg__descr">#delivery fill="#a3bbc8"</span>
+            <svg class="svg__item">
+                <use xlink:href="../images/sprite.svg#credit"></use>
+            </svg>
+            <span class="svg__descr">#credit fill="#a3bbc8"</span>
         </div>
 
         <div class="fonts__wrapper">
@@ -54,7 +67,6 @@
             justify-content: space-between;
             flex-wrap: wrap;
             color: #000;
-            flex: 1;
         }
 
         .color__item {
@@ -81,6 +93,10 @@
 
         .color__item--text {
             background-color: #436372;
+        }
+
+        .color__item--bg {
+            background-color: #fcd7b6;
         }
 
         .svg__wrapper {
