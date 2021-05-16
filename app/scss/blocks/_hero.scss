@@ -9,6 +9,7 @@
     }
 
     &__wrap {
+        position: relative;
         display: flex;
         align-items: center;
         justify-content: space-between;
@@ -17,6 +18,18 @@
         height: 100%;
         min-width: 320px;
         max-width: 1200px;
+
+        &::before {
+            content: "";
+            position: absolute;
+            right: -55px;
+            top: 50%;
+            width: 634px;
+            height: 634px;
+            border-radius: 50%;
+            background-image: linear-gradient(to left, $white 0%, rgba($white, 0) 100%);
+            transform: translateY(-50%);
+        }
     }
 
     &__title {
@@ -62,6 +75,10 @@
                 fill: $main-color;
             }
         }
+    }
+
+    &__img {
+        position: relative;
     }
 
     .slick-dots {

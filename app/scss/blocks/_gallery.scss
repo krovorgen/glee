@@ -77,8 +77,8 @@
         position: absolute;
         left: 50%;
         top: 50%;
-        opacity: 0;
         display: flex;
+        opacity: 0;
         transform: translate(-50%, -50%);
         transition: opacity 0.3s;
     }

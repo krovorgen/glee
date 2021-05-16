@@ -6,7 +6,7 @@
     "scripts": {
         "stylelint": "stylelint \"**/*.scss\"",
         "stylelint:fix": "stylelint \"**/*{.css,.scss}\" --fix",
-        "deploy": "gh-pages -d app"
+        "deploy": "gh-pages -d dist"
     },
     "keywords": [],
     "author": "",
