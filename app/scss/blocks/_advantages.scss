@@ -25,7 +25,7 @@
         background-repeat: no-repeat;
 
         &--support {
-            background-image: url("#{$img-path}support.svg");
+            background-image: url("#{$img-path}sprite.svg#cart");
         }
 
         &--delivery {
@@ -38,6 +38,8 @@
     }
 
     &__title {
+        @include line-clamp(2);
+
         margin-bottom: 10px;
         font-weight: 700;
         font-size: 18px;
@@ -45,6 +47,8 @@
     }
 
     &__text {
+        @include line-clamp(4);
+
         line-height: 1.4;
         color: #585858;
     }

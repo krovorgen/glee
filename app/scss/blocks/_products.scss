@@ -1,0 +1,45 @@
+.products {
+    margin-bottom: 145px;
+
+    &__title {
+        margin-bottom: 25px;
+        font-family: "DM Sans", sans-serif;
+        font-weight: 700;
+        font-size: 36px;
+        text-align: center;
+        color: #191919;
+    }
+
+    &__navigation {
+        display: flex;
+        justify-content: center;
+        margin-bottom: 80px;
+    }
+
+    &__item {
+        &:not(:last-child) {
+            margin-right: 30px;
+        }
+    }
+
+    &__button {
+        padding: 0;
+        border: none;
+        font-family: "DM Sans", sans-serif;
+        font-weight: 700;
+        color: #8b8b8b;
+        background-color: transparent;
+
+        &.mixitup-control-active {
+            color: #414141;
+        }
+
+        @extend %hover-btn;
+    }
+
+    &__items {
+        display: flex;
+        flex-wrap: wrap;
+        margin: 0 -15px;
+    }
+}

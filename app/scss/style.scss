@@ -4,9 +4,14 @@
 @import "libs/reset";
 @import "global";
 
-// main page
+// global section
 @import "blocks/header";
+@import "blocks/footer";
+
+// product cards
+@import "blocks/product-card";
+
+// main page
 @import "blocks/hero";
 @import "blocks/advantages";
-@import "blocks/gallery";
-@import "blocks/footer";
+@import "blocks/products";

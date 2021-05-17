@@ -41,7 +41,12 @@ const styles = () => {
 };
 
 const scripts = () => {
-    return src(['app/js/index.js'])
+    return src([
+        'node_modules/jquery/dist/jquery.js',
+        'node_modules/mixitup/dist/mixitup.min.js',
+        'node_modules/slick-carousel/slick/slick.js',
+        'app/js/index.js',
+    ])
         .pipe(sourcemaps.init())
         .pipe(concat('index.min.js'))
         .pipe(uglify())

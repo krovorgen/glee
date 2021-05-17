@@ -31,7 +31,6 @@ $footer-color: #7b7b7b;
     transition: color 0.5s;
 
     &:hover {
-        text-decoration: underline;
         color: $main-color;
     }
 }
@@ -43,3 +42,12 @@ $footer-color: #7b7b7b;
         color: #414141;
     }
 }
+/* stylelint-disable */
+@mixin line-clamp($property) {
+    -webkit-line-clamp: $property; /* Число отображаемых строк */
+    display: -webkit-box; /* Включаем флексбоксы */
+    -webkit-box-orient: vertical; /* Вертикальная ориентация */
+    overflow: hidden;
+}
+
+// @include line-clamp()

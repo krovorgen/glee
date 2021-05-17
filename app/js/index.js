@@ -4,5 +4,5 @@ $(function () {
         dots: true,
     });
 
-    (() => mixitup('.gallery__items'))();
+    (() => mixitup('.products__items'))();
 });
