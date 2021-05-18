@@ -64,6 +64,10 @@
             fill: $main;
         }
 
+        &:hover {
+            background-color: $main;
+        }
+
         @extend %hover-nav-header;
     }
 
