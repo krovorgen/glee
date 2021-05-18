@@ -19,15 +19,15 @@
         @include line-clamp(1);
 
         margin-bottom: 11px;
-        font-family: "DM Sans", sans-serif;
-        font-weight: 500;
-        color: $title-color;
+        color: $title;
+
+        @extend %dms-medium;
     }
 
     &__price {
         @include line-clamp(1);
 
-        color: $main-color;
+        color: $main;
     }
 
     &__navigation {
@@ -61,7 +61,7 @@
         svg {
             width: 20px;
             height: 20px;
-            fill: $main-color;
+            fill: $main;
         }
 
         @extend %hover-nav-header;

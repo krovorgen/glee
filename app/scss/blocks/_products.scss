@@ -3,11 +3,11 @@
 
     &__title {
         margin-bottom: 25px;
-        font-family: "DM Sans", sans-serif;
-        font-weight: 700;
         font-size: 36px;
         text-align: center;
-        color: #191919;
+        color: $grey-600;
+
+        @extend %dms-bold;
     }
 
     &__navigation {
@@ -25,15 +25,14 @@
     &__button {
         padding: 0;
         border: none;
-        font-family: "DM Sans", sans-serif;
-        font-weight: 700;
-        color: #8b8b8b;
+        color: $grey-100;
         background-color: transparent;
 
         &.mixitup-control-active {
             color: #414141;
         }
 
+        @extend %dms-bold;
         @extend %hover-btn;
     }
 

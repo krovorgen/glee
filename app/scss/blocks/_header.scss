@@ -23,8 +23,8 @@
         transition: border-bottom-color 0.5s, color 0.5s;
 
         &:hover {
-            border-bottom-color: $title-color;
-            color: $title-color;
+            border-bottom-color: $title;
+            color: $title;
         }
     }
 
@@ -38,19 +38,19 @@
 
     &__search {
         margin-right: 21px;
-        background-color: rgba($main-color, 0.2);
+        background-color: rgba($main, 0.2);
 
         svg {
             width: 16px;
             height: 16px;
-            fill: $title-color;
+            fill: $title;
         }
 
         @extend %hover-nav-header;
     }
 
     &__menu {
-        background-color: $main-color;
+        background-color: $main;
 
         svg {
             width: 20px;
@@ -75,20 +75,21 @@
         width: 16px;
         height: 16px;
         border-radius: 50%;
-        font-family: "DM Sans", sans-serif;
         font-size: 10px;
         background-color: $white;
+
+        @extend %dms-regular;
     }
 
     &__item {
         position: relative;
         border: none;
-        background-color: $bg-color;
+        background-color: $bg;
 
         svg {
             width: 19px;
             height: 17px;
-            fill: $title-color;
+            fill: $title;
             transition: fill 0.5s;
         }
 

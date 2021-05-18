@@ -10,12 +10,13 @@
         justify-content: center;
         padding: 48px;
         width: 100%;
-        font-family: "DM Sans", sans-serif;
-        background-color: rgba($bg-color, 0.2);
+        background-color: rgba($bg, 0.2);
 
         &:not(:last-child) {
-            border-right: 1px solid rgba($title-color, 0.1);
+            border-right: 1px solid rgba($title, 0.1);
         }
+
+        @extend %dms-regular;
     }
 
     &__info {
@@ -25,15 +26,15 @@
         background-repeat: no-repeat;
 
         &--support {
-            background-image: url("#{$img-path}sprite.svg#cart");
+            background-image: url("#{$img}sprite.svg#cart");
         }
 
         &--delivery {
-            background-image: url("#{$img-path}delivery.svg");
+            background-image: url("#{$img}delivery.svg");
         }
 
         &--cart {
-            background-image: url("#{$img-path}credit.svg");
+            background-image: url("#{$img}credit.svg");
         }
     }
 
@@ -50,6 +51,6 @@
         @include line-clamp(4);
 
         line-height: 1.4;
-        color: #585858;
+        color: $grey-300;
     }
 }

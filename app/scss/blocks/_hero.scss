@@ -1,6 +1,6 @@
 .hero {
     &__items {
-        background-color: $bg-color;
+        background-color: $bg;
     }
 
     &__item {
@@ -36,12 +36,12 @@
         @include line-clamp(2);
 
         margin-bottom: 29px;
-        max-width: 412px;
-        font-weight: 500;
+        max-width: 430px;
+        font-weight: 700;
         font-size: 72px;
         line-height: 1;
         text-transform: uppercase;
-        color: $title-color;
+        color: $title;
     }
 
     &__text {
@@ -56,7 +56,7 @@
     &__link {
         padding: 21px 20px 21px 27px;
         color: $white;
-        background-color: $main-color;
+        background-color: $main;
         transition: background-color 0.5s, color 0.5s, fill 0.5s;
 
         svg {
@@ -72,11 +72,11 @@
         }
 
         &:hover {
-            color: $main-color;
+            color: $main;
             background-color: $white;
 
             svg {
-                fill: $main-color;
+                fill: $main;
             }
         }
     }
