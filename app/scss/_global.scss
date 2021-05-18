@@ -39,3 +39,31 @@ iframe {
     white-space: nowrap;
     clip: rect(0, 0, 0, 0);
 }
+
+.shop-link {
+    padding: 21px 20px 21px 27px;
+    color: $white;
+    background-color: $main;
+    transition: background-color 0.5s, color 0.5s, fill 0.5s;
+
+    svg {
+        width: 22px;
+        height: 9px;
+        fill: $white;
+    }
+
+    span {
+        padding-right: 55px;
+        font-weight: 500;
+        font-size: 15px;
+    }
+
+    &:hover {
+        color: $main;
+        background-color: $white;
+
+        svg {
+            fill: $main;
+        }
+    }
+}

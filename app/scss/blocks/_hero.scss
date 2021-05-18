@@ -4,8 +4,7 @@
     }
 
     &__item {
-        padding: 15px 0 85px;
-        height: calc(100vh - 142px);
+        padding: 220px 0 300px;
     }
 
     &__wrap {
@@ -15,7 +14,6 @@
         justify-content: space-between;
         margin: 0 auto;
         padding: 0 15px;
-        height: 100%;
         min-width: 320px;
         max-width: 1200px;
 
@@ -51,34 +49,6 @@
         max-width: 360px;
         font-size: 18px;
         line-height: 1.4;
-    }
-
-    &__link {
-        padding: 21px 20px 21px 27px;
-        color: $white;
-        background-color: $main;
-        transition: background-color 0.5s, color 0.5s, fill 0.5s;
-
-        svg {
-            width: 22px;
-            height: 9px;
-            fill: $white;
-        }
-
-        span {
-            padding-right: 55px;
-            font-weight: 500;
-            font-size: 15px;
-        }
-
-        &:hover {
-            color: $main;
-            background-color: $white;
-
-            svg {
-                fill: $main;
-            }
-        }
     }
 
     &__img {
