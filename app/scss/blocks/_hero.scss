@@ -4,7 +4,7 @@
     }
 
     &__item {
-        padding: 220px 0 300px;
+        padding: 220px 0 280px;
     }
 
     &__wrap {
@@ -33,7 +33,7 @@
     &__title {
         @include line-clamp(2);
 
-        margin-bottom: 29px;
+        margin-bottom: 24px;
         max-width: 430px;
         font-weight: 700;
         font-size: 72px;
@@ -45,7 +45,7 @@
     &__text {
         @include line-clamp(4);
 
-        margin-bottom: 60px;
+        margin-bottom: 44px;
         max-width: 360px;
         font-size: 18px;
         line-height: 1.4;
