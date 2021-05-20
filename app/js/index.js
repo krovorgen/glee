@@ -5,6 +5,12 @@ $(function () {
         dots: true,
     });
 
+    $('.company__items').slick({
+        arrows: false,
+        slidesToShow: 5,
+        slidesToScroll: 1,
+    });
+
     //mixitup
     let containerEl1 = document.querySelector('.design');
     let containerEl2 = document.querySelector('.products');

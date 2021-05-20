@@ -1,0 +1,26 @@
+.company {
+    position: relative;
+    z-index: -1;
+    padding: 264px 0 92px;
+    background-color: rgba($bg, 0.2);
+
+    &__items {
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+    }
+
+    &__item {
+        display: flex !important;
+        flex-direction: column;
+        min-height: 85px;
+    }
+
+    &__img {
+        margin: auto;
+    }
+
+    .slick-slide {
+        height: 100%;
+    }
+}

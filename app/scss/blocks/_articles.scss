@@ -1,4 +1,6 @@
 .articles {
+    margin-bottom: -175px;
+
     &__top {
         display: flex;
         align-items: center;
@@ -41,10 +43,13 @@
 .article {
     display: flex;
     flex-direction: column;
-    margin-right: 30px;
     width: 100%;
     border-radius: 5px;
     box-shadow: 0 6px 47px 3px rgba(37, 37, 37, 0.05);
+
+    &:not(:last-child) {
+        margin-right: 30px;
+    }
 
     &__img {
         position: relative;
@@ -77,6 +82,7 @@
         flex-direction: column;
         padding: 35px 30px 25px;
         height: 100%;
+        background-color: $white;
     }
 
     &__title {
