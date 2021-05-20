@@ -18,29 +18,18 @@
         position: relative;
         padding-left: 255px;
 
-        &--first::before,
-        &--second::before {
-            content: "";
-            position: absolute;
-            left: 0;
-            bottom: 0;
-            width: 235px;
-            height: 405px;
-            background-size: cover;
-            background-repeat: no-repeat;
-        }
-
-        &--first::before {
-            background-image: url("../images/offers/1.png");
-        }
-
-        &--second::before {
-            background-image: url("../images/offers/2.png");
-        }
-
         &--second {
             padding-left: 300px;
         }
+    }
+
+    &__img {
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        height: 405px;
+        max-width: 235px;
+        object-fit: cover;
     }
 
     &__title {

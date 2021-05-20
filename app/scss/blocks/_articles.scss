@@ -1,0 +1,107 @@
+.articles {
+    &__top {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin-bottom: 45px;
+
+        @extend %dms-bold;
+    }
+
+    &__title {
+        font-size: 36px;
+        color: $grey-600;
+    }
+
+    &__next {
+        position: relative;
+        padding-right: 25px;
+        font-size: 16px;
+        color: $grey-500;
+
+        &::before {
+            content: "";
+            position: absolute;
+            right: 0;
+            top: 3px;
+            width: 7px;
+            height: 12px;
+            background-image: url("../images/arrow-right.svg");
+            background-repeat: no-repeat;
+        }
+
+        @extend %hover-link;
+    }
+
+    &__items {
+        display: flex;
+    }
+}
+
+.article {
+    display: flex;
+    flex-direction: column;
+    margin-right: 30px;
+    width: 100%;
+    border-radius: 5px;
+    box-shadow: 0 6px 47px 3px rgba(37, 37, 37, 0.05);
+
+    &__img {
+        position: relative;
+        height: 250px;
+
+        img {
+            width: 100%;
+            height: 100%;
+            border-radius: 5px 5px 0 0;
+            object-fit: cover;
+        }
+    }
+
+    &__subtitle {
+        position: absolute;
+        left: 28px;
+        bottom: -15px;
+        padding: 8px 31px;
+        border-radius: 15px;
+        font-size: 14px;
+        text-transform: uppercase;
+        color: $white;
+        background-color: $main;
+
+        @extend %poppins-bold;
+    }
+
+    &__info {
+        display: flex;
+        flex-direction: column;
+        padding: 35px 30px 25px;
+        height: 100%;
+    }
+
+    &__title {
+        padding-bottom: 15px;
+        font-size: 18px;
+        color: $grey-500;
+
+        a {
+            @extend %hover-link;
+        }
+
+        @extend %dms-medium;
+    }
+
+    &__bottom {
+        display: flex;
+        margin-top: auto;
+        padding-top: 20px;
+        border-top: 1px solid $grey-75;
+        font-size: 12px;
+        text-transform: uppercase;
+        color: #222933;
+    }
+
+    &__date {
+        padding-right: 30px;
+    }
+}

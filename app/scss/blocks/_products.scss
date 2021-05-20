@@ -1,44 +1,19 @@
 .products {
-    margin-bottom: 145px;
+    margin-bottom: 95px;
 
     &__title {
         margin-bottom: 25px;
         font-size: 36px;
         text-align: center;
-        color: $grey-600;
+        color: $grey-700;
 
         @extend %dms-bold;
-    }
-
-    &__navigation {
-        display: flex;
-        justify-content: center;
-        margin-bottom: 80px;
-    }
-
-    &__item {
-        &:not(:last-child) {
-            margin-right: 30px;
-        }
-    }
-
-    &__button {
-        padding: 0;
-        border: none;
-        color: $grey-100;
-        background-color: transparent;
-
-        &.mixitup-control-active {
-            color: #414141;
-        }
-
-        @extend %dms-bold;
-        @extend %hover-btn;
     }
 
     &__items {
         display: flex;
         flex-wrap: wrap;
         margin: 0 -15px;
+        margin-bottom: 145px;
     }
 }

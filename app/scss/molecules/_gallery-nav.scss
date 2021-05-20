@@ -1,0 +1,25 @@
+.gallery-nav {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 80px;
+
+    &__item {
+        &:not(:last-child) {
+            margin-right: 30px;
+        }
+    }
+
+    &__button {
+        padding: 0;
+        border: none;
+        color: $grey-100;
+        background-color: transparent;
+
+        &.mixitup-control-active {
+            color: #414141;
+        }
+
+        @extend %dms-bold;
+        @extend %hover-btn;
+    }
+}

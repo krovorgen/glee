@@ -4,15 +4,20 @@
 @import "libs/reset";
 @import "global";
 
-// global section
+// molecules
+@import "molecules/product-card";
+@import "molecules/gallery-nav";
+@import "molecules/shop-link";
+
+// main
 @import "blocks/header";
 @import "blocks/footer";
 
-// product cards
-@import "blocks/product-card";
-
 // main page
 @import "blocks/hero";
-@import "blocks/advantages";
 @import "blocks/products";
+@import "blocks/advantages";
 @import "blocks/offers";
+@import "blocks/design";
+@import "blocks/video-popup";
+@import "blocks/articles";
