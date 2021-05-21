@@ -28,7 +28,7 @@
             top: 3px;
             width: 7px;
             height: 12px;
-            background-image: url("../images/arrow-right.svg");
+            background-image: url("#{$img}arrow-right.svg");
             background-repeat: no-repeat;
         }
 
@@ -91,6 +91,8 @@
         color: $grey-500;
 
         a {
+            @include line-clamp(3);
+
             @extend %hover-link;
         }
 
@@ -109,5 +111,33 @@
 
     &__date {
         padding-right: 30px;
+    }
+
+    &__date::before {
+        background-image: url("#{$img}articles/1.svg");
+    }
+
+    &__author::before {
+        background-image: url("#{$img}articles/2.svg");
+    }
+
+    &__date,
+    &__author {
+        @include line-clamp(1);
+
+        position: relative;
+        padding-left: 17px;
+    }
+
+    &__date::before,
+    &__author::before {
+        content: "";
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 14px;
+        height: 17px;
+        background-size: contain;
+        background-repeat: no-repeat;
     }
 }

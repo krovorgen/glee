@@ -75,6 +75,7 @@ const build = () => {
             'app/js/index.min.js.map',
             'app/fonts/**/*',
             'app/images/**/*',
+            'app/style-map/**/*',
         ],
         {
             base: 'app',
