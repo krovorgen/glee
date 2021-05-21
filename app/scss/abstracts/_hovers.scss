@@ -11,10 +11,14 @@
 }
 
 %hover-link {
-    transition: color 0.5s;
+    transition: color 0.5s, fill 0.5s;
 
     &:hover {
         color: $main;
+
+        svg {
+            fill: $main;
+        }
     }
 }
 
