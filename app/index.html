@@ -13,76 +13,7 @@
         <!-- prettier-ignore -->
         <a class="style-map" href="style-map/" target="_blank" style="position: fixed;right: 0;top: 0;display: flex;align-items: center;justify-content: center;width: 30px;height: 30px;border-radius: 50%;color: #ffffff;background-color: #a3bbc8;">s</a>
 
-        <header class="header">
-            <div class="container container--long">
-                <nav class="header__inner">
-                    <a class="logo" href="#">
-                        <img
-                            class="logo__img"
-                            src="images/logo.png"
-                            width="146"
-                            height="39"
-                            alt="Logo Glee"
-                        />
-                    </a>
-                    <ul class="menu menu--header">
-                        <li class="menu__item">
-                            <a class="menu__link" href="#" target="_blank">Home +</a>
-                        </li>
-                        <li class="menu__item">
-                            <a class="menu__link" href="#" target="_blank">About</a>
-                        </li>
-                        <li class="menu__item">
-                            <a class="menu__link" href="#" target="_blank">Services</a>
-                        </li>
-                        <li class="menu__item">
-                            <a class="menu__link" href="#" target="_blank">Pages +</a>
-                        </li>
-                        <li class="menu__item">
-                            <a class="menu__link" href="#" target="_blank">News</a>
-                        </li>
-                        <li class="menu__item">
-                            <a class="menu__link" href="#" target="_blank">Contact</a>
-                        </li>
-                    </ul>
-                    <div class="user-nav">
-                        <button class="user-nav__search" type="button">
-                            <span class="visually-hidden">Search</span>
-                            <svg>
-                                <use xlink:href="images/sprite.svg#search"></use>
-                            </svg>
-                        </button>
-
-                        <button class="user-nav__item user-nav__item--left" type="button">
-                            <span class="visually-hidden">Add to favourites</span>
-                            <span class="user-nav__wrap">
-                                <svg>
-                                    <use xlink:href="images/sprite.svg#heart"></use>
-                                </svg>
-                                <span class="user-nav__count">0</span>
-                            </span>
-                        </button>
-
-                        <button class="user-nav__item user-nav__item--right" type="button">
-                            <span class="visually-hidden">Add to cart</span>
-                            <span class="user-nav__wrap">
-                                <svg>
-                                    <use xlink:href="images/sprite.svg#cart"></use>
-                                </svg>
-                                <span class="user-nav__count">0</span>
-                            </span>
-                        </button>
-
-                        <button class="user-nav__menu" type="button">
-                            <span class="visually-hidden">Tab for ...</span>
-                            <svg>
-                                <use xlink:href="images/sprite.svg#menu"></use>
-                            </svg>
-                        </button>
-                    </div>
-                </nav>
-            </div>
-        </header>
+        @@include('parts/_header.html')
 
         <main>
             <h1 class="visually-hidden">Glee - best furniture store</h1>
