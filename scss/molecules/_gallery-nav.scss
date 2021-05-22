@@ -1,0 +1,26 @@
+.gallery-nav {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 80px;
+
+    &__item {
+        &:not(:last-child) {
+            margin-right: 30px;
+        }
+    }
+
+    &__button {
+        padding: 0;
+        border: none;
+        font-family: "DM Sans", sans-serif;
+        font-weight: 700;
+        color: $grey-100;
+        background-color: transparent;
+
+        &.mixitup-control-active {
+            color: $grey-400;
+        }
+
+        @extend %hover-btn;
+    }
+}
