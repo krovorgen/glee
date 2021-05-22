@@ -12,14 +12,15 @@
     &__button {
         padding: 0;
         border: none;
+        font-family: "DM Sans", sans-serif;
+        font-weight: 700;
         color: $grey-100;
         background-color: transparent;
 
         &.mixitup-control-active {
-            color: #414141;
+            color: $grey-400;
         }
 
-        @extend %dms-bold;
         @extend %hover-btn;
     }
 }

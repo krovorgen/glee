@@ -1,18 +1,19 @@
 .articles {
-    margin-bottom: -175px;
+    position: relative;
+    z-index: 2;
 
     &__top {
         display: flex;
         align-items: center;
         justify-content: space-between;
         margin-bottom: 45px;
-
-        @extend %dms-bold;
+        font-family: "DM Sans", sans-serif;
+        font-weight: 700;
     }
 
     &__title {
-        font-size: 36px;
-        color: $grey-600;
+        margin-bottom: 0;
+        text-align: left;
     }
 
     &__next {
@@ -36,106 +37,8 @@
     &__items {
         display: flex;
     }
-}
 
-.article {
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-    border-radius: 5px;
-    box-shadow: 0 6px 47px 3px rgba(37, 37, 37, 0.05);
-
-    &:not(:last-child) {
-        margin-right: 30px;
-    }
-
-    &__img {
-        position: relative;
-        height: 250px;
-
-        img {
-            width: 100%;
-            height: 100%;
-            border-radius: 5px 5px 0 0;
-            object-fit: cover;
-        }
-    }
-
-    &__subtitle {
-        position: absolute;
-        left: 28px;
-        bottom: -15px;
-        padding: 8px 31px;
-        border-radius: 15px;
-        font-size: 14px;
-        text-transform: uppercase;
-        color: $white;
-        background-color: $main;
-
-        @extend %poppins-bold;
-    }
-
-    &__info {
-        display: flex;
-        flex-direction: column;
-        padding: 35px 30px 25px;
-        height: 100%;
-        background-color: $white;
-    }
-
-    &__title {
-        padding-bottom: 15px;
-        font-size: 18px;
-        color: $grey-500;
-
-        a {
-            @include line-clamp(3);
-
-            @extend %hover-link;
-        }
-
-        @extend %dms-medium;
-    }
-
-    &__bottom {
-        display: flex;
-        margin-top: auto;
-        padding-top: 17px;
-        border-top: 1px solid $grey-75;
-        font-size: 12px;
-        text-transform: uppercase;
-        color: #222933;
-    }
-
-    &__date {
-        padding-right: 30px;
-    }
-
-    &__date::before {
-        background-image: url("#{$img}articles/1.svg");
-    }
-
-    &__author::before {
-        background-image: url("#{$img}articles/2.svg");
-    }
-
-    &__date,
-    &__author {
-        @include line-clamp(1);
-
-        position: relative;
-        padding-left: 14px;
-    }
-
-    &__date::before,
-    &__author::before {
-        content: "";
-        position: absolute;
-        left: 0;
-        top: 0;
-        width: 14px;
-        height: 17px;
-        background-size: contain;
-        background-repeat: no-repeat;
+    &--with-logo {
+        margin-bottom: -171px;
     }
 }

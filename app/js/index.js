@@ -11,6 +11,7 @@ $(function () {
         slidesToScroll: 1,
         autoplay: true,
         autoplaySpeed: 1000,
+        swipeToSlide: true,
     });
 
     //mixitup

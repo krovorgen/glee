@@ -1,17 +1,6 @@
 .design {
     margin-bottom: 85px;
 
-    &__title {
-        @include line-clamp(2);
-
-        margin-bottom: 25px;
-        font-size: 36px;
-        text-align: center;
-        color: $grey-600;
-
-        @extend %dms-bold;
-    }
-
     &__items {
         display: flex;
         flex-wrap: wrap;
@@ -19,10 +8,18 @@
     }
 
     &__card-title {
-        margin-bottom: 15px;
-        max-width: 171px;
+        @include line-clamp(2);
+
         font-size: 20px;
         color: $grey-600;
+
+        @extend %hover-link;
+    }
+
+    &__card-link {
+        display: block;
+        margin-bottom: 15px;
+        max-width: 171px;
     }
 
     &__text {
@@ -38,27 +35,27 @@
         margin: 0 15px 34px;
         padding: 35px 0 0 35px;
         width: calc(100% / 3 - 30px);
-        min-height: 245px;
+        height: 245px;
+        font-family: "DM Sans", sans-serif;
+        font-weight: 700;
         background-color: $grey-50;
-
-        @extend %dms-bold;
     }
 
-    &__img {
+    &__img-wrap {
         position: absolute;
         right: 0;
         bottom: 35px;
         max-width: 270px;
 
-        img {
-            width: 100%;
-            height: 100%;
-            object-fit: cover;
-        }
-
         &--sm {
             right: 35px;
             max-width: 145px;
         }
+    }
+
+    &__img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
     }
 }

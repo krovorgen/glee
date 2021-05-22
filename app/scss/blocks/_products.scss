@@ -1,15 +1,6 @@
 .products {
     margin-bottom: 95px;
 
-    &__title {
-        margin-bottom: 25px;
-        font-size: 36px;
-        text-align: center;
-        color: $grey-700;
-
-        @extend %dms-bold;
-    }
-
     &__items {
         display: flex;
         flex-wrap: wrap;

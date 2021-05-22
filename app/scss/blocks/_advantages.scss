@@ -10,13 +10,13 @@
         justify-content: center;
         padding: 48px;
         width: 100%;
+        font-family: "DM Sans", sans-serif;
+        font-weight: 400;
         background-color: rgba($bg, 0.2);
 
         &:not(:last-child) {
             border-right: 1px solid rgba($title, 0.1);
         }
-
-        @extend %dms-regular;
     }
 
     &__info {
@@ -44,7 +44,7 @@
         margin-bottom: 10px;
         font-weight: 700;
         font-size: 18px;
-        color: #414141;
+        color: $grey-400;
     }
 
     &__text {
