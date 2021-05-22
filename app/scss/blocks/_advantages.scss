@@ -26,15 +26,15 @@
         background-repeat: no-repeat;
 
         &--support {
-            background-image: url("#{$img}support.svg");
+            background-image: url("#{$img}content/support.svg");
         }
 
         &--delivery {
-            background-image: url("#{$img}delivery.svg");
+            background-image: url("#{$img}content/delivery.svg");
         }
 
         &--cart {
-            background-image: url("#{$img}credit.svg");
+            background-image: url("#{$img}content/credit.svg");
         }
     }
 
