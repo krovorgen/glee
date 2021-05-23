@@ -5,22 +5,22 @@
 @import "global";
 
 // molecules
-@import "molecules/product-card";
-@import "molecules/gallery-nav";
-@import "molecules/shop-link";
-@import "molecules/subscribe-form";
-@import "molecules/article-card";
+@import "components/product-card";
+@import "components/gallery-nav";
+@import "components/shop-link";
+@import "components/subscribe-form";
+@import "components/article-card";
 
 // main
-@import "blocks/header";
-@import "blocks/footer";
+@import "components/header";
+@import "components/footer";
 
 // main page
-@import "blocks/hero";
-@import "blocks/products";
-@import "blocks/advantages";
-@import "blocks/offers";
-@import "blocks/design";
-@import "blocks/video-popup";
-@import "blocks/articles";
-@import "blocks/company";
+@import "components/hero";
+@import "components/products";
+@import "components/advantages";
+@import "components/offers";
+@import "components/design";
+@import "components/video-popup";
+@import "components/articles";
+@import "components/company";

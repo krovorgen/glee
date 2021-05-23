@@ -69,7 +69,6 @@ const html = () => {
         .pipe(browserSync.stream());
 };
 
-
 const htmlMin = () => {
     return src('build/*.html')
         .pipe(htmlmin({ collapseWhitespace: true }))
@@ -77,16 +76,9 @@ const htmlMin = () => {
 };
 
 const toBuild = () => {
-    return src(
-        [
-            'app/fonts/**/*',
-            'app/images/**/*',
-            'app/style-map/**/*',
-        ],
-        {
-            base: 'app',
-        },
-    ).pipe(dest('build'));
+    return src(['app/fonts/**/*', 'app/images/**/*', 'app/style-map/**/*'], {
+        base: 'app',
+    }).pipe(dest('build'));
 };
 
 exports.styles = styles;
