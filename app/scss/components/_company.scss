@@ -21,4 +21,8 @@
     &--with-articles {
         padding: 264px 0 92px;
     }
+
+    @include r(1120) {
+        display: none;
+    }
 }
