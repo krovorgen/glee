@@ -1,8 +1,12 @@
 .company {
     position: relative;
     z-index: 1;
-    padding: 264px 0 92px;
+    padding: 92px 0 92px;
     background-color: rgba($bg, 0.2);
+
+    &--with-articles {
+        padding: 264px 0 92px;
+    }
 
     &__items {
         display: flex;

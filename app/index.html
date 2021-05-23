@@ -245,7 +245,7 @@
                             @@include('parts/_design-card.html', {
                                 "img": "images/design/3.png",
                                 "title": "Rattan Rocking Chair",
-                                "class": "design-card__img-wrap--sm"
+                                "addClass": "design-card__img-wrap--sm"
                             })
                         </li>
                         <li class="design__item mix furnitures">
@@ -258,7 +258,7 @@
                             @@include('parts/_design-card.html', {
                                 "img": "images/design/5.png",
                                 "title": "Rattan Rocking Chair",
-                                "class": "design-card__img-wrap--sm"
+                                "addClass": "design-card__img-wrap--sm"
                             })
                         </li>
                         <li class="design__item mix decor">
@@ -296,144 +296,32 @@
                     </div>
 
                     <ul class="articles__items">
-                        <li class="article-card">
-                            <article class="article-card__element">
-                                <div class="article-card__img-wrap">
-                                    <img
-                                        class="article-card__img"
-                                        src="images/articles/1.png"
-                                        alt="Product"
-                                    />
-                                    <a class="article-card__subtitle" href="#">News</a>
-                                </div>
-                                <div class="article-card__info">
-                                    <a class="article-card__link" href="#">
-                                        <h3 class="article-card__title">
-                                            Diusmod tempor incididunt ut labore et dolore magna
-                                            aliqua. Ut enim ad minim veniam
-                                        </h3>
-                                    </a>
-                                    <div class="article-card__bottom">
-                                        <time
-                                            class="article-card__descr article-card__descr--date"
-                                            datetime="2020-01-28"
-                                        >
-                                            28 january, 2020
-                                        </time>
-                                        <span
-                                            class="article-card__descr article-card__descr--author"
-                                        >
-                                            <a class="article-card__user" href="#">by admin</a>
-                                        </span>
-                                    </div>
-                                </div>
-                            </article>
+                        <li class="articles__item">
+                            @@include('parts/_article-card.html', {
+                                "img": "images/articles/1.png",
+                                "title": "Diusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam"
+                            })
                         </li>
-                        <li class="article-card">
-                            <article class="article-card__element">
-                                <div class="article-card__img-wrap">
-                                    <img
-                                        class="article-card__img"
-                                        src="images/articles/2.png"
-                                        alt="Product"
-                                    />
-                                    <a class="article-card__subtitle" href="#">News</a>
-                                </div>
-                                <div class="article-card__info">
-                                    <a class="article-card__link" href="#">
-                                        <h3 class="article-card__title">
-                                            Aonsectetur adipisicing elit, sed do eiusmod tempor
-                                            incididunt ut labore et dolore
-                                        </h3>
-                                    </a>
-                                    <div class="article-card__bottom">
-                                        <time
-                                            class="article-card__descr article-card__descr--date"
-                                            datetime="2020-01-28"
-                                        >
-                                            28 january, 2020
-                                        </time>
-                                        <span
-                                            class="article-card__descr article-card__descr--author"
-                                        >
-                                            <a class="article-card__user" href="#">by admin</a>
-                                        </span>
-                                    </div>
-                                </div>
-                            </article>
+                        <li class="articles__item">
+                            @@include('parts/_article-card.html', {
+                                 "img": "images/articles/2.png",
+                                 "title": "Aonsectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore"
+                            })
                         </li>
-                        <li class="article-card">
-                            <article class="article-card__element">
-                                <div class="article-card__img-wrap">
-                                    <img
-                                        class="article-card__img"
-                                        src="images/articles/3.png"
-                                        alt="Product"
-                                    />
-                                    <a class="article-card__subtitle" href="#">News</a>
-                                </div>
-                                <div class="article-card__info">
-                                    <a class="article-card__link" href="#">
-                                        <h3 class="article-card__title">
-                                            Rncididunt ut labore et dolore magna aliqua. Ut enim
-                                        </h3>
-                                    </a>
-                                    <div class="article-card__bottom">
-                                        <time
-                                            class="article-card__descr article-card__descr--date"
-                                            datetime="2020-01-28"
-                                        >
-                                            28 january, 2020
-                                        </time>
-                                        <span
-                                            class="article-card__descr article-card__descr--author"
-                                        >
-                                            <a class="article-card__user" href="#">by admin</a>
-                                        </span>
-                                    </div>
-                                </div>
-                            </article>
+                        <li class="articles__item">
+                            @@include('parts/_article-card.html', {
+                                "img": "images/articles/3.png",
+                                "title": "Rncididunt ut labore et dolore magna aliqua. Ut enim"
+                            })
                         </li>
                     </ul>
                 </div>
             </section>
 
-            <div class="company">
-                <div class="container">
-                    <ul class="company__items">
-                        <li class="company__item">
-                            <img class="company__img" src="images/company/logo1.png" alt="logo" />
-                        </li>
-                        <li class="company__item">
-                            <img class="company__img" src="images/company/logo2.png" alt="logo" />
-                        </li>
-                        <li class="company__item">
-                            <img class="company__img" src="images/company/logo3.png" alt="logo" />
-                        </li>
-                        <li class="company__item">
-                            <img class="company__img" src="images/company/logo4.png" alt="logo" />
-                        </li>
-                        <li class="company__item">
-                            <img class="company__img" src="images/company/logo5.png" alt="logo" />
-                        </li>
-                        <li class="company__item">
-                            <img class="company__img" src="images/company/logo1.png" alt="logo" />
-                        </li>
-                        <li class="company__item">
-                            <img class="company__img" src="images/company/logo2.png" alt="logo" />
-                        </li>
-                        <li class="company__item">
-                            <img class="company__img" src="images/company/logo3.png" alt="logo" />
-                        </li>
-                        <li class="company__item">
-                            <img class="company__img" src="images/company/logo4.png" alt="logo" />
-                        </li>
-                        <li class="company__item">
-                            <img class="company__img" src="images/company/logo5.png" alt="logo" />
-                        </li>
-                    </ul>
-                </div>
-            </div>
+            @@include('parts/_company.html', {
+                addClass: "company--with-articles"
+            })
+
         </main>
 
         @@include('parts/_footer.html')
