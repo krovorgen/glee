@@ -137,337 +137,47 @@
             <section class="products">
                 <div class="container">
                     <h2 class="title">Products of the week</h2>
-                    <ul class="gallery-nav">
-                        <li class="gallery-nav__item">
-                            <button class="gallery-nav__button" type="button" data-filter="all">
-                                All
-                            </button>
-                        </li>
-                        <li class="gallery-nav__item">
-                            <button
-                                class="gallery-nav__button"
-                                type="button"
-                                data-filter=".furnitures"
-                            >
-                                Furnitures
-                            </button>
-                        </li>
-                        <li class="gallery-nav__item">
-                            <button class="gallery-nav__button" type="button" data-filter=".chairs">
-                                Chairs
-                            </button>
-                        </li>
-                        <li class="gallery-nav__item">
-                            <button
-                                class="gallery-nav__button"
-                                type="button"
-                                data-filter=".lighting"
-                            >
-                                Lighting
-                            </button>
-                        </li>
-                        <li class="gallery-nav__item">
-                            <button class="gallery-nav__button" type="button" data-filter=".decor">
-                                Decor
-                            </button>
-                        </li>
-                    </ul>
+                    @@include('parts/_gallery-nav.html')
                     <ul class="products__items">
-                        <li class="product-card mix furnitures">
-                            <article class="product-card__element">
-                                <img
-                                    class="product-card__img"
-                                    src="images/product-card/1.png"
-                                    alt="Wooden radio"
-                                />
-                                <h3 class="product-card__title">Wooden radio</h3>
-                                <span class="product-card__price"><span>$</span> 29.00</span>
-                                <ul class="product-card__navigation">
-                                    <li class="product-card__item">
-                                        <a class="product-card__btn" href="#">
-                                            <span class="visually-hidden">Search</span>
-                                            <svg>
-                                                <use xlink:href="images/sprite.svg#search"></use>
-                                            </svg>
-                                        </a>
-                                    </li>
-                                    <li class="product-card__item">
-                                        <button class="product-card__btn" type="button">
-                                            <span class="visually-hidden">Add to cart</span>
-                                            <svg>
-                                                <use xlink:href="images/sprite.svg#cart"></use>
-                                            </svg>
-                                        </button>
-                                    </li>
-                                    <li class="product-card__item">
-                                        <button class="product-card__btn" type="button">
-                                            <span class="visually-hidden">Add to favourites</span>
-                                            <svg>
-                                                <use xlink:href="images/sprite.svg#heart"></use>
-                                            </svg>
-                                        </button>
-                                    </li>
-                                </ul>
-                            </article>
+                        <li class="products__item mix furnitures">
+                            @@include('parts/_product-card.html', {
+                                "img": "images/product-card/1.png",
+                            })
                         </li>
-                        <li class="product-card mix furnitures">
-                            <article class="product-card__element">
-                                <img
-                                    class="product-card__img"
-                                    src="images/product-card/2.png"
-                                    alt="Wooden chair"
-                                />
-                                <h3 class="product-card__title">Wooden chair</h3>
-                                <span class="product-card__price"><span>$</span> 29.00</span>
-                                <ul class="product-card__navigation">
-                                    <li class="product-card__item">
-                                        <a class="product-card__btn" href="#">
-                                            <span class="visually-hidden">Search</span>
-                                            <svg>
-                                                <use xlink:href="images/sprite.svg#search"></use>
-                                            </svg>
-                                        </a>
-                                    </li>
-                                    <li class="product-card__item">
-                                        <button class="product-card__btn" type="button">
-                                            <span class="visually-hidden">Add to cart</span>
-                                            <svg>
-                                                <use xlink:href="images/sprite.svg#cart"></use>
-                                            </svg>
-                                        </button>
-                                    </li>
-                                    <li class="product-card__item">
-                                        <button class="product-card__btn" type="button">
-                                            <span class="visually-hidden">Add to favourites</span>
-                                            <svg>
-                                                <use xlink:href="images/sprite.svg#heart"></use>
-                                            </svg>
-                                        </button>
-                                    </li>
-                                </ul>
-                            </article>
+                        <li class="products__item mix furnitures">
+                            @@include('parts/_product-card.html', {
+                                "img": "images/product-card/2.png",
+                            })
                         </li>
-                        <li class="product-card mix chairs">
-                            <article class="product-card__element">
-                                <img
-                                    class="product-card__img"
-                                    src="images/product-card/3.png"
-                                    alt="White chair"
-                                />
-                                <h3 class="product-card__title">White chair</h3>
-                                <span class="product-card__price"><span>$</span> 29.00</span>
-                                <ul class="product-card__navigation">
-                                    <li class="product-card__item">
-                                        <a class="product-card__btn" href="#">
-                                            <span class="visually-hidden">Search</span>
-                                            <svg>
-                                                <use xlink:href="images/sprite.svg#search"></use>
-                                            </svg>
-                                        </a>
-                                    </li>
-                                    <li class="product-card__item">
-                                        <button class="product-card__btn" type="button">
-                                            <span class="visually-hidden">Add to cart</span>
-                                            <svg>
-                                                <use xlink:href="images/sprite.svg#cart"></use>
-                                            </svg>
-                                        </button>
-                                    </li>
-                                    <li class="product-card__item">
-                                        <button class="product-card__btn" type="button">
-                                            <span class="visually-hidden">Add to favourites</span>
-                                            <svg>
-                                                <use xlink:href="images/sprite.svg#heart"></use>
-                                            </svg>
-                                        </button>
-                                    </li>
-                                </ul>
-                            </article>
+                        <li class="products__item mix chairs">
+                            @@include('parts/_product-card.html', {
+                                "img": "images/product-card/3.png",
+                            })
                         </li>
-                        <li class="product-card mix chairs">
-                            <article class="product-card__element">
-                                <img
-                                    class="product-card__img"
-                                    src="images/product-card/4.png"
-                                    alt="Retro table"
-                                />
-                                <h3 class="product-card__title">Retro table</h3>
-                                <span class="product-card__price"><span>$</span> 29.00</span>
-                                <ul class="product-card__navigation">
-                                    <li class="product-card__item">
-                                        <a class="product-card__btn" href="#">
-                                            <span class="visually-hidden">Search</span>
-                                            <svg>
-                                                <use xlink:href="images/sprite.svg#search"></use>
-                                            </svg>
-                                        </a>
-                                    </li>
-                                    <li class="product-card__item">
-                                        <button class="product-card__btn" type="button">
-                                            <span class="visually-hidden">Add to cart</span>
-                                            <svg>
-                                                <use xlink:href="images/sprite.svg#cart"></use>
-                                            </svg>
-                                        </button>
-                                    </li>
-                                    <li class="product-card__item">
-                                        <button class="product-card__btn" type="button">
-                                            <span class="visually-hidden">Add to favourites</span>
-                                            <svg>
-                                                <use xlink:href="images/sprite.svg#heart"></use>
-                                            </svg>
-                                        </button>
-                                    </li>
-                                </ul>
-                            </article>
+                        <li class="products__item mix chairs">
+                            @@include('parts/_product-card.html', {
+                                "img": "images/product-card/4.png",
+                            })
                         </li>
-                        <li class="product-card mix lighting">
-                            <article class="product-card__element">
-                                <img
-                                    class="product-card__img"
-                                    src="images/product-card/5.png"
-                                    alt="Wooden radio"
-                                />
-                                <h3 class="product-card__title">Wooden radio</h3>
-                                <span class="product-card__price"><span>$</span> 29.00</span>
-                                <ul class="product-card__navigation">
-                                    <li class="product-card__item">
-                                        <a class="product-card__btn" href="#">
-                                            <span class="visually-hidden">Search</span>
-                                            <svg>
-                                                <use xlink:href="images/sprite.svg#search"></use>
-                                            </svg>
-                                        </a>
-                                    </li>
-                                    <li class="product-card__item">
-                                        <button class="product-card__btn" type="button">
-                                            <span class="visually-hidden">Add to cart</span>
-                                            <svg>
-                                                <use xlink:href="images/sprite.svg#cart"></use>
-                                            </svg>
-                                        </button>
-                                    </li>
-                                    <li class="product-card__item">
-                                        <button class="product-card__btn" type="button">
-                                            <span class="visually-hidden">Add to favourites</span>
-                                            <svg>
-                                                <use xlink:href="images/sprite.svg#heart"></use>
-                                            </svg>
-                                        </button>
-                                    </li>
-                                </ul>
-                            </article>
+                        <li class="products__item mix lighting">
+                            @@include('parts/_product-card.html', {
+                                "img": "images/product-card/5.png",
+                            })
                         </li>
-                        <li class="product-card mix lighting">
-                            <article class="product-card__element">
-                                <img
-                                    class="product-card__img"
-                                    src="images/product-card/6.png"
-                                    alt="Wooden chair"
-                                />
-                                <h3 class="product-card__title">Wooden chair</h3>
-                                <span class="product-card__price"><span>$</span> 29.00</span>
-                                <ul class="product-card__navigation">
-                                    <li class="product-card__item">
-                                        <a class="product-card__btn" href="#">
-                                            <span class="visually-hidden">Search</span>
-                                            <svg>
-                                                <use xlink:href="images/sprite.svg#search"></use>
-                                            </svg>
-                                        </a>
-                                    </li>
-                                    <li class="product-card__item">
-                                        <button class="product-card__btn" type="button">
-                                            <span class="visually-hidden">Add to cart</span>
-                                            <svg>
-                                                <use xlink:href="images/sprite.svg#cart"></use>
-                                            </svg>
-                                        </button>
-                                    </li>
-                                    <li class="product-card__item">
-                                        <button class="product-card__btn" type="button">
-                                            <span class="visually-hidden">Add to favourites</span>
-                                            <svg>
-                                                <use xlink:href="images/sprite.svg#heart"></use>
-                                            </svg>
-                                        </button>
-                                    </li>
-                                </ul>
-                            </article>
+                        <li class="products__item mix lighting">
+                            @@include('parts/_product-card.html', {
+                                "img": "images/product-card/6.png",
+                            })
                         </li>
-                        <li class="product-card mix decor">
-                            <article class="product-card__element">
-                                <img
-                                    class="product-card__img"
-                                    src="images/product-card/7.png"
-                                    alt="White chair"
-                                />
-                                <h3 class="product-card__title">White chair</h3>
-                                <span class="product-card__price"><span>$</span> 29.00</span>
-                                <ul class="product-card__navigation">
-                                    <li class="product-card__item">
-                                        <a class="product-card__btn" href="#">
-                                            <span class="visually-hidden">Search</span>
-                                            <svg>
-                                                <use xlink:href="images/sprite.svg#search"></use>
-                                            </svg>
-                                        </a>
-                                    </li>
-                                    <li class="product-card__item">
-                                        <button class="product-card__btn" type="button">
-                                            <span class="visually-hidden">Add to cart</span>
-                                            <svg>
-                                                <use xlink:href="images/sprite.svg#cart"></use>
-                                            </svg>
-                                        </button>
-                                    </li>
-                                    <li class="product-card__item">
-                                        <button class="product-card__btn" type="button">
-                                            <span class="visually-hidden">Add to favourites</span>
-                                            <svg>
-                                                <use xlink:href="images/sprite.svg#heart"></use>
-                                            </svg>
-                                        </button>
-                                    </li>
-                                </ul>
-                            </article>
+                        <li class="products__item mix decor">
+                            @@include('parts/_product-card.html', {
+                                "img": "images/product-card/7.png",
+                            })
                         </li>
-                        <li class="product-card mix decor">
-                            <article class="product-card__element">
-                                <img
-                                    class="product-card__img"
-                                    src="images/product-card/8.png"
-                                    alt="Retro table"
-                                />
-                                <h3 class="product-card__title">Retro table</h3>
-                                <span class="product-card__price"><span>$</span> 29.00</span>
-                                <ul class="product-card__navigation">
-                                    <li class="product-card__item">
-                                        <a class="product-card__btn" href="#">
-                                            <span class="visually-hidden">Search</span>
-                                            <svg>
-                                                <use xlink:href="images/sprite.svg#search"></use>
-                                            </svg>
-                                        </a>
-                                    </li>
-                                    <li class="product-card__item">
-                                        <button class="product-card__btn" type="button">
-                                            <span class="visually-hidden">Add to cart</span>
-                                            <svg>
-                                                <use xlink:href="images/sprite.svg#cart"></use>
-                                            </svg>
-                                        </button>
-                                    </li>
-                                    <li class="product-card__item">
-                                        <button class="product-card__btn" type="button">
-                                            <span class="visually-hidden">Add to favourites</span>
-                                            <svg>
-                                                <use xlink:href="images/sprite.svg#heart"></use>
-                                            </svg>
-                                        </button>
-                                    </li>
-                                </ul>
-                            </article>
+                        <li class="products__item mix decor">
+                            @@include('parts/_product-card.html', {
+                                "img": "images/product-card/8.png",
+                            })
                         </li>
                     </ul>
                 </div>
@@ -475,7 +185,7 @@
                     <div class="container container--long">
                         <ul class="offers__items">
                             <li class="offers__item">
-                                <article class="offers__content offers__content--first">
+                                <article class="offers__content">
                                     <img class="offers__img" src="images/offers/1.png" alt="LED" />
                                     <h3 class="offers__title">Mirum Notare Tellus</h3>
                                     <div class="offers__text">
@@ -492,7 +202,7 @@
                                 </article>
                             </li>
                             <li class="offers__item">
-                                <article class="offers__content offers__content--second">
+                                <article class="offers__content">
                                     <img class="offers__img" src="images/offers/2.png" alt="LED" />
                                     <h3 class="offers__title">Malesuada Tempor Euismod</h3>
                                     <div class="offers__text">
@@ -517,108 +227,45 @@
             <section class="design">
                 <div class="container">
                     <h2 class="title">New Design</h2>
-                    <ul class="gallery-nav">
-                        <li class="gallery-nav__item">
-                            <button class="gallery-nav__button" type="button" data-filter="all">
-                                All
-                            </button>
-                        </li>
-                        <li class="gallery-nav__item">
-                            <button
-                                class="gallery-nav__button"
-                                type="button"
-                                data-filter=".furnitures"
-                            >
-                                Furnitures
-                            </button>
-                        </li>
-                        <li class="gallery-nav__item">
-                            <button class="gallery-nav__button" type="button" data-filter=".chairs">
-                                Chairs
-                            </button>
-                        </li>
-                        <li class="gallery-nav__item">
-                            <button
-                                class="gallery-nav__button"
-                                type="button"
-                                data-filter=".lighting"
-                            >
-                                Lighting
-                            </button>
-                        </li>
-                        <li class="gallery-nav__item">
-                            <button class="gallery-nav__button" type="button" data-filter=".decor">
-                                Decor
-                            </button>
-                        </li>
-                    </ul>
+                    @@include('parts/_gallery-nav.html')
                     <ul class="design__items">
                         <li class="design__item mix chairs">
-                            <article class="design__element">
-                                <div class="design__img-wrap">
-                                    <img class="design__img" src="images/design/1.png" alt="beat" />
-                                </div>
-                                <a class="design__card-link" href="#">
-                                    <h3 class="design__card-title">Beat Flat Pendant Black</h3>
-                                </a>
-                                <span class="design__text">Classic</span>
-                            </article>
+                            @@include('parts/_design-card.html', {
+                                "img": "images/design/1.png",
+                                "title": "Beat Flat Pendant Black"
+                            })
                         </li>
                         <li class="design__item mix chairs">
-                            <article class="design__element">
-                                <div class="design__img-wrap">
-                                    <img class="design__img" src="images/design/2.png" alt="beat" />
-                                </div>
-                                <a class="design__card-link" href="#">
-                                    <h3 class="design__card-title">Lampe Sur Pieds Bamboo</h3>
-                                </a>
-                                <span class="design__text">Classic</span>
-                            </article>
+                            @@include('parts/_design-card.html', {
+                                "img": "images/design/2.png",
+                                "title": "Lampe Sur Pieds Bamboo"
+                            })
                         </li>
                         <li class="design__item design__item--sm-img mix lighting">
-                            <article class="design__element">
-                                <div class="design__img-wrap design__img-wrap--sm">
-                                    <img class="design__img" src="images/design/3.png" alt="beat" />
-                                </div>
-                                <a class="design__card-link" href="#">
-                                    <h3 class="design__card-title">Rattan Rocking Chair</h3>
-                                </a>
-                                <span class="design__text">Classic</span>
-                            </article>
+                            @@include('parts/_design-card.html', {
+                                "img": "images/design/3.png",
+                                "title": "Rattan Rocking Chair",
+                                "class": "design-card__img-wrap--sm"
+                            })
                         </li>
                         <li class="design__item mix furnitures">
-                            <article class="design__element">
-                                <div class="design__img-wrap">
-                                    <img class="design__img" src="images/design/4.png" alt="beat" />
-                                </div>
-                                <a class="design__card-link" href="#">
-                                    <h3 class="design__card-title">Rattan Rocking Chair</h3>
-                                </a>
-
-                                <span class="design__text">Classic</span>
-                            </article>
+                            @@include('parts/_design-card.html', {
+                                "img": "images/design/4.png",
+                                "title": "Rattan Rocking Chair"
+                            })
                         </li>
                         <li class="design__item design__item--sm-img mix chairs">
-                            <article class="design__element">
-                                <div class="design__img-wrap design__img-wrap--sm">
-                                    <img class="design__img" src="images/design/5.png" alt="beat" />
-                                </div>
-                                <a class="design__card-link" href="#">
-                                    <h3 class="design__card-title">Rattan Rocking Chair</h3>
-                                </a>
-                                <span class="design__text">Classic</span>
-                            </article>
+                            @@include('parts/_design-card.html', {
+                                "img": "images/design/5.png",
+                                "title": "Rattan Rocking Chair",
+                                "class": "design-card__img-wrap--sm"
+                            })
                         </li>
                         <li class="design__item mix decor">
-                            <article class="design__element">
-                                <div class="design__img-wrap">
-                                    <img class="design__img" src="images/design/6.png" alt="beat" />
-                                </div>
-                                <a class="design__card-link" href="#">
-                                    <h3 class="design__card-title">Lampe Sur Pieds Bamboo</h3>
-                                </a>
-                                <span class="design__text">Classic</span>
-                            </article>
+                            @@include('parts/_design-card.html', {
+                                "img": "images/design/6.png",
+                                "title": "Lampe Sur Pieds Bamboo"
+                            })
                         </li>
                     </ul>
                 </div>
@@ -636,7 +283,7 @@
                 </svg>
             </a>
 
-            <section class="articles articles--with-logo">
+            <section class="articles articles--with-company">
                 <div class="container">
                     <div class="articles__top">
                         <h2 class="title articles__title">Our Insights & Articles</h2>

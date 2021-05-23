@@ -1,7 +1,9 @@
 .product-card {
-    margin: 0 15px 40px;
-    width: calc(100% / 4 - 30px);
-    height: 380px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    padding: 27px 15px 35px;
+    height: 100%;
     border-radius: 10px;
     box-shadow: 0 6px 47px 3px rgba(37, 37, 37, 0.05);
     text-align: center;
@@ -9,14 +11,6 @@
 
     &__img {
         margin: auto;
-    }
-
-    &__element {
-        position: relative;
-        display: flex;
-        flex-direction: column;
-        padding: 27px 15px 35px;
-        height: 100%;
     }
 
     &__title {
