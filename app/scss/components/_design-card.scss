@@ -1,11 +1,10 @@
-.design {
-    margin-bottom: 85px;
-
-    &__items {
-        display: flex;
-        flex-wrap: wrap;
-        margin: 0 -15px;
-    }
+.design-card {
+    position: relative;
+    padding: 35px 0 0 35px;
+    height: 100%;
+    font-family: "DM Sans", sans-serif;
+    font-weight: 700;
+    background-color: $grey-50;
 
     &__card-title {
         @include line-clamp(2);
@@ -28,17 +27,6 @@
         max-width: 170px;
         font-size: 16px;
         color: $main;
-    }
-
-    &__item {
-        position: relative;
-        margin: 0 15px 34px;
-        padding: 35px 0 0 35px;
-        width: calc(100% / 3 - 30px);
-        height: 245px;
-        font-family: "DM Sans", sans-serif;
-        font-weight: 700;
-        background-color: $grey-50;
     }
 
     &__img-wrap {

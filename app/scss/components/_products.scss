@@ -7,4 +7,10 @@
         margin: 0 -15px;
         margin-bottom: 145px;
     }
+
+    &__item {
+        margin: 0 15px 40px;
+        width: calc(100% / 4 - 30px);
+        height: 380px;
+    }
 }

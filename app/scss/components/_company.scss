@@ -1,7 +1,7 @@
 .company {
     position: relative;
     z-index: 1;
-    padding: 264px 0 92px;
+    padding: 92px 0;
     background-color: rgba($bg, 0.2);
 
     &__items {
@@ -16,5 +16,13 @@
 
     &__img {
         margin: auto;
+    }
+
+    &--with-articles {
+        padding: 264px 0 92px;
+    }
+
+    @include r(1120) {
+        display: none;
     }
 }

@@ -19,11 +19,11 @@
     }
 
     &:hover {
-        color: $main;
-        background-color: $white;
+        color: $bg;
+        background-color: $title;
 
         svg {
-            fill: $main;
+            fill: $bg;
         }
     }
 }
