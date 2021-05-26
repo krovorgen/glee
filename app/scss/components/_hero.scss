@@ -5,6 +5,10 @@
 
     &__item {
         padding: 220px 0 280px;
+
+        @include r($xl) {
+            padding: 20px 0 90px;
+        }
     }
 
     &__wrap {
@@ -14,19 +18,34 @@
         justify-content: space-between;
         margin: 0 auto;
         padding: 0 15px;
-        min-width: 320px;
         max-width: 1200px;
 
         &::before {
             content: "";
             position: absolute;
-            right: -55px;
+            right: -20px;
             top: 50%;
             width: 634px;
             height: 634px;
             border-radius: 50%;
             background-image: linear-gradient(to left, $white 0%, rgba($white, 0) 100%);
             transform: translateY(-50%);
+
+            @include r($xxl) {
+                right: 0;
+                width: 450px;
+                height: 450px;
+            }
+
+            @include r($xl) {
+                display: none;
+            }
+        }
+
+        @include r($xl) {
+            flex-direction: column;
+            height: calc(100vh - 256px);
+            text-align: center;
         }
     }
 
@@ -40,6 +59,16 @@
         line-height: 1;
         text-transform: uppercase;
         color: $title;
+
+        @include r($xl) {
+            margin-bottom: $mb15;
+            max-width: none;
+            font-size: 48px;
+        }
+
+        @include r($md) {
+            font-size: 28px;
+        }
     }
 
     &__text {
@@ -49,10 +78,30 @@
         max-width: 360px;
         font-size: 18px;
         line-height: 1.4;
+
+        @include r($xl) {
+            margin-bottom: $mb15;
+            max-width: none;
+        }
     }
 
     &__img {
         position: relative;
+
+        img {
+            height: auto;
+            object-fit: contain;
+
+            @include r($xl) {
+                margin: auto;
+            }
+        }
+
+        @include r($xl) {
+            display: flex;
+            flex-direction: column;
+            height: 100%;
+        }
     }
 
     .slick-dots {
@@ -92,6 +141,12 @@
                     background-color: $white;
                 }
             }
+        }
+    }
+
+    .shop-link {
+        @include r($xl) {
+            margin-bottom: $mb30;
         }
     }
 }

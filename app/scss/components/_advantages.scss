@@ -3,6 +3,10 @@
 
     &__items {
         display: flex;
+
+        @include r($lg) {
+            flex-wrap: wrap;
+        }
     }
 
     &__item {
@@ -16,6 +20,15 @@
 
         &:not(:last-child) {
             border-right: 1px solid rgba($title, 0.1);
+
+            @include r($lg) {
+                border-right: none;
+                border-bottom: 1px solid rgba($title, 0.1);
+            }
+        }
+
+        @include r($xl) {
+            padding: 20px;
         }
     }
 
@@ -35,6 +48,14 @@
 
         &--cart {
             background-image: url("#{$img}content/credit.svg");
+        }
+
+        @include r($xl) {
+            padding-left: 70px;
+        }
+
+        @include r($lg) {
+            max-width: none;
         }
     }
 

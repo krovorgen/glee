@@ -25,3 +25,8 @@
 @import "components/subscribe-form";
 @import "components/article-card";
 @import "components/design-card";
+
+.advantages,
+.gallery-nav {
+    margin-bottom: $mb50;
+}

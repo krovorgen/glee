@@ -3,6 +3,11 @@
     justify-content: center;
     margin-bottom: 80px;
 
+    @include r($sm) {
+        justify-content: flex-start;
+        overflow-x: auto;
+    }
+
     &__item {
         &:not(:last-child) {
             margin-right: 30px;
