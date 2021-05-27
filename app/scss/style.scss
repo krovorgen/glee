@@ -26,7 +26,11 @@
 @import "components/article-card";
 @import "components/design-card";
 
-.advantages,
-.gallery-nav {
-    margin-bottom: $mb50;
+@media (max-width: $md + "px") {
+    .advantages,
+    .products,
+    .design,
+    .video-popup {
+        margin-bottom: $mb50;
+    }
 }

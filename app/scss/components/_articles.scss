@@ -9,6 +9,10 @@
         margin-bottom: 45px;
         font-family: "DM Sans", sans-serif;
         font-weight: 700;
+
+        @include r($md) {
+            margin-bottom: $mb15;
+        }
     }
 
     &__title {
@@ -36,6 +40,11 @@
 
     &__items {
         display: flex;
+
+        @include r($lg) {
+            flex-wrap: wrap;
+            justify-content: center;
+        }
     }
 
     &__item {
@@ -43,10 +52,27 @@
 
         &:not(:last-child) {
             margin-right: 30px;
+
+            @include r($lg) {
+                margin-right: 0;
+                margin-bottom: $mb15;
+            }
+        }
+
+        @include r($lg) {
+            width: 50%;
+        }
+
+        @include r($md) {
+            width: 100%;
         }
     }
 
     &--with-company {
         margin-bottom: -171px;
+
+        @include r($lg) {
+            margin-bottom: $mb15;
+        }
     }
 }

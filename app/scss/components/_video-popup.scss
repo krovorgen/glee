@@ -39,4 +39,8 @@
             height: 128px;
         }
     }
+
+    @include r($xl) {
+        height: 50vh;
+    }
 }

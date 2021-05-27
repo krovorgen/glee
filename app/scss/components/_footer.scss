@@ -3,23 +3,50 @@
     font-size: 14px;
     color: $grey-200;
 
+    @include r($md) {
+        padding: 50px 0 15px;
+    }
+    @include r($sm) {
+        text-align: center;
+    }
+
+
     &__items {
         display: flex;
         justify-content: space-between;
         margin-bottom: 35px;
         padding-bottom: 75px;
         border-bottom: 1px solid rgba($main, 0.4);
+
+        @include r($lg) {
+            flex-wrap: wrap;
+            margin-bottom: $mb30;
+            padding-bottom: 15px;
+        }
     }
 
     &__logo {
         display: block;
         margin-bottom: 30px;
+
+        @include r($sm) {
+            display: inline-block;
+        }
     }
 
     &__item {
         padding-top: 18px;
         width: 100%;
         max-width: 270px;
+
+        @include r($lg) {
+            margin-bottom: $mb15;
+            max-width: 50%;
+        }
+
+        @include r($sm) {
+            max-width: 100%;
+        }
     }
 
     &__title {
@@ -51,10 +78,24 @@
     &__bottom {
         display: flex;
         justify-content: space-between;
+
+        @include r($md) {
+            flex-direction: column;
+        }
+    }
+
+    &__copyright {
+        @include r($md) {
+            margin-bottom: $mb15;
+        }
     }
 
     &__navigation {
         display: flex;
+
+        @include r($sm) {
+            justify-content: center;
+        }
     }
 
     &__navigation-item {
@@ -89,5 +130,14 @@
 
     &__link {
         @extend %hover-link;
+    }
+
+    @include r($lg) {
+        margin-bottom: $mb15;
+        max-width: 50%;
+    }
+
+    @include r($sm) {
+        max-width: 100%;
     }
 }

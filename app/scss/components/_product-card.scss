@@ -9,10 +9,6 @@
     text-align: center;
     background-color: $white;
 
-    @include r($sm) {
-        padding: 10px;
-    }
-
     &__img {
         margin: auto;
     }
@@ -46,6 +42,10 @@
     &__item {
         &:not(:last-child) {
             margin-right: 16px;
+
+            @include r($sm) {
+                margin-right: 0;
+            }
         }
     }
 
@@ -78,5 +78,9 @@
         .product-card__navigation {
             opacity: 1;
         }
+    }
+
+    @include r($sm) {
+        padding: 10px;
     }
 }

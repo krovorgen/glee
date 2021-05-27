@@ -11,5 +11,14 @@
         margin: 0 15px 34px;
         width: calc(100% / 3 - 30px);
         height: 245px;
+
+        @include r($lg) {
+            width: calc(100% / 2 - 30px);
+        }
+
+        @include r($sm) {
+            margin: 0 15px 15px;
+            width: calc(100% / 1 - 30px);
+        }
     }
 }

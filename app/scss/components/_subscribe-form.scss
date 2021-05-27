@@ -1,6 +1,8 @@
 .subscribe-form {
     display: flex;
-
+    @include r($sm) {
+        justify-content: center;
+    }
     &__input {
         padding: 12px 15px;
         width: 100%;
