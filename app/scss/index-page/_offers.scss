@@ -2,13 +2,13 @@
     &__items {
         display: flex;
 
-        @include r($xl) {
+        @include r($lg) {
             flex-wrap: wrap;
         }
     }
 
     &__item {
-        padding: 97px 100px 67px 130px;
+        padding: 97px 100px 100px 130px;
         width: 100%;
         color: $title;
         background-color: rgba($bg, 0.4);
@@ -16,7 +16,7 @@
         &:not(:last-child) {
             margin-right: 30px;
 
-            @include r($xl) {
+            @include r($lg) {
                 margin-right: 0;
                 border-bottom: 1px solid $title;
             }
@@ -34,6 +34,10 @@
     &__content {
         position: relative;
         padding-left: 255px;
+
+        @include r($xl) {
+            padding-left: 160px;
+        }
 
         @include r($lg) {
             padding-left: 140px;
@@ -67,7 +71,7 @@
         @include line-clamp(2);
 
         margin-bottom: 21px;
-        font-family: "DM Sans", sans-serif;
+        font-family: $dm-sans;
         font-weight: 700;
         font-size: 26px;
 
@@ -95,14 +99,6 @@
         color: $title;
         background-color: transparent;
 
-        svg {
-            fill: $title;
-        }
-
-        span {
-            padding-right: 42px;
-        }
-
         &:hover {
             color: $bg;
             background-color: $title;
@@ -110,6 +106,14 @@
             svg {
                 fill: $bg;
             }
+        }
+
+        svg {
+            fill: $title;
+        }
+
+        span {
+            padding-right: 42px;
         }
     }
 }

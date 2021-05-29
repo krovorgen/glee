@@ -3,19 +3,11 @@
     font-size: 14px;
     color: $grey-200;
 
-    @include r($md) {
-        padding: 50px 0 15px;
-    }
-    @include r($sm) {
-        text-align: center;
-    }
-
-
     &__items {
         display: flex;
         justify-content: space-between;
         margin-bottom: 35px;
-        padding-bottom: 75px;
+        padding-bottom: 71px;
         border-bottom: 1px solid rgba($main, 0.4);
 
         @include r($lg) {
@@ -51,7 +43,7 @@
 
     &__title {
         margin-bottom: 25px;
-        font-family: "DM Sans", sans-serif;
+        font-family: $dm-sans;
         font-weight: 700;
         font-size: 16px;
         text-transform: uppercase;
@@ -99,18 +91,28 @@
     }
 
     &__navigation-item {
+        align-self: baseline;
+
         &:not(:first-child) {
             padding-left: 15px;
             border-left: 1px solid $grey-200;
         }
 
         &:not(:last-child) {
-            padding-right: 15px;
+            margin-right: 15px;
         }
     }
 
     &__navigation-link {
         @extend %hover-link;
+    }
+
+    @include r($md) {
+        padding: 50px 0 15px;
+    }
+
+    @include r($sm) {
+        text-align: center;
     }
 }
 
@@ -125,6 +127,10 @@
 
         p:not(:last-child) {
             margin-bottom: 9px;
+        }
+
+        a {
+            @extend %hover-link;
         }
     }
 

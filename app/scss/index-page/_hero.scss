@@ -44,7 +44,6 @@
 
         @include r($xl) {
             flex-direction: column;
-            height: calc(100vh - 256px);
             text-align: center;
         }
     }

@@ -16,11 +16,19 @@
       "declarations",
       {
         "type": "rule",
+        "selector": "&--.+"
+      },
+      {
+        "type": "rule",
         "selector": "&::before"
       },
       {
         "type": "rule",
         "selector": "&::after"
+      },
+      {
+        "type": "rule",
+        "selector": "&:hover"
       },
       "rules",
       {
@@ -34,10 +42,6 @@
       {
         "type": "rule",
         "selector": "&:focus"
-      },
-      {
-        "type": "rule",
-        "selector": "&:hover"
       },
       {
         "type": "rule",
@@ -66,10 +70,6 @@
       {
         "type": "rule",
         "selector": "&\\..+"
-      },
-      {
-        "type": "rule",
-        "selector": "&--.+"
       },
       {
         "type": "rule",

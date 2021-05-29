@@ -8,6 +8,11 @@ body {
     background-color: $white;
 }
 
+// обращение по классу
+.body--with-menu {
+    overflow: hidden;
+}
+
 .container {
     margin: 0 auto;
     padding: 0 15px;
@@ -42,10 +47,10 @@ iframe {
 }
 
 .title {
-    @include line-clamp(1);
+    @include line-clamp(2);
 
     margin-bottom: 25px;
-    font-family: "DM Sans", sans-serif;
+    font-family: $dm-sans;
     font-weight: 700;
     font-size: 36px;
     text-align: center;
@@ -60,6 +65,32 @@ iframe {
     }
 }
 
-.body--with-menu {
-    overflow: hidden;
+.shop-link {
+    display: inline-block;
+    padding: 21px 20px 21px 27px;
+    color: $white;
+    background-color: $main;
+    transition: background-color 0.5s, color 0.5s;
+
+    &:hover {
+        color: $bg;
+        background-color: $title;
+
+        svg {
+            fill: $bg;
+        }
+    }
+
+    svg {
+        width: 22px;
+        height: 9px;
+        fill: $white;
+        transition: fill 0.5s;
+    }
+
+    span {
+        padding-right: 55px;
+        font-weight: 500;
+        font-size: 15px;
+    }
 }

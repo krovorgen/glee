@@ -53,7 +53,7 @@
     &__title {
         @include line-clamp(3);
 
-        font-family: "DM Sans", sans-serif;
+        font-family: $dm-sans;
         font-weight: 500;
         font-size: 18px;
         color: $grey-500;
@@ -75,18 +75,6 @@
         color: #222933;
     }
 
-    &__descr--date::before {
-        background-image: url("#{$img}articles/1.svg");
-    }
-
-    &__descr--author::before {
-        background-image: url("#{$img}articles/2.svg");
-    }
-
-    &__user {
-        @extend %hover-link;
-    }
-
     &__descr {
         @include line-clamp(1);
 
@@ -95,18 +83,32 @@
 
         &--date {
             padding-right: 30px;
-        }
-    }
 
-    &__descr::before {
-        content: "";
-        position: absolute;
-        left: 0;
-        top: 0;
-        width: 14px;
-        height: 17px;
-        background-size: contain;
-        background-repeat: no-repeat;
+            &::before {
+                background-image: url("#{$img}articles/1.svg");
+            }
+        }
+
+        &--author {
+            max-width: 140px;
+
+            &::before {
+                background-image: url("#{$img}articles/2.svg");
+            }
+
+            @extend %hover-link;
+        }
+
+        &::before {
+            content: "";
+            position: absolute;
+            left: 0;
+            top: 0;
+            width: 14px;
+            height: 17px;
+            background-size: contain;
+            background-repeat: no-repeat;
+        }
     }
 
     @include r($lg) {

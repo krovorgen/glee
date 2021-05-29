@@ -23,21 +23,26 @@
         transition: width 0.5s, height 0.5s;
     }
 
-    svg {
-        z-index: 2;
-        width: 98px;
-        height: 98px;
-    }
-
-    &:focus {
-        outline: 1px solid transparent;
-    }
-
     &:hover {
         &::before {
             width: 128px;
             height: 128px;
         }
+    }
+
+    svg {
+        z-index: 2;
+        width: 98px;
+        height: 98px;
+
+        @include r($sm) {
+            width: 80px;
+            height: 80px;
+        }
+    }
+
+    &:focus {
+        outline: 1px solid transparent;
     }
 
     @include r($xl) {

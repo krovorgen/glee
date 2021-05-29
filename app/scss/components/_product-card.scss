@@ -9,15 +9,26 @@
     text-align: center;
     background-color: $white;
 
+    &:hover {
+        .product-card__navigation {
+            opacity: 1;
+        }
+    }
+
     &__img {
-        margin: auto;
+        margin: auto auto 80px;
+        max-height: 195px;
+
+        @include r($xl) {
+            margin: auto;
+        }
     }
 
     &__title {
         @include line-clamp(1);
 
         margin-bottom: 11px;
-        font-family: "DM Sans", sans-serif;
+        font-family: $dm-sans;
         font-weight: 500;
         font-size: 16px;
         color: $title;
@@ -26,6 +37,8 @@
     &__price {
         @include line-clamp(1);
 
+        font-family: $dm-sans;
+        font-weight: 700;
         color: $main;
     }
 
@@ -61,23 +74,17 @@
         box-shadow: 0 6px 47px 3px rgba(37, 37, 37, 0.05);
         background-color: $white;
 
+        &:hover {
+            background-color: $main;
+        }
+
         svg {
             width: 20px;
             height: 20px;
             fill: $main;
         }
 
-        &:hover {
-            background-color: $main;
-        }
-
         @extend %hover-nav-header;
-    }
-
-    &:hover {
-        .product-card__navigation {
-            opacity: 1;
-        }
     }
 
     @include r($sm) {

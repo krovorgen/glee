@@ -4,6 +4,14 @@
     padding: 92px 0;
     background-color: rgba($bg, 0.2);
 
+    &--with-articles {
+        padding: 264px 0 92px;
+
+        @include r($lg) {
+            padding: 50px 0;
+        }
+    }
+
     &__items {
         display: flex;
     }
@@ -16,13 +24,5 @@
 
     &__img {
         margin: auto;
-    }
-
-    &--with-articles {
-        padding: 264px 0 92px;
-
-        @include r($lg) {
-            padding: 50px 0;
-        }
     }
 }

@@ -12,8 +12,9 @@
     &__button {
         padding: 0;
         border: none;
-        font-family: "DM Sans", sans-serif;
+        font-family: $dm-sans;
         font-weight: 700;
+        white-space: nowrap;
         color: $grey-100;
         background-color: transparent;
 

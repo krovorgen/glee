@@ -1,8 +1,6 @@
 .subscribe-form {
     display: flex;
-    @include r($sm) {
-        justify-content: center;
-    }
+
     &__input {
         padding: 12px 15px;
         width: 100%;
@@ -11,7 +9,7 @@
         background-color: rgba($bg, 0.2);
 
         &::placeholder {
-            font-family: "DM Sans", sans-serif;
+            font-family: $dm-sans;
             font-weight: 400;
             font-size: 12px;
             color: $blue-500;
@@ -21,11 +19,15 @@
     &__btn {
         padding: 12px 16px;
         border: none;
-        font-family: "DM Sans", sans-serif;
+        font-family: $dm-sans;
         font-weight: 400;
         color: $white;
         background-color: $main;
 
         @extend %hover-nav-header;
+    }
+
+    @include r($sm) {
+        justify-content: center;
     }
 }

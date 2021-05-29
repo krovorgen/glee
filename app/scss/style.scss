@@ -6,31 +6,34 @@
 
 // molecules
 
-// main
+// global components
 @import "components/header";
 @import "components/footer";
-
-// main page
-@import "components/hero";
-@import "components/products";
-@import "components/advantages";
-@import "components/offers";
-@import "components/design";
-@import "components/video-popup";
 @import "components/articles";
 @import "components/company";
-@import "components/product-card";
-@import "components/gallery-nav";
 @import "components/shop-link";
 @import "components/subscribe-form";
+
+// card
+@import "components/gallery-nav";
+@import "components/product-card";
 @import "components/article-card";
 @import "components/design-card";
 
-@media (max-width: $md + "px") {
+// index-page
+@import "index-page/hero";
+@import "index-page/products";
+@import "index-page/advantages";
+@import "index-page/offers";
+@import "index-page/design";
+@import "index-page/video-popup";
+
+@media (max-width: $lg + "px") {
     .advantages,
     .products,
     .design,
-    .video-popup {
+    .video-popup,
+    .products__items {
         margin-bottom: $mb50;
     }
 }
