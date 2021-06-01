@@ -1,0 +1,40 @@
+.breadcrumbs {
+    margin-bottom: 118px;
+    padding: 23px 0 30px;
+    text-align: center;
+    background-color: rgba($main, 0.2);
+
+    &__title {
+        margin-bottom: 10px;
+        font-weight: 300;
+        font-size: 36px;
+        color: $blue-800;
+    }
+
+    &__list {
+        display: flex;
+        justify-content: center;
+    }
+
+    &__item {
+        position: relative;
+        color: rgba($blue-800, 0.6);
+
+        &:not(:first-child) {
+            padding-left: 18px;
+
+            &::before {
+                content: "/";
+                position: absolute;
+                left: 6px;
+                top: 0;
+            }
+        }
+    }
+
+    &__link {
+        font-size: 14px;
+
+        @extend %hover-link;
+    }
+}
