@@ -2,4 +2,26 @@
     &__inner {
         display: flex;
     }
+
+    &__items {
+        display: flex;
+        flex-wrap: wrap;
+        margin: 0 -15px;
+    }
+
+    &__item {
+        margin: 0 15px 40px;
+        width: calc(100% / 3 - 30px);
+    }
+
+    &__content--list {
+        .product-list__items {
+            margin: 0;
+        }
+
+        .product-list__item {
+            margin: 0 0 40px;
+            width: 100%;
+        }
+    }
 }

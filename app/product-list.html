@@ -149,7 +149,62 @@ title: "Product list" })
                         </ul>
                     </div>
                 </aside>
-                <div class="product-list__content"></div>
+                <div class="product-list__content">
+                    <div class="product-list__nav">
+                        <button
+                            class="product-list__btn product-list__btn--grid"
+                            type="button"
+                        ></button>
+                        <button
+                            class="product-list__btn product-list__btn--list"
+                            type="button"
+                        ></button>
+                    </div>
+                    <ul class="product-list__items">
+                        <li class="product-list__item">
+                            @@include('parts/_product-card.html', { 
+                                "img": "images/product-card/1.png",
+                                "title": "Wooden radio",
+                                "price": "29.00", 
+                            })
+                        </li>
+                        <li class="product-list__item">
+                            @@include('parts/_product-card.html', { 
+                                "img": "images/product-card/2.png",
+                                "title": "Wooden radio",
+                                "price": "29.00", 
+                            })
+                        </li>
+                        <li class="product-list__item">
+                            @@include('parts/_product-card.html', { 
+                                "img": "images/product-card/3.png",
+                                "title": "Wooden radio",
+                                "price": "29.00", 
+                            })
+                        </li>
+                        <li class="product-list__item">
+                            @@include('parts/_product-card.html', { 
+                                "img": "images/product-card/4.png",
+                                "title": "Wooden radio",
+                                "price": "29.00",  
+                            })
+                        </li>
+                        <li class="product-list__item">
+                            @@include('parts/_product-card.html', { 
+                                "img": "images/product-card/5.png",
+                                "title": "Wooden radio",
+                                "price": "29.00", 
+                            })
+                        </li>
+                        <li class="product-list__item">
+                            @@include('parts/_product-card.html', { 
+                                "img": "images/product-card/6.png",
+                                "title": "Wooden radio",
+                                "price": "29.00", 
+                            })
+                        </li>
+                    </ul>
+                </div>
             </div>
         </div>
     </section>

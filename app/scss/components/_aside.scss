@@ -184,10 +184,36 @@
         width: 15px;
         height: 15px;
         background-color: #a3bbc8;
+        cursor: pointer;
     }
 
     .irs-bar {
         height: 4px;
         background-color: #a3bbc8;
+    }
+}
+
+.product-list {
+    &__nav {
+        margin-bottom: 50px;
+    }
+
+    &__btn {
+        padding: 0;
+        width: 20px;
+        height: 20px;
+        border: 0;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-color: transparent;
+
+        &--grid {
+            margin-right: 20px;
+            background-image: url("../images/grid.svg");
+        }
+
+        &--list {
+            background-image: url("../images/list.svg");
+        }
     }
 }

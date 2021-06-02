@@ -76,6 +76,14 @@ $(function () {
         },
     });
 
+    $('.product-list__btn--grid').on('click', () => {
+        $('.product-list__content').removeClass('product-list__content--list');
+    });
+
+    $('.product-list__btn--list').on('click', () => {
+        $('.product-list__content').addClass('product-list__content--list');
+    });
+
     //mixitup
     let containerEl1 = document.querySelector('.design');
     let containerEl2 = document.querySelector('.products');
