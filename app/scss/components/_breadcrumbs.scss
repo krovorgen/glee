@@ -4,7 +4,13 @@
     text-align: center;
     background-color: rgba($main, 0.2);
 
+    @include r($md) {
+        margin-bottom: $mb50;
+    }
+
     &__title {
+        @include line-clamp(1);
+
         margin-bottom: 10px;
         font-weight: 300;
         font-size: 36px;

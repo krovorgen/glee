@@ -18,6 +18,10 @@
         font-weight: 400;
         background-color: rgba($bg, 0.2);
 
+        @include r($xl) {
+            padding: 20px;
+        }
+
         &:not(:last-child) {
             border-right: 1px solid rgba($title, 0.1);
 
@@ -26,10 +30,6 @@
                 border-bottom: 1px solid rgba($title, 0.1);
             }
         }
-
-        @include r($xl) {
-            padding: 20px;
-        }
     }
 
     &__info {
@@ -37,6 +37,15 @@
         max-width: 306px;
         background-position: top left;
         background-repeat: no-repeat;
+
+        @include r($xl) {
+            padding-left: 70px;
+        }
+
+        @include r($lg) {
+            width: 100%;
+            max-width: 360px;
+        }
 
         &--support {
             background-image: url("#{$img}content/support.svg");
@@ -48,15 +57,6 @@
 
         &--cart {
             background-image: url("#{$img}content/credit.svg");
-        }
-
-        @include r($xl) {
-            padding-left: 70px;
-        }
-
-        @include r($lg) {
-            width: 100%;
-            max-width: 360px;
         }
     }
 

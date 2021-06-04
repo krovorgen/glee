@@ -3,6 +3,14 @@
     font-size: 14px;
     color: $grey-200;
 
+    @include r($md) {
+        padding: 50px 0 15px;
+    }
+
+    @include r($sm) {
+        text-align: center;
+    }
+
     &__items {
         display: flex;
         justify-content: space-between;
@@ -106,19 +114,20 @@
     &__navigation-link {
         @extend %hover-link;
     }
-
-    @include r($md) {
-        padding: 50px 0 15px;
-    }
-
-    @include r($sm) {
-        text-align: center;
-    }
 }
 
 .address {
     width: 100%;
     max-width: 270px;
+
+    @include r($lg) {
+        margin-bottom: $mb15;
+        max-width: 50%;
+    }
+
+    @include r($sm) {
+        max-width: 100%;
+    }
 
     &__item {
         &:not(:last-child) {
@@ -136,14 +145,5 @@
 
     &__link {
         @extend %hover-link;
-    }
-
-    @include r($lg) {
-        margin-bottom: $mb15;
-        max-width: 50%;
-    }
-
-    @include r($sm) {
-        max-width: 100%;
     }
 }

@@ -1,31 +1,40 @@
 <article class="product-card">
-    <img class="product-card__img" src="@@img" alt="Wooden radio" />
-    <h3 class="product-card__title">@@title</h3>
-    <span class="product-card__price"><span>$</span> @@price</span>
-    <ul class="product-card__navigation">
-        <li class="product-card__item">
-            <a class="product-card__btn" href="#">
-                <span class="visually-hidden">Search</span>
-                <svg>
-                    <use xlink:href="images/sprite.svg#search"></use>
-                </svg>
-            </a>
-        </li>
-        <li class="product-card__item">
-            <button class="product-card__btn" type="button">
-                <span class="visually-hidden">Add to cart</span>
-                <svg>
-                    <use xlink:href="images/sprite.svg#cart"></use>
-                </svg>
-            </button>
-        </li>
-        <li class="product-card__item">
-            <button class="product-card__btn" type="button">
-                <span class="visually-hidden">Add to favourites</span>
-                <svg>
-                    <use xlink:href="images/sprite.svg#heart"></use>
-                </svg>
-            </button>
-        </li>
-    </ul>
+    <div class="product-card__img-wrap">
+        <img class="product-card__img" src="@@img" alt="Wooden radio" />
+    </div>
+    <div class="product-card__info">
+        <h3 class="product-card__title">@@title</h3>
+        <div class="product-card__star" data-rateyo-rating="3"></div>
+        <span class="product-card__price"><span>$</span> @@price</span>
+        <p class="product-card__text">
+            consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna
+            aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+        </p>
+        <ul class="product-card__navigation">
+            <li class="product-card__item">
+                <a class="product-card__btn" href="#">
+                    <span class="visually-hidden">Search</span>
+                    <svg>
+                        <use xlink:href="images/sprite.svg#search"></use>
+                    </svg>
+                </a>
+            </li>
+            <li class="product-card__item">
+                <button class="product-card__btn" type="button">
+                    <span class="visually-hidden">Add to cart</span>
+                    <svg>
+                        <use xlink:href="images/sprite.svg#cart"></use>
+                    </svg>
+                </button>
+            </li>
+            <li class="product-card__item">
+                <button class="product-card__btn" type="button">
+                    <span class="visually-hidden">Add to favourites</span>
+                    <svg>
+                        <use xlink:href="images/sprite.svg#heart"></use>
+                    </svg>
+                </button>
+            </li>
+        </ul>
+    </div>
 </article>

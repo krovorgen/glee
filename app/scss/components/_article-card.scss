@@ -5,6 +5,14 @@
     border-radius: 5px;
     box-shadow: 0 6px 47px 3px rgba(37, 37, 37, 0.05);
 
+    @include r($lg) {
+        margin: 0 8px 16px;
+    }
+
+    @include r($md) {
+        margin: 0;
+    }
+
     &__img-wrap {
         position: relative;
     }
@@ -72,7 +80,7 @@
         border-top: 1px solid $grey-75;
         font-size: 12px;
         text-transform: uppercase;
-        color: #222933;
+        color: $blue-800;
     }
 
     &__descr {
@@ -80,6 +88,17 @@
 
         position: relative;
         padding-left: 18px;
+
+        &::before {
+            content: "";
+            position: absolute;
+            left: 0;
+            top: 0;
+            width: 14px;
+            height: 17px;
+            background-size: contain;
+            background-repeat: no-repeat;
+        }
 
         &--date {
             padding-right: 30px;
@@ -98,24 +117,5 @@
 
             @extend %hover-link;
         }
-
-        &::before {
-            content: "";
-            position: absolute;
-            left: 0;
-            top: 0;
-            width: 14px;
-            height: 17px;
-            background-size: contain;
-            background-repeat: no-repeat;
-        }
-    }
-
-    @include r($lg) {
-        margin: 0 8px 16px;
-    }
-
-    @include r($md) {
-        margin: 0;
     }
 }

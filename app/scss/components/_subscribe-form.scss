@@ -1,6 +1,10 @@
 .subscribe-form {
     display: flex;
 
+    @include r($sm) {
+        justify-content: center;
+    }
+
     &__input {
         padding: 12px 15px;
         width: 100%;
@@ -25,9 +29,5 @@
         background-color: $main;
 
         @extend %hover-nav-header;
-    }
-
-    @include r($sm) {
-        justify-content: center;
     }
 }

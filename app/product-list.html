@@ -1,154 +1,11 @@
-@@include('parts/_top.html') @@include('parts/_header.html') @@include('parts/_breadcrumbs.html', {
-title: "Product list" })
+@@include('parts/_top.html')
+@@include('parts/_header.html')
+@@include('parts/_breadcrumbs.html', {title: "Product list" })
 <main>
     <section class="product-list">
         <div class="container">
             <div class="product-list__inner">
-                <aside class="aside">
-                    <div class="aside__item aside-category">
-                        <h3 class="aside__title">Category</h3>
-                        <form class="aside-category__form">
-                            <label class="aside-category__label">
-                                <input
-                                    class="aside-category__input visually-hidden"
-                                    type="checkbox"
-                                />
-                                <span class="aside-category__checkbox">Chair</span>
-                            </label>
-                            <label class="aside-category__label">
-                                <input
-                                    class="aside-category__input visually-hidden"
-                                    type="checkbox"
-                                />
-                                <span class="aside-category__checkbox">Table</span>
-                            </label>
-                            <label class="aside-category__label">
-                                <input
-                                    class="aside-category__input visually-hidden"
-                                    type="checkbox"
-                                />
-                                <span class="aside-category__checkbox">Lamp</span>
-                            </label>
-                            <label class="aside-category__label">
-                                <input
-                                    class="aside-category__input visually-hidden"
-                                    type="checkbox"
-                                />
-                                <span class="aside-category__checkbox">Watch</span>
-                            </label>
-                            <label class="aside-category__label">
-                                <input
-                                    class="aside-category__input visually-hidden"
-                                    type="checkbox"
-                                />
-                                <span class="aside-category__checkbox">Clock</span>
-                            </label>
-                        </form>
-                    </div>
-                    <div class="aside__item aside-price">
-                        <h3 class="aside__title aside-price__pretitle">Price</h3>
-                        <form class="aside-price__form">
-                            <input type="range" class="aside-price__input" />
-                            <div class="aside-price__price">
-                                <span class="aside-price__start"></span>
-                                <span class="aside-price__finish"></span>
-                            </div>
-                        </form>
-                    </div>
-                    <div class="aside__item aside-brand">
-                        <h3 class="aside__title">Brand</h3>
-                        <form class="aside-brand__form">
-                            <label class="aside-brand__label">
-                                <input type="checkbox" class="aside-brand__input visually-hidden" />
-                                <span class="aside-brand__checkbox">
-                                    <span>RFL</span>
-                                    <span>(10) </span>
-                                </span>
-                            </label>
-                            <label class="aside-brand__label">
-                                <input type="checkbox" class="aside-brand__input visually-hidden" />
-                                <span class="aside-brand__checkbox">
-                                    <span>Brothers</span>
-                                    <span>(21)</span>
-                                </span>
-                            </label>
-                            <label class="aside-brand__label">
-                                <input type="checkbox" class="aside-brand__input visually-hidden" />
-                                <span class="aside-brand__checkbox">
-                                    <span>Regal</span>
-                                    <span>(3)</span>
-                                </span>
-                            </label>
-                            <label class="aside-brand__label">
-                                <input type="checkbox" class="aside-brand__input visually-hidden" />
-                                <span class="aside-brand__checkbox">
-                                    <span>Nadia</span>
-                                    <span>(14)</span>
-                                </span>
-                            </label>
-                            <label class="aside-brand__label">
-                                <input type="checkbox" class="aside-brand__input visually-hidden" />
-                                <span class="aside-brand__checkbox">
-                                    <span>Otobi</span>
-                                    <span>(6)</span>
-                                </span>
-                            </label>
-                        </form>
-                    </div>
-                    <div class="aside__item aside-recent">
-                        <h3 class="aside__title aside-recent__pretitle">Recent products</h3>
-                        <ul class="aside-recent__list">
-                            <li class="aside-recent__item">
-                                <div class="aside-recent__img-wrap">
-                                    <img
-                                        class="aside-recent__img"
-                                        src="images/recent/1.png"
-                                        alt="product"
-                                    />
-                                </div>
-                                <div class="aside-recent__info">
-                                    <a class="aside-resent__info" href="#">
-                                        <h3 class="aside-recent__title">Pendant lamp</h3>
-                                    </a>
-                                    <div class="aside-recent__star" data-rateyo-rating="1"></div>
-                                    <span class="aside-recent__price">23 <span>$</span></span>
-                                </div>
-                            </li>
-                            <li class="aside-recent__item">
-                                <div class="aside-recent__img-wrap">
-                                    <img
-                                        class="aside-recent__img"
-                                        src="images/recent/2.png"
-                                        alt="product"
-                                    />
-                                </div>
-                                <div class="aside-recent__info">
-                                    <a class="aside-resent__info" href="#">
-                                        <h3 class="aside-recent__title">Pendant lamp</h3>
-                                    </a>
-                                    <div class="aside-recent__star" data-rateyo-rating="3"></div>
-                                    <span class="aside-recent__price">23 <span>$</span></span>
-                                </div>
-                            </li>
-                            <li class="aside-recent__item">
-                                <div class="aside-recent__img-wrap">
-                                    <img
-                                        class="aside-recent__img"
-                                        src="images/recent/3.png"
-                                        alt="product"
-                                    />
-                                </div>
-                                <div class="aside-recent__info">
-                                    <a class="aside-resent__info" href="#">
-                                        <h3 class="aside-recent__title">Pendant lamp</h3>
-                                    </a>
-                                    <div class="aside-recent__star" data-rateyo-rating="5"></div>
-                                    <span class="aside-recent__price">23 <span>$</span></span>
-                                </div>
-                            </li>
-                        </ul>
-                    </div>
-                </aside>
+                @@include('parts/_aside.html')
                 <div class="product-list__content">
                     <div class="product-list__nav">
                         <button
@@ -159,54 +16,67 @@ title: "Product list" })
                             class="product-list__btn product-list__btn--list"
                             type="button"
                         ></button>
+                        <button
+                            class="product-list__btn product-list__btn--filter"
+                            type="button"
+                        ></button>
                     </div>
                     <ul class="product-list__items">
                         <li class="product-list__item">
-                            @@include('parts/_product-card.html', { 
+                            @@include('parts/_product-card.html', {
                                 "img": "images/product-card/1.png",
                                 "title": "Wooden radio",
-                                "price": "29.00", 
+                                "price": "29.00",
                             })
                         </li>
                         <li class="product-list__item">
-                            @@include('parts/_product-card.html', { 
+                            @@include('parts/_product-card.html', {
                                 "img": "images/product-card/2.png",
                                 "title": "Wooden radio",
-                                "price": "29.00", 
+                                "price": "29.00",
                             })
                         </li>
                         <li class="product-list__item">
-                            @@include('parts/_product-card.html', { 
+                            @@include('parts/_product-card.html', {
                                 "img": "images/product-card/3.png",
                                 "title": "Wooden radio",
-                                "price": "29.00", 
+                                "price": "29.00",
                             })
                         </li>
                         <li class="product-list__item">
-                            @@include('parts/_product-card.html', { 
+                            @@include('parts/_product-card.html', {
                                 "img": "images/product-card/4.png",
                                 "title": "Wooden radio",
-                                "price": "29.00",  
+                                "price": "29.00",
                             })
                         </li>
                         <li class="product-list__item">
-                            @@include('parts/_product-card.html', { 
+                            @@include('parts/_product-card.html', {
                                 "img": "images/product-card/5.png",
                                 "title": "Wooden radio",
-                                "price": "29.00", 
+                                "price": "29.00",
                             })
                         </li>
                         <li class="product-list__item">
-                            @@include('parts/_product-card.html', { 
+                            @@include('parts/_product-card.html', {
                                 "img": "images/product-card/6.png",
                                 "title": "Wooden radio",
-                                "price": "29.00", 
+                                "price": "29.00",
                             })
                         </li>
                     </ul>
+                    <div class="product-list__navigation">
+                        <button class="product-list__button product-list__button--active">1</button>
+                        <button class="product-list__button">2</button>
+                        <button class="product-list__button">3</button>
+                        <button class="product-list__button product-list__button--text">Next</button>
+                    </div>
                 </div>
+                <div class='aside__overlay'></div>
             </div>
         </div>
     </section>
 </main>
-@@include('parts/_company.html') @@include('parts/_footer.html') @@include('parts/_bottom.html')
+@@include('parts/_company.html')
+@@include('parts/_footer.html')
+@@include('parts/_bottom.html')

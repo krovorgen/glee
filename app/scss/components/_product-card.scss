@@ -15,7 +15,11 @@
         }
     }
 
-    &__img {
+    @include r($sm) {
+        padding: 10px;
+    }
+
+    &__img-wrap {
         margin: auto auto 80px;
         max-height: 195px;
 
@@ -62,6 +66,14 @@
         }
     }
 
+    &__star {
+        display: none;
+    }
+
+    &__text {
+        display: none;
+    }
+
     &__btn {
         display: flex;
         align-items: center;
@@ -85,9 +97,5 @@
         }
 
         @extend %hover-nav-header;
-    }
-
-    @include r($sm) {
-        padding: 10px;
     }
 }

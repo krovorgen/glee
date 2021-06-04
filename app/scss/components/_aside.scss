@@ -1,7 +1,49 @@
 .aside {
+    position: relative;
     margin-right: 30px;
     width: 100%;
     max-width: 270px;
+
+    @include r($lg) {
+        position: fixed;
+        left: 0;
+        top: 0;
+        z-index: 100;
+        margin-right: 0;
+        padding: 15px;
+        background-color: rgba($white, 0.95);
+        transform: translateX(-200%);
+        transition: transform 0.5s;
+    }
+
+    &--mobile {
+        height: 100%;
+        overflow-y: scroll;
+        transform: translateX(0);
+    }
+
+    &__overlay {
+        position: fixed;
+        left: 0;
+        right: 0;
+        top: 0;
+        bottom: 0;
+        z-index: 31;
+        display: block;
+        visibility: hidden;
+        opacity: 0;
+        background-color: rgba(0, 0, 0, 0.8);
+        transition: opacity 0.2s ease 0s, visibility 0.2s ease 0s;
+
+        &--active {
+            visibility: visible;
+            opacity: 1;
+        }
+    }
+
+    &__close {
+        display: none;
+    }
 
     &__item {
         margin-bottom: 50px;
@@ -105,8 +147,9 @@
         align-items: center;
         justify-content: center;
         margin-right: 20px;
-        width: 71px;
+        width: 100%;
         height: 71px;
+        max-width: 71px;
         border: 2px solid #f2f2f2;
     }
 
@@ -116,9 +159,12 @@
 
     &__info {
         padding-top: 1px;
+        width: 100%;
     }
 
     &__title {
+        @include line-clamp(1);
+
         margin-bottom: 9px;
         padding-top: 1px;
         font-weight: 400;
@@ -172,7 +218,7 @@
         opacity: 0.66;
         height: 3px;
         border-radius: 1px;
-        background-color: rgba(#a3bbc8, 0.66);
+        background-color: rgba($main, 0.66);
     }
 
     .irs--flat .irs-handle > i:first-child {
@@ -183,37 +229,12 @@
         top: 20px;
         width: 15px;
         height: 15px;
-        background-color: #a3bbc8;
+        background-color: $main;
         cursor: pointer;
     }
 
     .irs-bar {
         height: 4px;
-        background-color: #a3bbc8;
-    }
-}
-
-.product-list {
-    &__nav {
-        margin-bottom: 50px;
-    }
-
-    &__btn {
-        padding: 0;
-        width: 20px;
-        height: 20px;
-        border: 0;
-        background-position: center;
-        background-repeat: no-repeat;
-        background-color: transparent;
-
-        &--grid {
-            margin-right: 20px;
-            background-image: url("../images/grid.svg");
-        }
-
-        &--list {
-            background-image: url("../images/list.svg");
-        }
+        background-color: $main;
     }
 }

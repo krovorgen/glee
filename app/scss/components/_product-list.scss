@@ -12,16 +12,229 @@
     &__item {
         margin: 0 15px 40px;
         width: calc(100% / 3 - 30px);
+
+        @include r($md) {
+            margin: 0 10px 20px;
+            width: calc(100% / 2 - 20px);
+            height: 250px;
+        }
+    }
+
+    &__nav {
+        margin-bottom: 50px;
+    }
+
+    &__btn {
+        padding: 0;
+        width: 20px;
+        height: 20px;
+        border: 0;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-color: transparent;
+
+        &--grid {
+            background-image: url("../images/grid.svg");
+        }
+
+        &--list {
+            background-image: url("../images/list.svg");
+        }
+
+        &--filter {
+            display: none;
+            background-image: url("../images/filter.svg");
+
+            @include r($lg) {
+                display: inline-block;
+            }
+        }
+
+        &:not(:last-child) {
+            margin-right: 20px;
+        }
+    }
+
+    .product-card__img-wrap {
+        margin: auto auto 80px;
+
+        @include r($md) {
+            margin: auto;
+        }
     }
 
     &__content--list {
+        width: 100%;
+
         .product-list__items {
             margin: 0;
         }
 
         .product-list__item {
-            margin: 0 0 40px;
+            margin: 0 0 20px;
             width: 100%;
+
+            @include r($sm) {
+                margin-bottom: $mb50;
+            }
         }
+
+        .product-card {
+            flex-direction: row;
+            padding: 0;
+            box-shadow: none;
+            text-align: left;
+
+            @include r($sm) {
+                flex-direction: column;
+            }
+        }
+
+        .product-card__img-wrap {
+            display: flex;
+            margin: 0;
+            width: 100%;
+            height: 500px;
+            max-width: 370px;
+            max-height: 500px;
+            border: 2px solid #f2f2f2;
+
+            @include r($md) {
+                width: 330px;
+                height: 330px;
+            }
+
+            @include r($sm) {
+                margin-bottom: $mb15;
+                width: 100%;
+            }
+        }
+
+        .product-card__img {
+            margin: auto;
+        }
+
+        .product-card__info {
+            padding: 83px 0 0 56px;
+            width: 100%;
+
+            @include r($md) {
+                padding: 0 0 0 30px;
+            }
+
+            @include r($sm) {
+                padding-left: 0;
+            }
+        }
+
+        .product-card__title {
+            margin-bottom: 16px;
+            font-weight: 400;
+            font-size: 40px;
+            color: #333;
+
+            @include r($md) {
+                margin-bottom: $mb15;
+                font-size: 22px;
+            }
+        }
+
+        .product-card__star {
+            display: block;
+            margin-bottom: 32px;
+            padding-left: 0;
+
+            @include r($md) {
+                margin-bottom: $mb15;
+            }
+        }
+
+        .product-card__price {
+            margin-bottom: 24px;
+            font-weight: 400;
+            font-size: 30px;
+            color: #333;
+
+            @include r($md) {
+                margin-bottom: $mb15;
+                font-size: 18px;
+            }
+        }
+
+        .product-card__text {
+            @include line-clamp(3);
+
+            display: block;
+            margin-bottom: 40px;
+            max-width: 405px;
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 30px;
+            color: $title;
+
+            @include r($md) {
+                margin-bottom: $mb15;
+            }
+        }
+
+        .product-card__navigation {
+            position: relative;
+            left: 0;
+            top: 0;
+            display: flex;
+            opacity: 1;
+            transform: none;
+        }
+
+        .product-card__btn {
+            width: 50px;
+            height: 50px;
+            border-radius: 0;
+        }
+    }
+
+    &__navigation {
+        display: flex;
+        margin-top: 40px;
+        margin-bottom: 120px;
+
+        @include r($md) {
+            margin-bottom: $mb50;
+        }
+    }
+
+    &__button {
+        padding: 0;
+        height: 50px;
+        min-width: 50px;
+        border: 1px solid $main;
+        color: $title;
+        background-color: transparent;
+
+        &:hover {
+            color: $white;
+            background-color: $main;
+        }
+
+        &--active {
+            color: $white;
+            background-color: $title;
+        }
+
+        &--text {
+            padding: 0 22px;
+        }
+
+        &:not(:last-child) {
+            margin-right: 16px;
+        }
+
+        svg {
+            width: 20px;
+            height: 20px;
+            fill: $main;
+        }
+
+        @extend %hover-nav-header;
     }
 }

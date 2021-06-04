@@ -58,6 +58,14 @@ $(function () {
         ratedFill: '#fc0',
     });
 
+    $('.product-card__star').rateYo({
+        rating: 5,
+        starWidth: '18px',
+        starHeight: '18px',
+        normalFill: '#d6d6d6',
+        ratedFill: '#fc0',
+    });
+
     $('.aside-price__input').ionRangeSlider({
         type: 'double',
         min: 0,
@@ -82,6 +90,13 @@ $(function () {
 
     $('.product-list__btn--list').on('click', () => {
         $('.product-list__content').addClass('product-list__content--list');
+    });
+
+    $('.product-list__btn--filter, .aside__overlay').on('click', () => {
+        $('.aside').toggleClass('aside--mobile');
+        $('.aside__overlay').toggleClass('aside__overlay--active');
+        $('body').toggleClass('body--with-menu');
+
     });
 
     //mixitup

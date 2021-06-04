@@ -30,6 +30,10 @@
         }
     }
 
+    @include r($xl) {
+        height: 50vh;
+    }
+
     svg {
         z-index: 2;
         width: 98px;
@@ -43,9 +47,5 @@
 
     &:focus {
         outline: 1px solid transparent;
-    }
-
-    @include r($xl) {
-        height: 50vh;
     }
 }

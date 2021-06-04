@@ -16,10 +16,6 @@
       "declarations",
       {
         "type": "rule",
-        "selector": "&--.+"
-      },
-      {
-        "type": "rule",
         "selector": "&::before"
       },
       {
@@ -29,6 +25,15 @@
       {
         "type": "rule",
         "selector": "&:hover"
+      },
+      {
+        "type": "at-rule",
+        "name": "include",
+        "hasBlock": true
+      },
+      {
+        "type": "rule",
+        "selector": "&--.+"
       },
       "rules",
       {
@@ -74,11 +79,6 @@
       {
         "type": "rule",
         "selector": ".* &"
-      },
-      {
-        "type": "at-rule",
-        "name": "include",
-        "hasBlock": true
       },
       "at-rules"
     ],

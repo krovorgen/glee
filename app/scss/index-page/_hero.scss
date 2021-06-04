@@ -87,6 +87,12 @@
     &__img {
         position: relative;
 
+        @include r($xl) {
+            display: flex;
+            flex-direction: column;
+            height: 100%;
+        }
+
         img {
             height: auto;
             object-fit: contain;
@@ -94,12 +100,6 @@
             @include r($xl) {
                 margin: auto;
             }
-        }
-
-        @include r($xl) {
-            display: flex;
-            flex-direction: column;
-            height: 100%;
         }
     }
 

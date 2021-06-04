@@ -13,6 +13,14 @@
         color: $title;
         background-color: rgba($bg, 0.4);
 
+        @include r($xxl) {
+            padding: 25px;
+        }
+
+        @include r($sm) {
+            padding: 20px;
+        }
+
         &:not(:last-child) {
             margin-right: 30px;
 
@@ -20,14 +28,6 @@
                 margin-right: 0;
                 border-bottom: 1px solid $title;
             }
-        }
-
-        @include r($xxl) {
-            padding: 25px;
-        }
-
-        @include r($sm) {
-            padding: 20px;
         }
     }
 
