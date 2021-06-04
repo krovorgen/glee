@@ -14,6 +14,7 @@
         width: calc(100% / 3 - 30px);
 
         @include r($md) {
+            height: 300px;
             margin: 0 10px 20px;
             width: calc(100% / 2 - 20px);
         }
@@ -32,6 +33,10 @@
         background-repeat: no-repeat;
         background-color: transparent;
 
+        &:not(:last-child) {
+            margin-right: 20px;
+        }
+
         &--grid {
             background-image: url("../images/grid.svg");
         }
@@ -48,9 +53,11 @@
                 display: inline-block;
             }
         }
+    }
 
-        &:not(:last-child) {
-            margin-right: 20px;
+    .product-card {
+        @include r($md) {
+            padding: 10px;
         }
     }
 
@@ -59,7 +66,13 @@
 
         @include r($md) {
             margin: auto;
-            height: 250px;
+        }
+    }
+
+    .product-card__navigation {
+        @include r($sm) {
+            opacity: 1;
+            top: 70%;
         }
     }
 
@@ -73,6 +86,7 @@
         .product-list__item {
             margin: 0 0 20px;
             width: 100%;
+            height: auto;
 
             @include r($sm) {
                 margin-bottom: $mb50;
@@ -191,50 +205,5 @@
             height: 50px;
             border-radius: 0;
         }
-    }
-
-    &__navigation {
-        display: flex;
-        margin-top: 40px;
-        margin-bottom: 120px;
-
-        @include r($md) {
-            margin-bottom: $mb50;
-        }
-    }
-
-    &__button {
-        padding: 0;
-        height: 50px;
-        min-width: 50px;
-        border: 1px solid $main;
-        color: $title;
-        background-color: transparent;
-
-        &:hover {
-            color: $white;
-            background-color: $main;
-        }
-
-        &--active {
-            color: $white;
-            background-color: $title;
-        }
-
-        &--text {
-            padding: 0 22px;
-        }
-
-        &:not(:last-child) {
-            margin-right: 16px;
-        }
-
-        svg {
-            width: 20px;
-            height: 20px;
-            fill: $main;
-        }
-
-        @extend %hover-nav-header;
     }
 }

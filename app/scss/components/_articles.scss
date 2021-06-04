@@ -2,14 +2,6 @@
     position: relative;
     z-index: 2;
 
-    &--with-company {
-        margin-bottom: -171px;
-
-        @include r($lg) {
-            margin-bottom: $mb15;
-        }
-    }
-
     &__top {
         display: flex;
         align-items: center;
@@ -78,6 +70,14 @@
                 margin-right: 0;
                 margin-bottom: $mb30;
             }
+        }
+    }
+
+    &--with-company {
+        margin-bottom: -171px;
+
+        @include r($lg) {
+            margin-bottom: $mb15;
         }
     }
 }

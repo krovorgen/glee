@@ -31,10 +31,6 @@
         "name": "include",
         "hasBlock": true
       },
-      {
-        "type": "rule",
-        "selector": "&--.+"
-      },
       "rules",
       {
         "type": "rule",
@@ -67,6 +63,10 @@
       {
         "type": "rule",
         "selector": "&:nth-child.+"
+      },
+      {
+        "type": "rule",
+        "selector": "&--.+"
       },
       {
         "type": "rule",

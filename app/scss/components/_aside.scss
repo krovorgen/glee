@@ -16,12 +16,6 @@
         transition: transform 0.5s;
     }
 
-    &--mobile {
-        height: 100%;
-        overflow-y: scroll;
-        transform: translateX(0);
-    }
-
     &__overlay {
         position: fixed;
         left: 0;
@@ -73,6 +67,12 @@
             background-color: $main;
         }
     }
+
+    &--mobile {
+        height: 100%;
+        overflow-y: scroll;
+        transform: translateX(0);
+    }
 }
 
 .aside-category,
@@ -99,6 +99,8 @@
     }
 
     &__checkbox {
+        @include line-clamp(1);
+
         position: relative;
         display: block;
 
@@ -112,6 +114,8 @@
             background-image: url("../images/arrow-right.svg");
             background-repeat: no-repeat;
         }
+
+        @extend %hover-link;
     }
 }
 
@@ -119,20 +123,32 @@
     &__input {
         &:checked + .aside-brand__checkbox {
             background-color: rgba($color: $main, $alpha: 0.2);
+
+            span:nth-child(2) {
+                color: #243f4d;
+            }
         }
     }
 
     &__checkbox {
         display: flex;
         justify-content: space-between;
+
+        span {
+            &:nth-child(2) {
+                color: #b3b3b3;
+            }
+
+            &:nth-child(1) {
+                @include line-clamp(1);
+            }
+        }
+
+        @extend %hover-link;
     }
 }
 
 .aside-recent {
-    &__pretitle {
-        margin-bottom: 35px;
-    }
-
     &__item {
         display: flex;
         color: #333;
@@ -189,10 +205,6 @@
 
 .aside-price {
     margin-bottom: 83px;
-
-    &__pretitle {
-        margin-bottom: 13px;
-    }
 
     &__price {
         display: flex;

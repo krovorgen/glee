@@ -89,8 +89,10 @@
             margin-bottom: $mb15;
         }
     }
+}
 
-    &__navigation {
+.menu-bottom {
+    &__items {
         display: flex;
 
         @include r($sm) {
@@ -98,7 +100,7 @@
         }
     }
 
-    &__navigation-item {
+    &__item {
         align-self: baseline;
 
         &:not(:first-child) {
@@ -111,7 +113,7 @@
         }
     }
 
-    &__navigation-link {
+    &__link {
         @extend %hover-link;
     }
 }

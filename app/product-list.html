@@ -1,4 +1,6 @@
-@@include('parts/_top.html')
+@@include('parts/_top.html', {
+    title: "Product list"
+})
 @@include('parts/_header.html')
 @@include('parts/_breadcrumbs.html', {title: "Product list" })
 <main>
@@ -27,6 +29,7 @@
                                 "img": "images/product-card/1.png",
                                 "title": "Wooden radio",
                                 "price": "29.00",
+                                "text": "consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation"
                             })
                         </li>
                         <li class="product-list__item">
@@ -34,6 +37,7 @@
                                 "img": "images/product-card/2.png",
                                 "title": "Wooden radio",
                                 "price": "29.00",
+                                "text": "consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation"
                             })
                         </li>
                         <li class="product-list__item">
@@ -41,6 +45,7 @@
                                 "img": "images/product-card/3.png",
                                 "title": "Wooden radio",
                                 "price": "29.00",
+                                "text": "consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation"
                             })
                         </li>
                         <li class="product-list__item">
@@ -48,6 +53,7 @@
                                 "img": "images/product-card/4.png",
                                 "title": "Wooden radio",
                                 "price": "29.00",
+                                "text": "consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation"
                             })
                         </li>
                         <li class="product-list__item">
@@ -55,6 +61,7 @@
                                 "img": "images/product-card/5.png",
                                 "title": "Wooden radio",
                                 "price": "29.00",
+                                "text": "consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation"
                             })
                         </li>
                         <li class="product-list__item">
@@ -62,14 +69,15 @@
                                 "img": "images/product-card/6.png",
                                 "title": "Wooden radio",
                                 "price": "29.00",
+                                "text": "consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation"
                             })
                         </li>
                     </ul>
-                    <div class="product-list__navigation">
-                        <button class="product-list__button product-list__button--active">1</button>
-                        <button class="product-list__button">2</button>
-                        <button class="product-list__button">3</button>
-                        <button class="product-list__button product-list__button--text">Next</button>
+                    <div class="pagination__navigation">
+                        <span class="pagination__button pagination__button--active">1</span>
+                        <a class="pagination__button" href='#'>2</a>
+                        <a class="pagination__button" href='#'>3</a>
+                        <a class="pagination__button pagination__button--text" href='#'>Next</a>
                     </div>
                 </div>
                 <div class='aside__overlay'></div>

@@ -1,0 +1,49 @@
+.pagination {
+    &__navigation {
+        display: flex;
+        margin-top: 40px;
+        margin-bottom: 120px;
+
+        @include r($md) {
+            margin-bottom: $mb50;
+        }
+    }
+
+    &__button {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 0;
+        height: 50px;
+        min-width: 50px;
+        border: 1px solid $main;
+        color: $title;
+        background-color: transparent;
+
+        &:hover {
+            color: $white;
+            background-color: $main;
+        }
+
+        &:not(:last-child) {
+            margin-right: 16px;
+        }
+
+        svg {
+            width: 20px;
+            height: 20px;
+            fill: $main;
+        }
+
+        &--active {
+            color: $white;
+            background-color: $main;
+        }
+
+        &--text {
+            padding: 0 22px;
+        }
+
+        @extend %hover-nav-header;
+    }
+}
