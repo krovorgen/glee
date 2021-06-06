@@ -31,12 +31,20 @@
 @import "index-page/design";
 @import "index-page/video-popup";
 
+// about
+@import "about/about";
+@import "about/privilege";
+@import "about/team";
+
 @media (max-width: $lg + "px") {
     .advantages,
     .products,
     .design,
     .video-popup,
-    .products__items {
+    .products__items,
+    .about,
+    .privilege,
+    .team {
         margin-bottom: $mb50;
     }
 }

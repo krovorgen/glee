@@ -1,0 +1,87 @@
+.privilege {
+    margin-bottom: 119px;
+    padding: 88px 0 79px;
+    background-color: $bg;
+
+    @include r($lg) {
+        padding: 50px 0 35px;
+    }
+
+    @include r($sm) {
+        padding: 30px 0 0;
+    }
+
+    &__items {
+        display: flex;
+        justify-content: space-between;
+
+        @include r($lg) {
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+    }
+
+    &__item {
+        @include line-clamp(1);
+
+        position: relative;
+        padding-top: 75px;
+        width: 25%;
+        font-family: "DM Sans", sans-serif;
+        font-weight: 700;
+        font-size: 18px;
+        text-align: center;
+        color: #243f4d;
+
+        &::before {
+            content: "";
+            position: absolute;
+            left: 50%;
+            top: 0;
+            width: 80px;
+            height: 64px;
+            background-position: center bottom;
+            background-repeat: no-repeat;
+            transform: translateX(-50%);
+        }
+
+        @include r($lg) {
+            margin-bottom: $mb15;
+            width: 50%;
+        }
+
+        @include r($sm) {
+            margin-bottom: $mb30;
+            padding-top: 70px;
+            width: 100%;
+        }
+
+        &--rate::before {
+            background-image: url("../images/about/1.svg");
+        }
+
+        &--delivered::before {
+            background-image: url("../images/about/2.svg");
+        }
+
+        &--time::before {
+            background-image: url("../images/about/3.svg");
+        }
+
+        &--brands::before {
+            background-image: url("../images/about/4.svg");
+        }
+    }
+
+    &__counter {
+        @include line-clamp(1);
+
+        display: block;
+        margin-bottom: 14px;
+        font-size: 36px;
+
+        @include r($sm) {
+            margin-bottom: 5px;
+        }
+    }
+}

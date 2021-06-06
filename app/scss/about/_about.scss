@@ -1,0 +1,166 @@
+.about {
+    margin-bottom: 120px;
+
+    &__inner {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    &__img-wrap {
+        margin-right: 48px;
+
+        @include r($lg) {
+            display: none;
+        }
+    }
+
+    &__img {
+        object-fit: cover;
+    }
+
+    &__top {
+        display: flex;
+        margin-bottom: 24px;
+
+        @include r($md) {
+            margin-bottom: $mb15;
+        }
+    }
+
+    &__years {
+        margin-right: 23px;
+        font-weight: 700;
+        font-size: 140px;
+        line-height: 1;
+        color: $main;
+    }
+
+    &__descr {
+        @include line-clamp(3);
+
+        align-self: flex-end;
+        padding-bottom: 14px;
+        max-width: 85px;
+        line-height: 1.9;
+        color: $title;
+    }
+
+    &__title {
+        @include line-clamp(1);
+
+        margin-bottom: 34px;
+        font-family: "DM Sans", sans-serif;
+        font-weight: 700;
+        font-size: 36px;
+        color: $title;
+
+        @include r($md) {
+            margin-bottom: $mb15;
+        }
+    }
+
+    &__text {
+        @include line-clamp(6);
+
+        position: relative;
+        margin-bottom: 33px;
+        padding-bottom: 60px;
+        max-width: 550px;
+        line-height: 1.9;
+        color: $title;
+
+        &::before {
+            content: "";
+            position: absolute;
+            left: 0;
+            bottom: 0;
+            width: 90%;
+            height: 3px;
+            background-color: rgba(#09316f, 0.1);
+        }
+
+        @include r($md) {
+            margin-bottom: $mb15;
+            padding-bottom: $mb15;
+        }
+    }
+
+    &__items {
+        display: flex;
+
+        @include r($md) {
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+    }
+
+    &__item {
+        @include r($md) {
+            width: 100%;
+            max-width: 180px;
+        }
+
+        &:not(:first-child) {
+            padding: 0 30px;
+            border-left: 1px solid rgba(#09316f, 0.1);
+
+            @include r($md) {
+                padding: 0 15px;
+                border-color: transparent;
+            }
+        }
+
+        &:not(:last-child) {
+            margin-bottom: $mb15;
+        }
+
+        &:first-child {
+            padding-right: 25px;
+
+            @include r($md) {
+                padding: 0 15px;
+            }
+        }
+    }
+
+    &__wrap {
+        @include line-clamp(1);
+
+        position: relative;
+        padding-left: 55px;
+
+        &::before {
+            content: "";
+            position: absolute;
+            left: 0;
+            top: 13px;
+            width: 44px;
+            height: 42px;
+            background-repeat: no-repeat;
+        }
+
+        &--projects::before {
+            background-image: url("../images/about/about-1.svg");
+        }
+
+        &--revenue::before {
+            background-image: url("../images/about/about-2.svg");
+        }
+
+        &--awards::before {
+            background-image: url("../images/about/about-3.svg");
+        }
+    }
+
+    &__counter {
+        @include line-clamp(1);
+
+        display: block;
+        margin-bottom: 1px;
+        font-family: "DM Sans", sans-serif;
+        font-weight: 700;
+        font-size: 36px;
+        color: $title;
+    }
+}

@@ -2,8 +2,8 @@
     title: "Product list"
 })
 @@include('parts/_header.html')
-@@include('parts/_breadcrumbs.html', {title: "Product list" })
 <main>
+    @@include('parts/_breadcrumbs.html', {title: "Product list" })
     <section class="product-list">
         <div class="container">
             <div class="product-list__inner">
@@ -84,7 +84,7 @@
             </div>
         </div>
     </section>
+    @@include('parts/_company.html')
 </main>
-@@include('parts/_company.html')
 @@include('parts/_footer.html')
 @@include('parts/_bottom.html')

@@ -14,9 +14,9 @@
         width: calc(100% / 3 - 30px);
 
         @include r($md) {
-            height: 300px;
             margin: 0 10px 20px;
             width: calc(100% / 2 - 20px);
+            height: 300px;
         }
     }
 
@@ -71,8 +71,8 @@
 
     .product-card__navigation {
         @include r($sm) {
-            opacity: 1;
             top: 70%;
+            opacity: 1;
         }
     }
 
