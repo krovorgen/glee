@@ -1,6 +1,5 @@
 .aside {
     position: relative;
-    margin-right: 30px;
     width: 100%;
     max-width: 270px;
 
@@ -66,6 +65,14 @@
             border-radius: 1px;
             background-color: $main;
         }
+    }
+
+    &--left {
+        margin-right: 30px;
+    }
+
+    &--right {
+        margin-left: 70px;
     }
 
     &--mobile {

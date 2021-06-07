@@ -1,0 +1,119 @@
+.blog {
+    &__inner {
+        display: flex;
+    }
+
+    &__items {
+        margin-bottom: 75px;
+    }
+
+    &__item {
+        &:not(:last-child) {
+            margin-bottom: 50px;
+        }
+    }
+
+    &__wrap {
+        position: relative;
+        margin-bottom: 34px;
+    }
+
+    &__img {
+        object-fit: cover;
+    }
+
+    &__calendar {
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        display: flex;
+        padding: 26px 22px;
+        font-size: 12px;
+        color: $white;
+        background-color: $main;
+    }
+
+    &__descr {
+        @include line-clamp(1);
+
+        position: relative;
+        padding-left: 18px;
+
+        &::before {
+            content: "";
+            position: absolute;
+            left: 0;
+            top: 0;
+            width: 14px;
+            height: 17px;
+            background-size: contain;
+            background-repeat: no-repeat;
+        }
+
+        &--date {
+            padding-right: 30px;
+
+            &::before {
+                background-image: url("#{$img}articles/1.svg");
+            }
+        }
+
+        &--author {
+            max-width: 140px;
+
+            &::before {
+                background-image: url("#{$img}articles/2.svg");
+            }
+
+            &:hover {
+                color: $title;
+            }
+
+            @extend %hover-link;
+        }
+    }
+
+    &__link {
+        display: inline-block;
+        margin-bottom: 25px;
+    }
+
+    &__title {
+        font-weight: 400;
+        font-size: 36px;
+        color: #333;
+
+        @extend %hover-link;
+    }
+
+    &__text {
+        margin-bottom: 30px;
+        line-height: 1.9;
+        color: $title;
+    }
+
+    &__more {
+        padding: 20px 20px 20px 19px;
+        border: 1px solid #d8d3cc;
+        border-radius: 5px;
+        color: $main;
+        background-color: transparent;
+
+        &:hover {
+            color: $bg;
+            background-color: $title;
+
+            svg {
+                fill: $bg;
+            }
+        }
+
+        svg {
+            fill: $main;
+        }
+
+        span {
+            padding-right: 42px;
+        }
+    }
+}
