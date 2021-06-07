@@ -1,90 +1,100 @@
-@@include('parts/_top.html', {
-    title: "Product list"
-})
-@@include('parts/_header.html')
+@@include('parts/_top.html', { title: "Product list" }) @@include('parts/_header.html')
 <main>
-    @@include('parts/_breadcrumbs.html', {title: "Product list" })
+    @@include('parts/_top-section.html', {title: "Product list" })
     <section class="product-list">
         <div class="container">
             <div class="product-list__inner">
                 @@include('parts/_aside.html')
                 <div class="product-list__content">
-                    <div class="product-list__nav">
-                        <button
-                            class="product-list__btn product-list__btn--grid"
-                            type="button"
-                        ></button>
-                        <button
-                            class="product-list__btn product-list__btn--list"
-                            type="button"
-                        ></button>
-                        <button
-                            class="product-list__btn product-list__btn--filter"
-                            type="button"
-                        ></button>
-                    </div>
+                    <ul class="product-list__nav">
+                        <li class="product-list__button">
+                            <button
+                                class="product-list__btn product-list__btn--grid"
+                                type="button"
+                            >
+                                <span class='visually-hidden'>Click to show grid</span>
+                            </button>
+                        </li>
+                        <li class="product-list__button">
+                            <button
+                                class="product-list__btn product-list__btn--list"
+                                type="button"
+                            >
+                                <span class='visually-hidden'>Click to show list</span>
+                            </button>
+                        </li>
+                        <li class="product-list__button">
+                            <button
+                                class="product-list__btn product-list__btn--filter"
+                                type="button"
+                            >
+                                <span class='visually-hidden'>Click to show filter</span>
+                            </button>
+                        </li>
+                    </ul>
                     <ul class="product-list__items">
                         <li class="product-list__item">
                             @@include('parts/_product-card.html', {
-                                "img": "images/product-card/1.png",
-                                "title": "Wooden radio",
-                                "price": "29.00",
-                                "text": "consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation"
-                            })
+                            "img": "images/product-card/1.png",
+                            "title": "Wooden radio",
+                            "price": "29.00",
+                            "text": "consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation" })
                         </li>
                         <li class="product-list__item">
                             @@include('parts/_product-card.html', {
-                                "img": "images/product-card/2.png",
-                                "title": "Wooden radio",
-                                "price": "29.00",
-                                "text": "consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation"
-                            })
+                            "img": "images/product-card/2.png",
+                            "title": "Wooden radio",
+                            "price": "29.00",
+                            "text": "consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation" })
                         </li>
                         <li class="product-list__item">
                             @@include('parts/_product-card.html', {
-                                "img": "images/product-card/3.png",
-                                "title": "Wooden radio",
-                                "price": "29.00",
-                                "text": "consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation"
-                            })
+                            "img": "images/product-card/3.png",
+                            "title": "Wooden radio",
+                            "price": "29.00",
+                            "text": "consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation" })
                         </li>
                         <li class="product-list__item">
                             @@include('parts/_product-card.html', {
-                                "img": "images/product-card/4.png",
-                                "title": "Wooden radio",
-                                "price": "29.00",
-                                "text": "consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation"
-                            })
+                            "img": "images/product-card/4.png",
+                            "title": "Wooden radio",
+                            "price": "29.00",
+                            "text": "consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation" })
                         </li>
                         <li class="product-list__item">
                             @@include('parts/_product-card.html', {
-                                "img": "images/product-card/5.png",
-                                "title": "Wooden radio",
-                                "price": "29.00",
-                                "text": "consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation"
-                            })
+                            "img": "images/product-card/5.png",
+                            "title": "Wooden radio",
+                            "price": "29.00",
+                            "text": "consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation" })
                         </li>
                         <li class="product-list__item">
                             @@include('parts/_product-card.html', {
-                                "img": "images/product-card/6.png",
-                                "title": "Wooden radio",
-                                "price": "29.00",
-                                "text": "consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation"
-                            })
+                            "img": "images/product-card/6.png",
+                            "title": "Wooden radio",
+                            "price": "29.00",
+                            "text": "consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation" })
                         </li>
                     </ul>
-                    <div class="pagination__navigation">
-                        <span class="pagination__button pagination__button--active">1</span>
-                        <a class="pagination__button" href='#'>2</a>
-                        <a class="pagination__button" href='#'>3</a>
-                        <a class="pagination__button pagination__button--text" href='#'>Next</a>
-                    </div>
+                    <ul class="pagination">
+                        <li class='pagination__item'>
+                            <span class="pagination__button pagination__button--active">1</span>
+                        </li>
+                        <li class='pagination__item'>
+                            <a class="pagination__button" href="#">2</a>
+                        </li>
+                        <li class='pagination__item'>
+                            <a class="pagination__button" href="#">3</a>
+                        </li>
+                        <li class='pagination__item'>
+                            <a class="pagination__button pagination__button--text" href="#">Next</a>
+                        </li>
+                    </ul>
                 </div>
-                <div class='aside__overlay'></div>
+                <div class="aside__overlay"></div>
             </div>
         </div>
     </section>
     @@include('parts/_company.html')
 </main>
-@@include('parts/_footer.html')
-@@include('parts/_bottom.html')
+@@include('parts/_footer.html') @@include('parts/_bottom.html')

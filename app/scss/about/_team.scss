@@ -12,7 +12,9 @@
 
     &__description {
         @include r($xl) {
-            margin-bottom: $mb30;
+            max-width: 550px;
+            width: 100%;
+            margin: 0 auto $mb30;
         }
     }
 
@@ -20,10 +22,14 @@
         @include line-clamp(1);
 
         margin-bottom: 21px;
-        font-family: "DM Sans", sans-serif;
+        font-family: $dm-sans;
         font-weight: 700;
         font-size: 36px;
         color: $title;
+
+        @include r($xl) {
+            text-align: center;
+        }
 
         @include r($lg) {
             margin-bottom: $mb15;
@@ -61,8 +67,12 @@
         width: 100%;
         max-width: 800px;
 
-        @include r($sm) {
-            margin: 0;
+        @include r($xl) {
+            margin: 0 auto;
+        }
+
+        @include r($lg) {
+            justify-content: center;
         }
     }
 
@@ -72,14 +82,13 @@
         width: 100%;
         max-width: 370px;
 
-        @include r($md) {
+        @include r($lg) {
             margin-bottom: $mb30;
             max-width: 300px;
         }
 
         @include r($sm) {
             margin: 0 0 $mb30;
-            max-width: 100%;
         }
     }
 
@@ -100,7 +109,7 @@
         box-shadow: 0 6px 57px rgba($grey-500, 0.05);
         background-color: $white;
 
-        @include r($md) {
+        @include r($lg) {
             position: relative;
             bottom: 0;
             flex-direction: column;
@@ -113,7 +122,8 @@
         @include line-clamp(1);
 
         margin-bottom: 15px;
-        font-family: "DM Sans", sans-serif;
+        max-width: 180px;
+        font-family: $dm-sans;
         font-weight: 700;
         font-size: 22px;
     }
@@ -121,9 +131,10 @@
     &__job {
         @include line-clamp(1);
 
+        max-width: 180px;
         color: $blue-200;
 
-        @include r($md) {
+        @include r($lg) {
             display: block;
             margin-bottom: $mb15;
         }
@@ -133,6 +144,12 @@
         display: flex;
     }
 
+    &__icon {
+        &:not(:last-child) {
+            margin-right: 7px;
+        }
+    }
+
     &__link {
         display: flex;
         align-items: center;
@@ -140,11 +157,7 @@
         width: 41px;
         height: 41px;
         border-radius: 50%;
-        background-color: #f6f6f6;
-
-        &:not(:last-child) {
-            margin-right: 7px;
-        }
+        background-color: $grey-50;
 
         svg {
             width: 18px;

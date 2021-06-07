@@ -1,11 +1,15 @@
 .pagination {
-    &__navigation {
-        display: flex;
-        margin-top: 40px;
-        margin-bottom: 120px;
+    display: flex;
+    margin-top: 40px;
+    margin-bottom: 120px;
 
-        @include r($md) {
-            margin-bottom: $mb50;
+    @include r($md) {
+        margin-bottom: $mb50;
+    }
+
+    &__item {
+        &:not(:last-child) {
+            margin-right: 16px;
         }
     }
 
@@ -23,10 +27,6 @@
         &:hover {
             color: $white;
             background-color: $main;
-        }
-
-        &:not(:last-child) {
-            margin-right: 16px;
         }
 
         svg {

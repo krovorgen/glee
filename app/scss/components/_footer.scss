@@ -91,33 +91,6 @@
     }
 }
 
-.menu-bottom {
-    &__items {
-        display: flex;
-
-        @include r($sm) {
-            justify-content: center;
-        }
-    }
-
-    &__item {
-        align-self: baseline;
-
-        &:not(:first-child) {
-            padding-left: 15px;
-            border-left: 1px solid $grey-200;
-        }
-
-        &:not(:last-child) {
-            margin-right: 15px;
-        }
-    }
-
-    &__link {
-        @extend %hover-link;
-    }
-}
-
 .address {
     width: 100%;
     max-width: 270px;

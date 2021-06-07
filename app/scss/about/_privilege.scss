@@ -1,6 +1,6 @@
 .privilege {
-    margin-bottom: 119px;
-    padding: 88px 0 79px;
+    margin-bottom: 120px;
+    padding: 90px 0 80px;
     background-color: $bg;
 
     @include r($lg) {
@@ -27,7 +27,7 @@
         position: relative;
         padding-top: 75px;
         width: 25%;
-        font-family: "DM Sans", sans-serif;
+        font-family: $dm-sans;
         font-weight: 700;
         font-size: 18px;
         text-align: center;

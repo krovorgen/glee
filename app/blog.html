@@ -1,5 +1,8 @@
-@@include('parts/_top.html', { title: "Product list" }) @@include('parts/_header.html')
-@@include('parts/_breadcrumbs.html', {title: "Blog" })
+@@include('parts/_top.html', { title: "Product list" })
+@@include('parts/_header.html')
+
+<main>
+@@include('parts/_top-section.html', {title: "Blog" })
 
 <section class="blog">
     <div class="container">
@@ -139,12 +142,20 @@
                         </a>
                     </li>
                 </ul>
-                <div class="pagination__navigation">
-                    <span class="pagination__button pagination__button--active">1</span>
-                    <a class="pagination__button" href="#">2</a>
-                    <a class="pagination__button" href="#">3</a>
-                    <a class="pagination__button pagination__button--text" href="#">Next</a>
-                </div>
+                <ul class="pagination">
+                    <li class='pagination__item'>
+                        <span class="pagination__button pagination__button--active">1</span>
+                    </li>
+                    <li class='pagination__item'>
+                        <a class="pagination__button" href="#">2</a>
+                    </li>
+                    <li class='pagination__item'>
+                        <a class="pagination__button" href="#">3</a>
+                    </li>
+                    <li class='pagination__item'>
+                        <a class="pagination__button pagination__button--text" href="#">Next</a>
+                    </li>
+                </ul>
             </div>
             <aside class="aside aside--right">
                 <div class="aside__item aside-category">
@@ -242,4 +253,8 @@
     </div>
 </section>
 
-@@include('parts/_company.html') @@include('parts/_footer.html') @@include('parts/_bottom.html')
+@@include('parts/_company.html')
+</main>
+
+@@include('parts/_footer.html')
+@@include('parts/_bottom.html')

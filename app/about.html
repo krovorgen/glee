@@ -1,10 +1,16 @@
-@@include('parts/_top.html', { title: "Product list" }) @@include('parts/_header.html')
-@@include('parts/_breadcrumbs.html', {title: "About Us" })
+@@include('parts/_top.html', { title: "Product list" })
+@@include('parts/_header.html')
 
-@@include('parts/about/_about.html')
-@@include('parts/about/_privilege.html')
-@@include('parts/about/_team.html')
+<main>
+    @@include('parts/_top-section.html', {title: "About Us" })
 
-@@include('parts/index/_articles.html', { addClass: "articles--with-company", })
-@@include('parts/_company.html', { addClass: "company--with-articles" })
-@@include('parts/_footer.html') @@include('parts/_bottom.html')
+    @@include('parts/about/_about.html')
+    @@include('parts/about/_privilege.html')
+    @@include('parts/about/_team.html')
+
+    @@include('parts/index/_articles.html', { addClass: "articles--with-company", })
+    @@include('parts/_company.html', { addClass: "company--with-articles" })
+</main>
+
+@@include('parts/_footer.html')
+@@include('parts/_bottom.html')
