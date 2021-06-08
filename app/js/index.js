@@ -84,15 +84,15 @@ $(function () {
         },
     });
 
-    $('.product-list__btn--grid').on('click', () => {
+    $('.filter-nav__btn--grid').on('click', () => {
         $('.product-list__content').removeClass('product-list__content--list');
     });
 
-    $('.product-list__btn--list').on('click', () => {
+    $('.filter-nav__btn--list').on('click', () => {
         $('.product-list__content').addClass('product-list__content--list');
     });
 
-    $('.product-list__btn--filter, .aside__overlay').on('click', () => {
+    $('.filter-nav__btn--filter, .aside__overlay').on('click', () => {
         $('.aside').toggleClass('aside--mobile');
         $('.aside__overlay').toggleClass('aside__overlay--active');
         $('body').toggleClass('body--with-menu');

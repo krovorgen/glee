@@ -76,6 +76,7 @@
     }
 
     &--mobile {
+        margin-left: 0;
         height: 100%;
         overflow-y: scroll;
         transform: translateX(0);
@@ -270,9 +271,9 @@
     }
 
     &__img-wrap {
+        margin-right: 20px;
         width: 70px;
         height: 70px;
-        margin-right: 20px;
     }
 
     &__img {
@@ -282,27 +283,26 @@
     }
 
     &__info {
-        max-width: 160px;
         width: 100%;
+        max-width: 160px;
     }
 
     &__title {
-        color: $grey-450;
-        font-size: 14px;
-        font-weight: 400;
-        line-height: 1.4;
         margin-bottom: 12px;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 1.4;
+        color: $grey-450;
 
         @extend %hover-link;
     }
 
     &__date {
-        color: $grey-90;
-        font-size: 12px;
-        font-weight: 400;
-        padding-left: 15px;
         position: relative;
-
+        padding-left: 15px;
+        font-weight: 400;
+        font-size: 12px;
+        color: $grey-90;
 
         &::before {
             content: "";
@@ -311,47 +311,50 @@
             top: 0;
             width: 13px;
             height: 13px;
+            background-image: url(../images/articles/1.svg);
             background-size: contain;
             background-repeat: no-repeat;
-            background-image: url(../images/articles/1.svg);
         }
     }
 }
 
-.aside-search {margin-bottom: 57px;
+.aside-search {
+    margin-bottom: 57px;
+
     &__form {
-        max-width: 270px;
-        width: 100%;
         position: relative;
+        width: 100%;
+        max-width: 270px;
     }
 
     &__input {
         padding: 0 58px 0 6px;
         width: 100%;
-        border-radius: 5px;
-        border: 1px solid $main;
         height: 43px;
+        border: 1px solid $main;
+        border-radius: 5px;
         background-color: rgba($white, 0.4);
     }
 
     &__btn {
         position: absolute;
-        top: 0;
         right: 0;
-        width: 48px;
-        height: 43px;
+        top: 0;
         display: flex;
         align-items: center;
         justify-content: center;
+        width: 48px;
+        height: 43px;
+        border: none;
         border-radius: 5px;
         background-color: $blue-50;
-        border: none;
 
-        @extend %hover-nav-header;
         svg {
             width: 18px;
             height: 18px;
             fill: #094074;
         }
+
+        @extend %hover-nav-header;
     }
 }

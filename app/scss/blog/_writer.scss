@@ -1,0 +1,86 @@
+.writer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 58px 0 64px;
+    padding: 24px 0;
+    border-top: 2px solid $grey-60;
+    border-bottom: 2px solid $grey-60;
+
+    @include r($md) {
+        flex-direction: column;
+        align-items: flex-start;
+        margin: 30px 0;
+    }
+
+    &__author {
+        display: flex;
+        align-items: center;
+
+        @include r($md) {
+            margin-bottom: $mb15;
+        }
+    }
+
+    &__avatar {
+        margin-right: 28px;
+    }
+
+    &__name {
+        display: block;
+        margin-bottom: 15px;
+        font-weight: 500;
+        font-size: 18px;
+        color: $grey-450;
+    }
+
+    &__job {
+        font-size: 16px;
+        color: #666;
+    }
+
+    &__tags {
+        display: flex;
+        margin-bottom: 10px;
+    }
+
+    &__about {
+        display: flex;
+
+        .writer__item {
+            &:not(:last-child) {
+                margin-right: 20px;
+            }
+        }
+    }
+
+    &__pretitle {
+        // какую то дичь тут писал.
+        // Какие альтернативы могут быть для одинакового размера заголовка линии
+        // и её контента и чтобы они были прижаты к левому краю?
+        margin-right: 28px;
+        min-width: 50px;
+        font-weight: 400;
+        color: $grey-450;
+    }
+
+    &__link {
+        font-weight: 400;
+        color: $grey-90;
+
+        @extend %hover-link;
+    }
+
+    &__items {
+        display: flex;
+    }
+
+    &__social {
+        svg {
+            fill: $grey-90;
+            background-size: contain;
+        }
+
+        @extend %hover-link;
+    }
+}

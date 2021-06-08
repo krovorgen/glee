@@ -1,0 +1,427 @@
+<link rel="stylesheet" href="scss/components/_aside.scss" />@@include('parts/_top.html', { title:
+"Product list" }) @@include('parts/_header.html')
+
+<main>
+    @@include('parts/_top-section.html', {title: "Blog Details" })
+
+    <section class="blog">
+        <div class="container">
+            <div class="blog__inner">
+                <div class="blog__content">
+                    <ul class="filter-nav">
+                        <li class="filter-nav__button">
+                            <button
+                                class="filter-nav__btn filter-nav__btn--filter"
+                                type="button"
+                            >
+                                <span class='visually-hidden'>Click to show filter</span>
+                            </button>
+                        </li>
+                    </ul>
+                    <div class="blog__wrap">
+                        <img
+                            class="blog__img"
+                            src="images/blog/1.png"
+                            width="830"
+                            height="501"
+                            alt="blog picture"
+                        />
+                        <div class="blog__calendar">
+                            <time class="blog__descr blog__descr--date" datetime="2020-01-28">
+                                28 JANUARY, 2020
+                            </time>
+                            <a class="blog__descr blog__descr--author" href="#">BY ADMIN</a>
+                        </div>
+                    </div>
+                    <h2 class="blog__title blog__title--text">Fonsectetur adipisicing eiusmod</h2>
+                    <p class="blog__text blog__text--accent">
+                        Sdipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna
+                        aliqua. Ut enim ad minim venia Lorem ipsum dolor sit amet, consectetur
+                        adipisicing elit,
+                    </p>
+                    <p class="blog__text">
+                        consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et
+                        dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+                        ullamco laboris nisi ut alLorem ipsum dolor sit amet, consectetur
+                        adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna
+                        aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
+                        nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
+                        reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+                        pariatur.
+                    </p>
+                    <blockquote class="blog__blockquote">
+                        Sdipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna
+                        aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
+                        <cite class="blog__author"> Wiusmod tempor </cite>
+                    </blockquote>
+                    <div class="blog__with-picture">
+                        <img
+                            class="blog__picture"
+                            src="images/blog/1.png"
+                            width="322"
+                            height="209"
+                            alt=""
+                        />
+                        <div class="blog__info">
+                            <h3 class="blog__pretitle">Riusmod tempor incididunt</h3>
+                            <p class="blog__text blog__text--light">
+                                consectetur adipisicing elit, sed do eiusmod tempor incididunt ut
+                                labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+                                exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                            </p>
+                        </div>
+                    </div>
+                    <h3 class="blog__pretitle">Kajtsal jervcm eoaspckred</h3>
+                    <p class="blog__text blog__text--light">
+                        consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et
+                        dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+                        ullamco laboris nisi ut aliquip ex ea commodo
+                    </p>
+                    <div class="writer">
+                        <div class="writer__author">
+                            <img
+                                class="writer__avatar"
+                                src="images/blog/avatar-1.png"
+                                alt="Mark N. Hernandez"
+                                width="76"
+                                height="76"
+                            />
+                            <div class="writer__status">
+                                <span class="writer__name">Mark N. Hernandez</span>
+                                <span class="writer__job">Designer</span>
+                            </div>
+                        </div>
+                        <div class="writer__info">
+                            <div class="writer__tags">
+                                <h4 class="writer__pretitle">Tags:</h4>
+                                <ul class="writer__items">
+                                    <li class="writer__item">
+                                        <a class="writer__link" href="#">All,&nbsp;</a>
+                                    </li>
+                                    <li class="writer__item">
+                                        <a class="writer__link" href="#">Trending</a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="writer__about">
+                                <h4 class="writer__pretitle">Share:</h4>
+                                <ul class="writer__items">
+                                    <li class="writer__item">
+                                        <a class="writer__social" href="#">
+                                            <svg width="9" height="16">
+                                                <use xlink:href="images/sprite.svg#facebook"></use>
+                                            </svg>
+                                        </a>
+                                    </li>
+                                    <li class="writer__item">
+                                        <a class="writer__social" href="#">
+                                            <svg width="15" height="13">
+                                                <use xlink:href="images/sprite.svg#twitter"></use>
+                                            </svg>
+                                        </a>
+                                    </li>
+                                    <li class="writer__item">
+                                        <a class="writer__social" href="#">
+                                            <svg width="15" height="14">
+                                                <use xlink:href="images/sprite.svg#instagram"></use>
+                                            </svg>
+                                        </a>
+                                    </li>
+                                    <li class="writer__item">
+                                        <a class="writer__social" href="#">
+                                            <svg width="19" height="12">
+                                                <use xlink:href="images/sprite.svg#google+"></use>
+                                            </svg>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="comments">
+                        <p class="comments__title">3 Comments</p>
+                        <ul class="comments__items">
+                            <li class="comments__item">
+                                <div class="comments__avatar-wrap">
+                                    <img
+                                        class="comments__avatar"
+                                        src="images/blog/avatar-2.png"
+                                        alt="name"
+                                    />
+                                </div>
+                                <div class="comments__info">
+                                    <div class="comments__top">
+                                        <span class="comments__author">Delores G. Roberts</span>
+                                        <time class="comments__date" datetime="2020-10-11">
+                                            Add 11 Oct 2020
+                                        </time>
+                                    </div>
+                                    <p class="comments__text">
+                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                                        Maecenas fringilla massa et tristique convallis. Class
+                                        aptent taciti sociosqu ad litora torquent per conubia
+                                        nostra, per inceptos himenaeos. Suspendisse orci sem,
+                                        ultrices
+                                    </p>
+                                    <a class="comments__link" href="#">
+                                        Reply
+                                        <svg>
+                                            <use xlink:href="images/sprite.svg#arrow-right"></use>
+                                        </svg>
+                                    </a>
+                                </div>
+                            </li>
+                            <li class="comments__item comments__item--reply">
+                                <div class="comments__avatar-wrap">
+                                    <img
+                                        class="comments__avatar"
+                                        src="images/blog/avatar-3.png"
+                                        alt="name"
+                                    />
+                                </div>
+                                <div class="comments__info">
+                                    <div class="comments__top">
+                                        <span class="comments__author">Shannon S. Williams</span>
+                                        <time class="comments__date" datetime="2020-10-11">
+                                            Add 11 Oct 2020
+                                        </time>
+                                    </div>
+                                    <p class="comments__text">
+                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                                        Maecenas fringilla massa et tristique convallis. Class
+                                        aptent taciti sociosqu ad litora torquent per conubia nostra
+                                    </p>
+                                    <a class="comments__link" href="#">
+                                        Reply
+                                        <svg>
+                                            <use xlink:href="images/sprite.svg#arrow-right"></use>
+                                        </svg>
+                                    </a>
+                                </div>
+                            </li>
+                            <li class="comments__item">
+                                <div class="comments__avatar-wrap">
+                                    <img
+                                        class="comments__avatar"
+                                        src="images/blog/avatar-4.png"
+                                        alt="name"
+                                    />
+                                </div>
+                                <div class="comments__info">
+                                    <div class="comments__top">
+                                        <span class="comments__author">Nicholas R. Coley</span>
+                                        <time class="comments__date" datetime="2020-10-11">
+                                            Add 11 Oct 2020
+                                        </time>
+                                    </div>
+                                    <p class="comments__text">
+                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                                        Maecenas fringilla massa et tristique convallis. Class
+                                        aptent taciti sociosqu ad litora torquent per conubia
+                                        nostra, per inceptos himenaeos. Suspendisse orci sem,
+                                    </p>
+                                    <a class="comments__link" href="#">
+                                        Reply
+                                        <svg>
+                                            <use xlink:href="images/sprite.svg#arrow-right"></use>
+                                        </svg>
+                                    </a>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class='form-comment'>
+                        <h3 class='form-comment__title'>Leave A Comment</h3>
+                        <form class="form-comment__form" action="#">
+                            <div class="form-comment__top">
+                                <label class="form-comment__label form-comment__label--name">
+                                    <input
+                                        class="form-comment__item"
+                                        type="text"
+                                        id="name_input"
+                                        name="request[name]"
+                                        placeholder='Name'
+                                    />
+                                    <svg width='14' height='14'>
+                                        <use xlink:href="images/sprite.svg#silhouette"></use>
+                                    </svg>
+                                </label>
+                                <label class="form-comment__label form-comment__label--email">
+                                    <svg width='18' height='13'>
+                                        <use xlink:href="images/sprite.svg#mail"></use>
+                                    </svg>
+                                    <input
+                                        class="form-comment__item form-comment__item--email"
+                                        id="email_input"
+                                        type="text"
+                                        name="request[email]"
+                                        placeholder='Email'
+                                    />
+                                </label>
+                            </div>
+                            <label class="form-comment__label">
+                                <svg width='18' height='15'>
+                                    <use xlink:href="images/sprite.svg#message"></use>
+                                </svg>
+                                <textarea
+                                    class="form-comment__item form-comment__item--textarea"
+                                    id="text_text"
+                                    placeholder='Comments'
+                                    name="request[text]"
+                                ></textarea>
+                            </label>
+                            <button class="form-btn form-comment__button" type="submit">
+                                Post Comment
+                            </button>
+                        </form>
+                    </div>
+                </div>
+                <aside class="aside aside--right">
+                    <div class="aside__item aside-search">
+                        <form class="aside-search__form">
+                            <label class="visually-hidden" for="text_input">Enter text</label>
+                            <input
+                                class="aside-search__input"
+                                type="text"
+                                required
+                                id="text_input"
+                                name="request[text]"
+                            />
+                            <button class="aside-search__btn" type="submit">
+                                <svg>
+                                    <use xlink:href="images/sprite.svg#search-2"></use>
+                                </svg>
+                            </button>
+                        </form>
+                    </div>
+                    <div class="aside__item aside-category">
+                        <h3 class="aside__title">Category</h3>
+                        <form class="aside-category__form">
+                            <label class="aside-category__label">
+                                <input
+                                    class="aside-category__input visually-hidden"
+                                    type="checkbox"
+                                />
+                                <span class="aside-category__checkbox">Chair</span>
+                            </label>
+                            <label class="aside-category__label">
+                                <input
+                                    class="aside-category__input visually-hidden"
+                                    type="checkbox"
+                                />
+                                <span class="aside-category__checkbox">Table</span>
+                            </label>
+                            <label class="aside-category__label">
+                                <input
+                                    class="aside-category__input visually-hidden"
+                                    type="checkbox"
+                                />
+                                <span class="aside-category__checkbox">Lamp</span>
+                            </label>
+                            <label class="aside-category__label">
+                                <input
+                                    class="aside-category__input visually-hidden"
+                                    type="checkbox"
+                                />
+                                <span class="aside-category__checkbox">Watch</span>
+                            </label>
+                            <label class="aside-category__label">
+                                <input
+                                    class="aside-category__input visually-hidden"
+                                    type="checkbox"
+                                />
+                                <span class="aside-category__checkbox">Clock</span>
+                            </label>
+                        </form>
+                    </div>
+                    <div class="aside__item aside-posts">
+                        <h3 class="aside__title">Recent products</h3>
+                        <ul class="aside-posts__list">
+                            <li class="aside-posts__item">
+                                <div class="aside-posts__img-wrap">
+                                    <img
+                                        class="aside-posts__img"
+                                        src="images/blog/blog-1.jpg"
+                                        alt="product"
+                                    />
+                                </div>
+                                <div class="aside-posts__info">
+                                    <a class="aside-resent__info" href="#">
+                                        <h3 class="aside-posts__title">
+                                            Corem ipsum dolor tetur adipisicing elit
+                                        </h3>
+                                    </a>
+                                    <time class="aside-posts__date" datetime="2020-01-28">
+                                        28 JANUARY, 2020
+                                    </time>
+                                </div>
+                            </li>
+                            <li class="aside-posts__item">
+                                <div class="aside-posts__img-wrap">
+                                    <img
+                                        class="aside-posts__img"
+                                        src="images/blog/blog-2.jpg"
+                                        alt="product"
+                                    />
+                                </div>
+                                <div class="aside-posts__info">
+                                    <a class="aside-resent__info" href="#">
+                                        <h3 class="aside-posts__title">
+                                            Fdipisicing elit, sed do eiusmod tempor
+                                        </h3>
+                                    </a>
+                                    <time class="aside-posts__date" datetime="2020-01-28"
+                                        >28 JANUARY, 2020</time
+                                    >
+                                </div>
+                            </li>
+                            <li class="aside-posts__item">
+                                <div class="aside-posts__img-wrap">
+                                    <img
+                                        class="aside-posts__img"
+                                        src="images/blog/blog-3.jpg"
+                                        alt="product"
+                                    />
+                                </div>
+                                <div class="aside-posts__info">
+                                    <a class="aside-resent__info" href="#">
+                                        <h3 class="aside-posts__title">
+                                            Eonsectetur adipisicing elit, sed do eiusmod
+                                        </h3>
+                                    </a>
+                                    <time class="aside-posts__date" datetime="2020-01-28"
+                                        >28 JANUARY, 2020</time
+                                    >
+                                </div>
+                            </li>
+                            <li class="aside-posts__item">
+                                <div class="aside-posts__img-wrap">
+                                    <img
+                                        class="aside-posts__img"
+                                        src="images/blog/blog-4.jpg"
+                                        alt="product"
+                                    />
+                                </div>
+                                <div class="aside-posts__info">
+                                    <a class="aside-resent__info" href="#">
+                                        <h3 class="aside-posts__title">
+                                            gnim ad minim veniam, quis nostrud
+                                        </h3>
+                                    </a>
+                                    <time class="aside-posts__date" datetime="2020-01-28"
+                                        >28 JANUARY, 2020</time
+                                    >
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </aside>
+                <div class="aside__overlay"></div>
+            </div>
+        </div>
+    </section>
+
+    @@include('parts/_company.html')
+</main>
+
+@@include('parts/_footer.html') @@include('parts/_bottom.html')

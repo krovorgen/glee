@@ -1,5 +1,5 @@
-<link rel="stylesheet" href="scss/components/_aside.scss" />@@include('parts/_top.html', { title:
-"Product list" }) @@include('parts/_header.html')
+@@include('parts/_top.html', { title: "Product list" })
+@@include('parts/_header.html')
 
 <main>
     @@include('parts/_top-section.html', {title: "Blog" })
@@ -8,150 +8,49 @@
         <div class="container">
             <div class="blog__inner">
                 <div class="blog__content">
+                    <ul class="filter-nav">
+                        <li class="filter-nav__button">
+                            <button class="filter-nav__btn filter-nav__btn--filter" type="button">
+                                <span class="visually-hidden">Click to show filter</span>
+                            </button>
+                        </li>
+                    </ul>
                     <ul class="blog__items">
                         <li class="blog__item">
-                            <div class="blog__wrap">
-                                <img
-                                    class="blog__img"
-                                    src="images/blog/1.png"
-                                    width="830"
-                                    height="501"
-                                    alt="blog picture"
-                                />
-                                <div class="blog__calendar">
-                                    <time
-                                        class="blog__descr blog__descr--date"
-                                        datetime="2020-01-28"
-                                    >
-                                        28 JANUARY, 2020
-                                    </time>
-                                    <a class="blog__descr blog__descr--author" href="#">BY ADMIN</a>
-                                </div>
-                            </div>
-                            <a class="blog__link" href="#">
-                                <h2 class="blog__title">Fonsectetur adipisicing eiusmod</h2>
-                            </a>
-                            <p class="blog__text">
-                                consectetur adipisicing elit, sed do eiusmod tempor incididunt ut
-                                labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
-                                exercitation ullamco laboris nisi ut alLorem ipsum dolor sit amet,
-                                consectetur adipisicing elit, sed do eiusmod tempor incididunt ut
-                                labore et dolore magna
-                            </p>
-                            <a class="shop-link blog__more" href="#">
-                                <span>View More</span>
-                                <svg>
-                                    <use xlink:href="images/sprite.svg#arrow-right"></use>
-                                </svg>
-                            </a>
+                            @@include('parts/blog/_blog-article.html', {
+                                img: "images/blog/1.png",
+                                time: "28 JANUARY, 2020",
+                                author: "BY ADMIN",
+                                title: "Fonsectetur adipisicing eiusmod",
+                                text: "consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut alLorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna",
+                            })
                         </li>
                         <li class="blog__item">
-                            <div class="blog__wrap">
-                                <img
-                                    class="blog__img"
-                                    src="images/blog/2.png"
-                                    width="830"
-                                    height="501"
-                                    alt="blog picture"
-                                />
-                                <div class="blog__calendar">
-                                    <time
-                                        class="blog__descr blog__descr--date"
-                                        datetime="2020-01-28"
-                                    >
-                                        28 JANUARY, 2020
-                                    </time>
-                                    <a class="blog__descr blog__descr--author" href="#">BY ADMIN</a>
-                                </div>
-                            </div>
-                            <a class="blog__link" href="#">
-                                <h2 class="blog__title">Fonsectetur adipisicing elit,</h2>
-                            </a>
-                            <p class="blog__text">
-                                consectetur adipisicing elit, sed do eiusmod tempor incididunt ut
-                                labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
-                                exercitation ullamco laboris nisi ut alLorem ipsum dolor sit amet,
-                                consectetur adipisicing elit, sed do eiusmod tempor incididunt ut
-                                labore et dolore magna
-                            </p>
-                            <a class="shop-link blog__more" href="#">
-                                <span>View More</span>
-                                <svg>
-                                    <use xlink:href="images/sprite.svg#arrow-right"></use>
-                                </svg>
-                            </a>
+                            @@include('parts/blog/_blog-article.html', {
+                                img: "images/blog/2.png",
+                                time: "28 JANUARY, 2020",
+                                author: "BY ADMIN",
+                                title: "Fonsectetur adipisicing elit,",
+                                text: "consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut alLorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna",
+                            })
                         </li>
                         <li class="blog__item">
-                            <div class="blog__wrap">
-                                <img
-                                    class="blog__img"
-                                    src="images/blog/3.png"
-                                    width="830"
-                                    height="501"
-                                    alt="blog picture"
-                                />
-                                <div class="blog__calendar">
-                                    <time
-                                        class="blog__descr blog__descr--date"
-                                        datetime="2020-01-28"
-                                    >
-                                        28 JANUARY, 2020
-                                    </time>
-                                    <a class="blog__descr blog__descr--author" href="#">BY ADMIN</a>
-                                </div>
-                            </div>
-                            <a class="blog__link" href="#">
-                                <h2 class="blog__title">Fsectetur adipisicing tempor incididunt</h2>
-                            </a>
-                            <p class="blog__text">
-                                consectetur adipisicing elit, sed do eiusmod tempor incididunt ut
-                                labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
-                                exercitation ullamco laboris nisi ut alLorem ipsum dolor sit amet,
-                                consectetur adipisicing elit, sed do eiusmod tempor incididunt ut
-                                labore et dolore magna
-                            </p>
-                            <a class="shop-link blog__more" href="#">
-                                <span>View More</span>
-                                <svg>
-                                    <use xlink:href="images/sprite.svg#arrow-right"></use>
-                                </svg>
-                            </a>
+                            @@include('parts/blog/_blog-article.html', {
+                                img: "images/blog/3.png",
+                                time: "28 JANUARY, 2020",
+                                author: "BY ADMIN",
+                                title: "Fsectetur adipisicing tempor incididunt",
+                                text: "consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut alLorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna",
+                            })
                         </li>
                         <li class="blog__item">
-                            <div class="blog__wrap">
-                                <img
-                                    class="blog__img"
-                                    src="images/blog/4.png"
-                                    width="830"
-                                    height="501"
-                                    alt="blog picture"
-                                />
-                                <div class="blog__calendar">
-                                    <time
-                                        class="blog__descr blog__descr--date"
-                                        datetime="2020-01-28"
-                                    >
-                                        28 JANUARY, 2020
-                                    </time>
-                                    <a class="blog__descr blog__descr--author" href="#">BY ADMIN</a>
-                                </div>
-                            </div>
-                            <a class="blog__link" href="#">
-                                <h2 class="blog__title">vonsectetur adipisicing elit</h2>
-                            </a>
-                            <p class="blog__text">
-                                consectetur adipisicing elit, sed do eiusmod tempor incididunt ut
-                                labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
-                                exercitation ullamco laboris nisi ut alLorem ipsum dolor sit amet,
-                                consectetur adipisicing elit, sed do eiusmod tempor incididunt ut
-                                labore et dolore magna
-                            </p>
-                            <a class="shop-link blog__more" href="#">
-                                <span>View More</span>
-                                <svg>
-                                    <use xlink:href="images/sprite.svg#arrow-right"></use>
-                                </svg>
-                            </a>
+                            @@include('parts/blog/_blog-article.html', {
+                                img: "images/blog/4.png",
+                                time: "28 JANUARY, 2020",
+                                author: "BY ADMIN",
+                                title: "vonsectetur adipisicing elit",
+                                text: "consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut alLorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna",
+                            })
                         </li>
                     </ul>
                     <ul class="pagination">
@@ -169,10 +68,11 @@
                         </li>
                     </ul>
                 </div>
+                <div class="aside__overlay"></div>
                 <aside class="aside aside--right">
                     <div class="aside__item aside-search">
                         <form class="aside-search__form">
-                            <label class="visually-hidden" for='text_input'>Enter text</label>
+                            <label class="visually-hidden" for="text_input">Enter text</label>
                             <input
                                 class="aside-search__input"
                                 type="text"
