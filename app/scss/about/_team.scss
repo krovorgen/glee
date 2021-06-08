@@ -126,6 +126,7 @@
         font-family: $dm-sans;
         font-weight: 700;
         font-size: 22px;
+        text-overflow: clip;
     }
 
     &__job {
@@ -133,6 +134,7 @@
 
         max-width: 180px;
         color: $blue-200;
+        text-overflow: clip;
 
         @include r($lg) {
             display: block;
