@@ -1,0 +1,53 @@
+.terms {
+    margin-bottom: 120px;
+    counter-reset: terms;
+
+    &__title {
+        margin-bottom: 30px;
+        font-weight: 500;
+        font-size: 24px;
+        color: $title;
+        @include r($md) {
+            margin-bottom: $mb15;
+        }
+    }
+
+    &__text {
+        margin-bottom: 70px;
+        color: $title;
+
+        @include r($md) {
+            margin-bottom: $mb30;
+        }
+    }
+
+    &__items {
+        margin-bottom: 75px;
+
+        @include r($md) {
+            margin-bottom: $mb30;
+        }
+    }
+
+    &__item {
+        position: relative;
+        padding-left: 35px;
+        color: $title;
+
+        &::before {
+            content: "0"counter(terms);
+            position: absolute;
+            left: 0;
+            top: 0;
+            counter-increment: terms;
+        }
+
+        &:not(:last-child) {
+            margin-bottom: 30px;
+
+            @include r($md) {
+                margin-bottom: $mb15;
+            }
+        }
+    }
+}

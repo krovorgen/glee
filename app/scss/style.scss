@@ -16,8 +16,8 @@
 @import "components/product-list";
 @import "components/aside";
 @import "components/pagination";
-@import "blog/blog";
 @import "components/filter-nav";
+@import "terms/terms";
 
 // card
 @import "components/gallery-nav";
@@ -42,6 +42,7 @@
 @import "blog/writer";
 @import "blog/comments";
 @import "blog/form-comment";
+@import "blog/blog";
 
 @media (max-width: $lg + "px") {
     .advantages,
@@ -54,7 +55,8 @@
     .team,
     .top-section,
     .form-comment,
-    .comments {
+    .comments,
+    .terms {
         margin-bottom: $mb50;
     }
 }
