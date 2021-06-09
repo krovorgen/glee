@@ -98,3 +98,14 @@ iframe {
 label {
     cursor: pointer;
 }
+
+.form-btn {
+    padding: 12px 16px;
+    border: none;
+    font-family: $dm-sans;
+    font-weight: 400;
+    color: $white;
+    background-color: $main;
+
+    @extend %hover-nav-header;
+}

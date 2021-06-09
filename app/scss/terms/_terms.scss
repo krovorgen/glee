@@ -3,17 +3,19 @@
     counter-reset: terms;
 
     &__title {
-        margin-bottom: 30px;
+        margin-bottom: 20px;
         font-weight: 500;
         font-size: 24px;
         color: $title;
+
         @include r($md) {
             margin-bottom: $mb15;
         }
     }
 
     &__text {
-        margin-bottom: 70px;
+        margin-bottom: 52px;
+        line-height: 1.9;
         color: $title;
 
         @include r($md) {
@@ -22,7 +24,7 @@
     }
 
     &__items {
-        margin-bottom: 75px;
+        margin-bottom: 61px;
 
         @include r($md) {
             margin-bottom: $mb30;
@@ -31,11 +33,13 @@
 
     &__item {
         position: relative;
-        padding-left: 35px;
+        margin-left: 5px;
+        padding-left: 34px;
+        line-height: 1.9;
         color: $title;
 
         &::before {
-            content: "0"counter(terms);
+            content: "0"counter(terms) ".";
             position: absolute;
             left: 0;
             top: 0;
@@ -43,7 +47,7 @@
         }
 
         &:not(:last-child) {
-            margin-bottom: 30px;
+            margin-bottom: 20px;
 
             @include r($md) {
                 margin-bottom: $mb15;

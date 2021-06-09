@@ -1,12 +1,34 @@
-@@include('parts/_top.html', { title: "Log in" })
-@@include('parts/_header.html')
+@@include('parts/_top.html', { title: "Log in" }) @@include('parts/_header.html')
 
 <main>
     @@include('parts/_top-section.html', {title: "Log in" })
 
+    <div class="login">
+        <div class="container">
+            <form action="#" class="login__form">
+                <label class="login__label">
+                    <span>Username or email address *</span>
+                    <input type="email" id="login_email" name="request[email]" required />
+                </label>
+                <label class="login__label">
+                    <span>Password *</span>
+                    <input type="password" id="login_password" name="request[password]" required />
+                </label>
+                <button class="form-btn login__button" type="submit">Login</button>
+                <div class="login__wrap">
+                    <label class="login__label">
+                        <input type="checkbox" class="login__checkbox" />
+                        Remember me
+                    </label>
+                    <a class="login__link" href="#">Lost your password?</a>
+                </div>
+                <a class="login__link login__link--solo" href="#">Lost your password?</a>
+                <button class="form-btn form-btn--light login__button" type="button">Create an account</button>
+            </form>
+        </div>
+    </div>
 
     @@include('parts/_company.html')
 </main>
 
-@@include('parts/_footer.html')
-@@include('parts/_bottom.html')
+@@include('parts/_footer.html') @@include('parts/_bottom.html')
