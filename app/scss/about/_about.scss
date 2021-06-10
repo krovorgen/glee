@@ -160,15 +160,15 @@
         }
 
         &--projects::before {
-            background-image: url("../images/about/about-1.svg");
+            background-image: url("#{$img}about/about-1.svg");
         }
 
         &--revenue::before {
-            background-image: url("../images/about/about-2.svg");
+            background-image: url("#{$img}about/about-2.svg");
         }
 
         &--awards::before {
-            background-image: url("../images/about/about-3.svg");
+            background-image: url("#{$img}about/about-3.svg");
         }
     }
 

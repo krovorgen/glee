@@ -1,12 +1,74 @@
-@@include('parts/_top.html', { title: "Product Detalis" })
-@@include('parts/_header.html')
+@@include('parts/_top.html', { title: "Product Detalis" }) @@include('parts/_header.html')
 
 <main>
     @@include('parts/_top-section.html', {title: "Product Detalis" })
+
+    <section class="product-details">
+        <div class="container">
+            <div class="product-details__inner">
+                <div class="product-details__img-wrap">
+                    <img
+                        class="product-details__img"
+                        src="images/product-details/1.png"
+                        alt="Pendant lamp"
+                    />
+                    <img
+                        class="product-details__img product-details__img--big"
+                        src="images/product-details/4.png"
+                        alt="Pendant lamp"
+                    />
+                    <img
+                        class="product-details__img"
+                        src="images/product-details/2.png"
+                        alt="Pendant lamp"
+                    />
+                    <img
+                        class="product-details__img"
+                        src="images/product-details/3.png"
+                        alt="Pendant lamp"
+                    />
+                </div>
+                <div class="product-details__info">
+                    <h2 class="product-details__title">Pendant lamp</h2>
+                    <div class="product-details__star" data-rateyo-rating="3"></div>
+                    <span class="product-details__price">23 <span>$</span></span>
+                    <p class="product-details__text">
+                        consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et
+                        dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+                        ullamco laboris nisi ut aliquip ex ea commodo
+                    </p>
+                    <div class="product-details__navigation">
+                        <div class="product-details__counter">
+                            <button
+                                class="product-details__meter product-details__meter--minus"
+                                type="button"
+                            >
+                                -
+                            </button>
+                            <input
+                                class="product-details__meter"
+                                id="product-counter"
+                                type="number"
+                            />
+                            <button
+                                class="product-details__meter product-details__meter--plus"
+                                type="button"
+                            >
+                                +
+                            </button>
+                            <label for="product-counter" class="visually-hidden">
+                                How many items have been selected
+                            </label>
+                        </div>
+                        <button class='form-btn product-details__button' type='submit'>Add to cart</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
     @@include('parts/index/_articles.html', { addClass: "articles--with-company", })
     @@include('parts/_company.html', { addClass: "company--with-articles" })
 </main>
 
-@@include('parts/_footer.html')
-@@include('parts/_bottom.html')
+@@include('parts/_footer.html') @@include('parts/_bottom.html')

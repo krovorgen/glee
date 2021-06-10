@@ -57,19 +57,19 @@
         }
 
         &--rate::before {
-            background-image: url("../images/about/1.svg");
+            background-image: url("#{$img}about/1.svg");
         }
 
         &--delivered::before {
-            background-image: url("../images/about/2.svg");
+            background-image: url("#{$img}about/2.svg");
         }
 
         &--time::before {
-            background-image: url("../images/about/3.svg");
+            background-image: url("#{$img}about/3.svg");
         }
 
         &--brands::before {
-            background-image: url("../images/about/4.svg");
+            background-image: url("#{$img}about/4.svg");
         }
     }
 

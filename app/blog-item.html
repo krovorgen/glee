@@ -19,7 +19,11 @@
                     @@include('parts/blog/_blog-item.html')
                     @@include('parts/blog/_writer.html')
                     @@include('parts/blog/_comments.html')
-                    @@include('parts/blog/_form-comment.html')
+                    @@include('parts/_form-comment.html', {
+                        title: "Leave A Comment",
+                        btnText: "Post Comment",
+                        textareaText: "Comments"
+                    })
                 </div>
                 @@include('parts/blog/_aside.html')
             </div>

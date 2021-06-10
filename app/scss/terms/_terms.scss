@@ -2,7 +2,7 @@
     margin-bottom: 120px;
     counter-reset: terms;
 
-    &__title {
+    h2 {
         margin-bottom: 20px;
         font-weight: 500;
         font-size: 24px;
@@ -13,7 +13,7 @@
         }
     }
 
-    &__text {
+    p {
         margin-bottom: 52px;
         line-height: 1.9;
         color: $title;
@@ -23,7 +23,7 @@
         }
     }
 
-    &__items {
+    ul {
         margin-bottom: 61px;
 
         @include r($md) {
@@ -31,7 +31,7 @@
         }
     }
 
-    &__item {
+    li {
         position: relative;
         margin-left: 5px;
         padding-left: 34px;

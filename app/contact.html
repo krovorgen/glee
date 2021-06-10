@@ -1,12 +1,69 @@
-@@include('parts/_top.html', { title: "Contact" })
-@@include('parts/_header.html')
+@@include('parts/_top.html', { title: "Contact" }) @@include('parts/_header.html')
 
 <main>
     @@include('parts/_top-section.html', {title: "Contact" })
+
+    <section class="contact">
+        <div class="container">
+            <h2 class="contact__title"><span>Write Here</span>Get In Touch</h2>
+            <address class="contact__address">
+                <ul class="contact__items">
+                    <li class="contact__item">
+                        <div class="contact__img-wrap">
+                            <svg width="31" height="44">
+                                <use xlink:href="images/sprite.svg#address"></use>
+                            </svg>
+                        </div>
+                        <h3 class="contact__pretitle">Address</h3>
+                        <a class="contact__link" href="#">
+                            <p class="contact__text">2416 Mapleview Drive</p>
+                            <p class="contact__text">Tampa, FL 33634</p>
+                        </a>
+                    </li>
+                    <li class="contact__item">
+                        <div class="contact__img-wrap">
+                            <svg width="37" height="35">
+                                <use xlink:href="images/sprite.svg#email"></use>
+                            </svg>
+                        </div>
+                        <h3 class="contact__pretitle">Our Email</h3>
+                        <p class="contact__text">
+                            Main Email : <a class="contact__link" href="mailto:contact@website.com">contact@website.com</a>
+                        </p>
+                        <p class="contact__text">
+                            Inquiries : <a class="contact__link" href="mailto:Info@mail.com">Info@mail.com</a>
+                        </p>
+                    </li>
+                    <li class="contact__item">
+                        <div class="contact__img-wrap">
+                            <svg width="37" height="45">
+                                <use xlink:href="images/sprite.svg#phone"></use>
+                            </svg>
+                        </div>
+                        <h3 class="contact__pretitle">Our Phone</h3>
+                        <p class="contact__text">
+                            Office Telephone : <a class="contact__link" href="tel:0029129102320">0029129102320</a>
+                        </p>
+                        <p class="contact__text">
+                            Mobile : <a class="contact__link" href="tel:000232439493">000 2324 39493</a>
+                        </p>
+                    </li>
+                </ul>
+            </address>
+            <div class="contact__wrap">
+                @@include('parts/_form-comment.html', {
+                    btnText: "Send message",
+                    btnClass: "form-comment__button--sm",
+                    addClass: "contact__form",
+                    textareaText: "Message"
+                })
+                <img class='contact__img' src="images/map.png" width='500' height='334' alt="Map" />
+            </div>
+        </div>
+    </section>
 
     @@include('parts/index/_articles.html', { addClass: "articles--with-company", })
     @@include('parts/_company.html', { addClass: "company--with-articles" })
 </main>
 
-@@include('parts/_footer.html')
-@@include('parts/_bottom.html')
+@@include('parts/_footer.html') @@include('parts/_bottom.html')

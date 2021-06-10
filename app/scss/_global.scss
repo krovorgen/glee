@@ -101,11 +101,22 @@ label {
 
 .form-btn {
     padding: 12px 16px;
-    border: none;
+    border: 2px solid transparent;
     font-family: $dm-sans;
     font-weight: 400;
     color: $white;
     background-color: $main;
+
+    &--light {
+        border-color: $main;
+        color: $title;
+        background-color: $white;
+
+        &:hover {
+            border-color: transparent;
+            color: $white;
+        }
+    }
 
     @extend %hover-nav-header;
 }

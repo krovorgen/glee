@@ -1,5 +1,7 @@
-<div class="form-comment">
-    <h3 class="form-comment__title">Leave A Comment</h3>
+<div class="form-comment @@if(context.addClass) {@@addClass}">
+    @@if(context.title) {
+        <h3 class="form-comment__title">@@title</h3>
+    }
     <form class="form-comment__form" action="#">
         <div class="form-comment__top">
             <label class="form-comment__label form-comment__label--name">
@@ -36,11 +38,11 @@
             <textarea
                 class="form-comment__item form-comment__item--textarea"
                 id="text_text"
-                placeholder="Comments"
+                placeholder="@@textareaText"
                 name="comment[text]"
                 required
             ></textarea>
         </label>
-        <button class="form-btn form-comment__button" type="submit">Post Comment</button>
+        <button class="form-btn form-comment__button  @@if(context.btnClass) {form-comment__button--sm}" type="submit">@@btnText</button>
     </form>
 </div>

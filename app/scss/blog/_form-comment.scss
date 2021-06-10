@@ -72,5 +72,12 @@
     &__button {
         padding: 15px 33px;
         text-transform: uppercase;
+
+        &--sm {
+            padding: 14px 44px;
+            border-radius: 5px;
+            font-family: "Poppins", sans-serif;
+            font-size: 15px;
+        }
     }
 }

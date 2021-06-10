@@ -66,6 +66,14 @@ $(function () {
         ratedFill: '#fc0',
     });
 
+    $('.product-details__star').rateYo({
+        rating: 5,
+        starWidth: '18px',
+        starHeight: '18px',
+        normalFill: '#d6d6d6',
+        ratedFill: '#fc0',
+    });
+
     $('.aside-price__input').ionRangeSlider({
         type: 'double',
         min: 0,
@@ -98,6 +106,20 @@ $(function () {
         $('body').toggleClass('body--with-menu');
 
     });
+
+    $(".product-details__meter").val(1)
+
+    $(".product-details__meter--minus").on('click', () => {
+        let counter = $(".product-details__meter");
+        let newValue = Number(counter.val()) - 1;
+        newValue >= 0 && counter.val(newValue);
+    })
+
+    $(".product-details__meter--plus").on('click', () => {
+        let counter = $(".product-details__meter");
+        let newValue = Number(counter.val()) + 1;
+        counter.val(newValue);
+    })
 
     //mixitup
     let containerEl1 = document.querySelector('.design');

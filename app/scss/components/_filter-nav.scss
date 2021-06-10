@@ -18,16 +18,16 @@
         background-color: transparent;
 
         &--grid {
-            background-image: url("../images/grid.svg");
+            background-image: url("#{$img}grid.svg");
         }
 
         &--list {
-            background-image: url("../images/list.svg");
+            background-image: url("#{$img}list.svg");
         }
 
         &--filter {
             display: none;
-            background-image: url("../images/filter.svg");
+            background-image: url("#{$img}filter.svg");
 
             @include r($lg) {
                 display: inline-block;

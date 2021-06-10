@@ -1,0 +1,25 @@
+.product-details {
+    margin-bottom: 100px;
+&__inner {
+    display: flex;
+}
+    &__img-wrap {
+        display: grid;
+        grid-gap: 25px;
+        grid-template-columns: 138px 387px;
+        grid-template-rows: repeat(3, 160px);
+        margin-right: 70px;
+    }
+
+    &__img--big {
+        grid-row: span 3;
+    }
+
+    &__meter {
+        &::-webkit-outer-spin-button,
+        &::-webkit-inner-spin-button {
+            appearance: none;
+            margin: 0;
+        }
+    }
+}
