@@ -24,17 +24,28 @@
 
     &__avatar {
         margin-right: 28px;
+        transition: transform 0.5s;
+
+        &:hover {
+            transform: translateY(-5px);
+        }
     }
 
     &__name {
+        @include line-clamp(1);
+
         display: block;
         margin-bottom: 15px;
+        max-width: 250px;
         font-weight: 500;
         font-size: 18px;
         color: $grey-450;
     }
 
     &__job {
+        @include line-clamp(1);
+
+        max-width: 250px;
         font-size: 16px;
         color: #666;
     }
@@ -55,9 +66,6 @@
     }
 
     &__pretitle {
-        // какую то дичь тут писал.
-        // Какие альтернативы могут быть для одинакового размера заголовка линии
-        // и её контента и чтобы они были прижаты к левому краю?
         margin-right: 28px;
         min-width: 50px;
         font-weight: 400;

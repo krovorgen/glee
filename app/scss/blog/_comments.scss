@@ -39,10 +39,16 @@
     }
 
     &__avatar-wrap {
+        display: block;
         margin-right: 30px;
         width: 100%;
         max-width: 100px;
         max-height: 100px;
+        transition: transform 0.5s;
+
+        &:hover {
+            transform: translateY(-5px);
+        }
 
         @include r($md) {
             margin-right: $mb15;
@@ -83,6 +89,9 @@
     }
 
     &__author {
+        @include line-clamp(1);
+
+        max-width: 250px;
         font-weight: 700;
         color: $text;
 

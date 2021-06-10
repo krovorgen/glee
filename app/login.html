@@ -8,11 +8,23 @@
             <form action="#" class="login__form">
                 <label class="login__label">
                     <span>Username or email address *</span>
-                    <input type="email" id="login_email" name="request[email]" required />
+                    <input
+                        class="login__input"
+                        type="email"
+                        id="login_email"
+                        name="request[email]"
+                        required
+                    />
                 </label>
                 <label class="login__label">
                     <span>Password *</span>
-                    <input type="password" id="login_password" name="request[password]" required />
+                    <input
+                        class="login__input"
+                        type="password"
+                        id="login_password"
+                        name="request[password]"
+                        required
+                    />
                 </label>
                 <button class="form-btn login__button" type="submit">Login</button>
                 <div class="login__wrap">
@@ -23,7 +35,9 @@
                     <a class="login__link" href="#">Lost your password?</a>
                 </div>
                 <a class="login__link login__link--solo" href="#">Lost your password?</a>
-                <button class="form-btn form-btn--light login__button" type="button">Create an account</button>
+                <button class="form-btn form-btn--light login__button" type="button">
+                    Create an account
+                </button>
             </form>
         </div>
     </div>

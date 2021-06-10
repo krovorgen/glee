@@ -1,0 +1,46 @@
+<div class="form-comment">
+    <h3 class="form-comment__title">Leave A Comment</h3>
+    <form class="form-comment__form" action="#">
+        <div class="form-comment__top">
+            <label class="form-comment__label form-comment__label--name">
+                <input
+                    class="form-comment__item"
+                    type="text"
+                    id="name_input"
+                    name="comment[name]"
+                    placeholder="Name"
+                    required
+                />
+                <svg width="14" height="14">
+                    <use xlink:href="images/sprite.svg#silhouette"></use>
+                </svg>
+            </label>
+            <label class="form-comment__label form-comment__label--email">
+                <svg width="18" height="13">
+                    <use xlink:href="images/sprite.svg#mail"></use>
+                </svg>
+                <input
+                    class="form-comment__item form-comment__item--email"
+                    id="email_input"
+                    type="email"
+                    name="comment[email]"
+                    placeholder="Email"
+                    required
+                />
+            </label>
+        </div>
+        <label class="form-comment__label">
+            <svg width="18" height="15">
+                <use xlink:href="images/sprite.svg#message"></use>
+            </svg>
+            <textarea
+                class="form-comment__item form-comment__item--textarea"
+                id="text_text"
+                placeholder="Comments"
+                name="comment[text]"
+                required
+            ></textarea>
+        </label>
+        <button class="form-btn form-comment__button" type="submit">Post Comment</button>
+    </form>
+</div>

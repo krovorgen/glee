@@ -3,18 +3,6 @@
     width: 100%;
     max-width: 270px;
 
-    @include r($lg) {
-        position: fixed;
-        left: 0;
-        top: 0;
-        z-index: 100;
-        margin-right: 0;
-        padding: 15px;
-        background-color: rgba($white, 0.95);
-        transform: translateX(-200%);
-        transition: transform 0.5s;
-    }
-
     &__overlay {
         position: fixed;
         left: 0;
@@ -69,17 +57,40 @@
 
     &--left {
         margin-right: 30px;
+
+        @include r($lg) {
+            position: fixed;
+            left: 0;
+            top: 0;
+            z-index: 100;
+            margin-right: 0;
+            padding: 15px;
+            background-color: rgba($white, 0.95);
+            transform: translateY(-200%);
+            transition: transform 0.5s;
+        }
     }
 
     &--right {
         margin-left: 70px;
+
+        @include r($lg) {
+            position: fixed;
+            right: 0;
+            top: 0;
+            z-index: 100;
+            margin-right: 0;
+            padding: 15px;
+            background-color: rgba($white, 0.95);
+            transform: translateY(-200%);
+            transition: transform 0.5s;
+        }
     }
 
     &--mobile {
-        margin-left: 0;
         height: 100%;
         overflow-y: scroll;
-        transform: translateX(0);
+        transform: translateY(0);
     }
 }
 
@@ -272,8 +283,9 @@
 
     &__img-wrap {
         margin-right: 20px;
-        width: 70px;
+        width: 100%;
         height: 70px;
+        max-width: 70px;
     }
 
     &__img {
@@ -288,6 +300,8 @@
     }
 
     &__title {
+        @include line-clamp(2);
+
         margin-bottom: 12px;
         font-weight: 400;
         font-size: 14px;
@@ -311,7 +325,7 @@
             top: 0;
             width: 13px;
             height: 13px;
-            background-image: url(../images/articles/1.svg);
+            background-image: url("../images/articles/1.svg");
             background-size: contain;
             background-repeat: no-repeat;
         }

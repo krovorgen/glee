@@ -37,6 +37,8 @@
     }
 
     &__text {
+        @include line-clamp(10);
+
         margin-bottom: 34px;
         max-width: 305px;
         line-height: 1.9;
