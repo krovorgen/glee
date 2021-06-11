@@ -38,7 +38,7 @@
     &__wrap {
         display: flex;
         flex-direction: column;
-        padding: 0 5px;
+        padding: 5px;
         border: 2px solid $grey-60;
     }
 
@@ -49,6 +49,8 @@
     &__img {
         margin: auto;
         padding-bottom: 3px;
+        // Чтобы картинка влезла и не наползала на бордер
+        overflow: auto;
 
         @include r($md) {
             width: 100%;
