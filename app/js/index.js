@@ -50,6 +50,32 @@ $(function () {
         ],
     });
 
+    $('.product-related__items').slick({
+        slidesToShow: 4,
+        slidesToScroll: 1,
+        swipeToSlide: true,
+        prevArrow:
+            '<button type="button" class="product-related__btn product-related__btn--prev"><img src="images/left-arrow.svg" alt="arrow" width="22" height="9"></button>',
+        nextArrow:
+            '<button type="button" class="product-related__btn product-related__btn--next"><img src="images/right-arrow.svg" alt="arrow" width="22" height="9"></button>',
+        responsive: [
+            {
+                breakpoint: 992,
+                settings: {
+                    slidesToShow: 3,
+                    slidesToScroll: 1,
+                },
+            },
+            {
+                breakpoint: 576,
+                settings: {
+                    slidesToShow: 2,
+                    slidesToScroll: 1,
+                },
+            },
+        ],
+    });
+
     $('.aside-recent__star').rateYo({
         rating: 5,
         starWidth: '15px',
@@ -104,22 +130,54 @@ $(function () {
         $('.aside').toggleClass('aside--mobile');
         $('.aside__overlay').toggleClass('aside__overlay--active');
         $('body').toggleClass('body--with-menu');
-
     });
 
-    $(".product-details__meter").val(1)
-
-    $(".product-details__meter--minus").on('click', () => {
-        let counter = $(".product-details__meter");
+    $('.product-details__meter--minus').on('click', () => {
+        let counter = $('.product-details__meter');
         let newValue = Number(counter.val()) - 1;
-        newValue >= 0 && counter.val(newValue);
-    })
+        newValue > 0 && counter.val(newValue);
+    });
 
-    $(".product-details__meter--plus").on('click', () => {
-        let counter = $(".product-details__meter");
+    $('.product-details__meter--plus').on('click', () => {
+        let counter = $('.product-details__meter');
         let newValue = Number(counter.val()) + 1;
         counter.val(newValue);
-    })
+    });
+
+    $('.js-tab-trigger').click(function () {
+        var id = $(this).attr('data-tab'),
+            content = $('.js-tab-content[data-tab="' + id + '"]');
+
+        $('.js-tab-trigger.active').removeClass('active'); // 1
+        $(this).addClass('active'); // 2
+
+        $('.js-tab-content.active').removeClass('active'); // 3
+        content.addClass('active'); // 4
+    });
+
+    $('.product-description__btn--descr').on('click', () => {
+        console.log(1);
+        $('.product-description__item').removeClass('active');
+        $('.product-description__item--descr').addClass('active');
+        $('.product-description__btn').removeClass('active');
+        $('.product-description__btn--descr').addClass('active');
+    });
+
+    $('.product-description__btn--info').on('click', () => {
+        console.log(2);
+        $('.product-description__item').removeClass('active');
+        $('.product-description__item--info').addClass('active');
+        $('.product-description__btn').removeClass('active');
+        $('.product-description__btn--info').addClass('active');
+    });
+
+    $('.product-description__btn--reviews').on('click', () => {
+        console.log(3);
+        $('.product-description__item').removeClass('active');
+        $('.product-description__item--reviews').addClass('active');
+        $('.product-description__btn').removeClass('active');
+        $('.product-description__btn--reviews').addClass('active');
+    });
 
     //mixitup
     let containerEl1 = document.querySelector('.design');

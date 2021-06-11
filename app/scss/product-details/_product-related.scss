@@ -1,0 +1,66 @@
+.product-related {
+    position: relative;
+    overflow-x: hidden;
+
+    &__item {
+        height: 380px;
+
+        @include r($lg) {
+            height: 330px;
+        }
+
+        @include r($md) {
+            height: 310px;
+        }
+
+        @include r($sm) {
+            height: 260px;
+        }
+    }
+
+    &__title {
+        margin-bottom: 70px;
+        font-family: $dm-sans;
+        font-weight: 700;
+        font-size: 36px;
+        color: $title;
+
+        @include r($lg) {
+            font-size: 28px;
+        }
+    }
+
+    &__btn {
+        position: absolute;
+        right: 0;
+        top: -113px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 50px;
+        height: 50px;
+        border: 2px solid rgba($main, 0.2);
+        background-color: $white;
+        transition: border-color 0.5s;
+
+        &:hover {
+            border-color: $main;
+        }
+
+        @include r($sm) {
+            top: -66px;
+        }
+
+        &--prev {
+            right: 70px;
+        }
+    }
+
+    .slick-list {
+        margin: 0 -15px;
+    }
+
+    .slick-slide > article {
+        margin: 0 15px;
+    }
+}

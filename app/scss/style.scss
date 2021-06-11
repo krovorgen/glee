@@ -19,7 +19,9 @@
 @import "components/filter-nav";
 @import "components/login";
 @import "contact/contact";
-@import "components/product-details";
+@import "product-details/product-details";
+@import "product-details/product-description";
+@import "product-details/product-related";
 
 // card
 @import "components/gallery-nav";
@@ -63,7 +65,10 @@
     .comments,
     .terms,
     .login,
-    .contact__address {
+    .contact__address,
+    .product-details,
+    .product-details__inner,
+    .product-description {
         margin-bottom: $mb50;
     }
 }

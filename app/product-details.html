@@ -7,26 +7,34 @@
         <div class="container">
             <div class="product-details__inner">
                 <div class="product-details__img-wrap">
-                    <img
-                        class="product-details__img"
-                        src="images/product-details/1.png"
-                        alt="Pendant lamp"
-                    />
-                    <img
-                        class="product-details__img product-details__img--big"
-                        src="images/product-details/4.png"
-                        alt="Pendant lamp"
-                    />
-                    <img
-                        class="product-details__img"
-                        src="images/product-details/2.png"
-                        alt="Pendant lamp"
-                    />
-                    <img
-                        class="product-details__img"
-                        src="images/product-details/3.png"
-                        alt="Pendant lamp"
-                    />
+                    <div class="product-details__wrap">
+                        <img
+                            class="product-details__img"
+                            src="images/product-details/1.png"
+                            alt="Pendant lamp"
+                        />
+                    </div>
+                    <div class="product-details__wrap product-details__wrap--big">
+                        <img
+                            class="product-details__img"
+                            src="images/product-details/4.png"
+                            alt="Pendant lamp"
+                        />
+                    </div>
+                    <div class="product-details__wrap">
+                        <img
+                            class="product-details__img"
+                            src="images/product-details/2.png"
+                            alt="Pendant lamp"
+                        />
+                    </div>
+                    <div class="product-details__wrap">
+                        <img
+                            class="product-details__img"
+                            src="images/product-details/3.png"
+                            alt="Pendant lamp"
+                        />
+                    </div>
                 </div>
                 <div class="product-details__info">
                     <h2 class="product-details__title">Pendant lamp</h2>
@@ -38,31 +46,142 @@
                         ullamco laboris nisi ut aliquip ex ea commodo
                     </p>
                     <div class="product-details__navigation">
-                        <div class="product-details__counter">
-                            <button
-                                class="product-details__meter product-details__meter--minus"
-                                type="button"
-                            >
-                                -
+                        <form class="product-details__form">
+                            <div class="product-details__counter">
+                                <label for="product-counter" class="visually-hidden">
+                                    How many items have been selected
+                                </label>
+                                <button
+                                    class="product-details__meter product-details__meter--minus"
+                                    type="button"
+                                >
+                                    -
+                                </button>
+                                <input
+                                    class="product-details__meter product-details__meter--input"
+                                    id="product-counter"
+                                    min="1"
+                                    value="1"
+                                    name="counter[number]"
+                                    type="number"
+                                />
+                                <button
+                                    class="product-details__meter product-details__meter--plus"
+                                    type="button"
+                                >
+                                    +
+                                </button>
+                            </div>
+                            <button class="form-btn product-details__button" type="submit">
+                                Add to cart
                             </button>
-                            <input
-                                class="product-details__meter"
-                                id="product-counter"
-                                type="number"
-                            />
-                            <button
-                                class="product-details__meter product-details__meter--plus"
-                                type="button"
-                            >
-                                +
-                            </button>
-                            <label for="product-counter" class="visually-hidden">
-                                How many items have been selected
-                            </label>
-                        </div>
-                        <button class='form-btn product-details__button' type='submit'>Add to cart</button>
+                        </form>
                     </div>
+                    <ul class="product-details__items">
+                        <li class="product-details__item">SKU: 014</li>
+                        <li class="product-details__item">Category: Lights</li>
+                        <li class="product-details__item">Tag: Decorative</li>
+                    </ul>
                 </div>
+            </div>
+
+            <div class="product-description">
+                <ul class="product-description__navigation">
+                    <li class="product-description__button">
+                        <button
+                            class="product-description__btn product-description__btn--descr active"
+                            type="button"
+                        >
+                            Description
+                        </button>
+                    </li>
+                    <li class="product-description__button">
+                        <button
+                            class="product-description__btn product-description__btn--info"
+                            type="button"
+                        >
+                            Additional information
+                        </button>
+                    </li>
+                    <li class="product-description__button">
+                        <button
+                            class="product-description__btn product-description__btn--reviews"
+                            type="button"
+                        >
+                            Reviews (2)
+                        </button>
+                    </li>
+                </ul>
+                <ul class="product-description__items">
+                    <li class="product-description__item product-description__item--descr active">
+                        consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et
+                        dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+                        ullamco laboris nisi ut aliquip ex ea commodo Lorem ipsum dolor sit amet,
+                        consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et
+                        dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+                        ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                    </li>
+                    <li class="product-description__item product-description__item--info">
+                        consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et
+                        dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+                        ullamco laboris nisi ut aliquip ex ea commodo Lorem ipsum dolor sit amet,
+                        consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et
+                    </li>
+                    <li class="product-description__item product-description__item--reviews">
+                        consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et
+                        dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+                        dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+                        ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                    </li>
+                </ul>
+            </div>
+
+            <div class="product-related">
+                <h2 class='product-related__title'>Related products</h2>
+                <ul class="product-related__items">
+                    <li class="product-related__item">
+                        @@include('parts/_product-card.html', {
+                        "img": "images/product-card/1.png",
+                        "title": "Wooden radio",
+                        "price": "29.00",
+                        })
+                    </li>
+                    <li class="product-related__item">
+                        @@include('parts/_product-card.html', {
+                        "img": "images/product-card/2.png",
+                        "title": "Wooden radio",
+                        "price": "29.00",
+                        })
+                    </li>
+                    <li class="product-related__item">
+                        @@include('parts/_product-card.html', {
+                        "img": "images/product-card/3.png",
+                        "title": "Wooden radio",
+                        "price": "29.00",
+                        })
+                    </li>
+                    <li class="product-related__item">
+                        @@include('parts/_product-card.html', {
+                        "img": "images/product-card/4.png",
+                        "title": "Wooden radio",
+                        "price": "29.00",
+                        })
+                    </li>
+                    <li class="product-related__item">
+                        @@include('parts/_product-card.html', {
+                        "img": "images/product-card/5.png",
+                        "title": "Wooden radio",
+                        "price": "29.00",
+                        })
+                    </li>
+                    <li class="product-related__item">
+                        @@include('parts/_product-card.html', {
+                        "img": "images/product-card/6.png",
+                        "title": "Wooden radio",
+                        "price": "29.00",
+                        })
+                    </li>
+                </ul>
             </div>
         </div>
     </section>
