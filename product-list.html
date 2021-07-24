@@ -3,16 +3,13 @@
     <head>
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Glee</title>
+        <title>Product list</title>
         <link rel="icon" href="images/favicon.ico" type="image/x-icon" />
         <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon" />
         <link rel="stylesheet" href="css/style.min.css" />
     </head>
 
-    <body></body>
-</html>
-
-<header class="header">
+    <body> <header class="header">
     <div class="container container--long">
         <nav class="header__inner">
             <a class="logo" href="#">
@@ -26,22 +23,22 @@
             </a>
             <ul class="menu menu--header">
                 <li class="menu__item">
-                    <a class="menu__link" href="#" target="_blank">Home +</a>
+                    <a class="menu__link" href="/">Home +</a>
                 </li>
                 <li class="menu__item">
-                    <a class="menu__link" href="#" target="_blank">About</a>
+                    <a class="menu__link" href="/about.html">About</a>
                 </li>
                 <li class="menu__item">
-                    <a class="menu__link" href="#" target="_blank">Services</a>
+                    <a class="menu__link" href="#">Services</a>
                 </li>
                 <li class="menu__item">
-                    <a class="menu__link" href="#" target="_blank">Pages +</a>
+                    <a class="menu__link" href="#">Pages +</a>
                 </li>
                 <li class="menu__item">
-                    <a class="menu__link" href="#" target="_blank">News</a>
+                    <a class="menu__link" href="#">News</a>
                 </li>
                 <li class="menu__item">
-                    <a class="menu__link" href="#" target="_blank">Contact</a>
+                    <a class="menu__link" href="#">Contact</a>
                 </li>
             </ul>
             <div class="user-nav">
@@ -88,23 +85,25 @@
     </div>
 </header>
 
-<div class="breadcrumbs">
-    <h2 class="breadcrumbs__title">Product list</h2>
+<main>
+    <div class="top-section">
+    <h1 class="top-section__title">Product list</h1>
+    <div class="breadcrumbs">
     <ul class="breadcrumbs__list">
         <li class="breadcrumbs__item">
             <a class="breadcrumbs__link" href="/">Home</a>
         </li>
         <li class="breadcrumbs__item">
-            <a class="breadcrumbs__link" href="#">Product list</a>
+            <span class="breadcrumbs__link">Product list</span>
         </li>
     </ul>
 </div>
 
-<main>
+</div>
     <section class="product-list">
         <div class="container">
             <div class="product-list__inner">
-                <aside class="aside">
+                <aside class="aside aside--left">
     <div class="aside__item aside-category">
         <h3 class="aside__title">Category</h3>
         <form class="aside-category__form">
@@ -146,7 +145,7 @@
         </form>
     </div>
     <div class="aside__item aside-price">
-        <h3 class="aside__title aside-price__pretitle">Price</h3>
+        <h3 class="aside__title">Price</h3>
         <form class="aside-price__form">
             <input type="range" class="aside-price__input" />
             <div class="aside-price__price">
@@ -161,42 +160,42 @@
             <label class="aside-brand__label">
                 <input type="checkbox" class="aside-brand__input visually-hidden" />
                 <span class="aside-brand__checkbox">
-                                    <span>RFL</span>
-                                    <span>(10) </span>
-                                </span>
+                    <span>RFL</span>
+                    <span>(10) </span>
+                </span>
             </label>
             <label class="aside-brand__label">
                 <input type="checkbox" class="aside-brand__input visually-hidden" />
                 <span class="aside-brand__checkbox">
-                                    <span>Brothers</span>
-                                    <span>(21)</span>
-                                </span>
+                    <span>Brothers</span>
+                    <span>(21)</span>
+                </span>
             </label>
             <label class="aside-brand__label">
                 <input type="checkbox" class="aside-brand__input visually-hidden" />
                 <span class="aside-brand__checkbox">
-                                    <span>Regal</span>
-                                    <span>(3)</span>
-                                </span>
+                    <span>Regal</span>
+                    <span>(3)</span>
+                </span>
             </label>
             <label class="aside-brand__label">
                 <input type="checkbox" class="aside-brand__input visually-hidden" />
                 <span class="aside-brand__checkbox">
-                                    <span>Nadia</span>
-                                    <span>(14)</span>
-                                </span>
+                    <span>Nadia</span>
+                    <span>(14)</span>
+                </span>
             </label>
             <label class="aside-brand__label">
                 <input type="checkbox" class="aside-brand__input visually-hidden" />
                 <span class="aside-brand__checkbox">
-                                    <span>Otobi</span>
-                                    <span>(6)</span>
-                                </span>
+                    <span>Otobi</span>
+                    <span>(6)</span>
+                </span>
             </label>
         </form>
     </div>
     <div class="aside__item aside-recent">
-        <h3 class="aside__title aside-recent__pretitle">Recent products</h3>
+        <h3 class="aside__title">Recent products</h3>
         <ul class="aside-recent__list">
             <li class="aside-recent__item">
                 <div class="aside-recent__img-wrap">
@@ -250,20 +249,32 @@
     </div>
 </aside>
                 <div class="product-list__content">
-                    <div class="product-list__nav">
-                        <button
-                            class="product-list__btn product-list__btn--grid"
-                            type="button"
-                        ></button>
-                        <button
-                            class="product-list__btn product-list__btn--list"
-                            type="button"
-                        ></button>
-                        <button
-                            class="product-list__btn product-list__btn--filter"
-                            type="button"
-                        ></button>
-                    </div>
+                    <ul class="filter-nav">
+                        <li class="filter-nav__button">
+                            <button
+                                class="filter-nav__btn filter-nav__btn--grid"
+                                type="button"
+                            >
+                                <span class='visually-hidden'>Click to show grid</span>
+                            </button>
+                        </li>
+                        <li class="filter-nav__button">
+                            <button
+                                class="filter-nav__btn filter-nav__btn--list"
+                                type="button"
+                            >
+                                <span class='visually-hidden'>Click to show list</span>
+                            </button>
+                        </li>
+                        <li class="filter-nav__button">
+                            <button
+                                class="filter-nav__btn filter-nav__btn--filter"
+                                type="button"
+                            >
+                                <span class='visually-hidden'>Click to show filter</span>
+                            </button>
+                        </li>
+                    </ul>
                     <ul class="product-list__items">
                         <li class="product-list__item">
                             <article class="product-card">
@@ -274,10 +285,7 @@
         <h3 class="product-card__title">Wooden radio</h3>
         <div class="product-card__star" data-rateyo-rating="3"></div>
         <span class="product-card__price"><span>$</span> 29.00</span>
-        <p class="product-card__text">
-            consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna
-            aliqua. Ut enim ad minim veniam, quis nostrud exercitation
-        </p>
+        <p class="product-card__text">consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation</p>
         <ul class="product-card__navigation">
             <li class="product-card__item">
                 <a class="product-card__btn" href="#">
@@ -317,10 +325,7 @@
         <h3 class="product-card__title">Wooden radio</h3>
         <div class="product-card__star" data-rateyo-rating="3"></div>
         <span class="product-card__price"><span>$</span> 29.00</span>
-        <p class="product-card__text">
-            consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna
-            aliqua. Ut enim ad minim veniam, quis nostrud exercitation
-        </p>
+        <p class="product-card__text">consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation</p>
         <ul class="product-card__navigation">
             <li class="product-card__item">
                 <a class="product-card__btn" href="#">
@@ -360,10 +365,7 @@
         <h3 class="product-card__title">Wooden radio</h3>
         <div class="product-card__star" data-rateyo-rating="3"></div>
         <span class="product-card__price"><span>$</span> 29.00</span>
-        <p class="product-card__text">
-            consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna
-            aliqua. Ut enim ad minim veniam, quis nostrud exercitation
-        </p>
+        <p class="product-card__text">consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation</p>
         <ul class="product-card__navigation">
             <li class="product-card__item">
                 <a class="product-card__btn" href="#">
@@ -403,10 +405,7 @@
         <h3 class="product-card__title">Wooden radio</h3>
         <div class="product-card__star" data-rateyo-rating="3"></div>
         <span class="product-card__price"><span>$</span> 29.00</span>
-        <p class="product-card__text">
-            consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna
-            aliqua. Ut enim ad minim veniam, quis nostrud exercitation
-        </p>
+        <p class="product-card__text">consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation</p>
         <ul class="product-card__navigation">
             <li class="product-card__item">
                 <a class="product-card__btn" href="#">
@@ -446,10 +445,7 @@
         <h3 class="product-card__title">Wooden radio</h3>
         <div class="product-card__star" data-rateyo-rating="3"></div>
         <span class="product-card__price"><span>$</span> 29.00</span>
-        <p class="product-card__text">
-            consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna
-            aliqua. Ut enim ad minim veniam, quis nostrud exercitation
-        </p>
+        <p class="product-card__text">consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation</p>
         <ul class="product-card__navigation">
             <li class="product-card__item">
                 <a class="product-card__btn" href="#">
@@ -489,10 +485,7 @@
         <h3 class="product-card__title">Wooden radio</h3>
         <div class="product-card__star" data-rateyo-rating="3"></div>
         <span class="product-card__price"><span>$</span> 29.00</span>
-        <p class="product-card__text">
-            consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna
-            aliqua. Ut enim ad minim veniam, quis nostrud exercitation
-        </p>
+        <p class="product-card__text">consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation</p>
         <ul class="product-card__navigation">
             <li class="product-card__item">
                 <a class="product-card__btn" href="#">
@@ -524,19 +517,26 @@
 
                         </li>
                     </ul>
-                    <div class="product-list__navigation">
-                        <button class="product-list__button product-list__button--active">1</button>
-                        <button class="product-list__button">2</button>
-                        <button class="product-list__button">3</button>
-                        <button class="product-list__button product-list__button--text">Next</button>
-                    </div>
+                    <ul class="pagination">
+                        <li class='pagination__item'>
+                            <span class="pagination__button pagination__button--active">1</span>
+                        </li>
+                        <li class='pagination__item'>
+                            <a class="pagination__button" href="#">2</a>
+                        </li>
+                        <li class='pagination__item'>
+                            <a class="pagination__button" href="#">3</a>
+                        </li>
+                        <li class='pagination__item'>
+                            <a class="pagination__button pagination__button--text" href="#">Next</a>
+                        </li>
+                    </ul>
                 </div>
-                <div class='aside__overlay'></div>
+                <div class="aside__overlay"></div>
             </div>
         </div>
     </section>
-</main>
-<div class="company ">
+    <div class="company ">
     <div class="container">
         <ul class="company__items">
             <li class="company__item">
@@ -573,6 +573,7 @@
     </div>
 </div>
 
+</main>
 <footer class="footer">
     <div class="container">
         <section class="footer__items">
@@ -649,31 +650,32 @@
                         name="request[email]"
                         placeholder="Email address"
                     />
-                    <button class="subscribe-form__btn" type="submit">Subscribe</button>
+                    <button class="form-btn" type="submit">Subscribe</button>
                 </form>
             </div>
         </section>
         <div class="footer__bottom">
             <p class="footer__copyright">©2020 CopyRight Example. All rights reserved.</p>
-            <ul class="footer__navigation">
-                <li class="footer__navigation-item">
-                    <a class="footer__navigation-link" href="#">Home</a>
-                </li>
-                <li class="footer__navigation-item">
-                    <a class="footer__navigation-link" href="#">About</a>
-                </li>
-                <li class="footer__navigation-item">
-                    <a class="footer__navigation-link" href="#">Blog</a>
-                </li>
-                <li class="footer__navigation-item">
-                    <a class="footer__navigation-link" href="#">Contact</a>
-                </li>
-            </ul>
+            <nav class='footer__nav'>
+                <ul class="menu menu--footer">
+                    <li class="menu__item">
+                        <a class="menu__link" href="#">Home</a>
+                    </li>
+                    <li class="menu__item">
+                        <a class="menu__link" href="#">About</a>
+                    </li>
+                    <li class="menu__item">
+                        <a class="menu__link" href="#">Blog</a>
+                    </li>
+                    <li class="menu__item">
+                        <a class="menu__link" href="#">Contact</a>
+                    </li>
+                </ul>
+            </nav>
         </div>
     </div>
 </footer>
-
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+ <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js" integrity="sha512-XtmMtDEcNz2j7ekrtHvOVR4iwwaD6o/FUJe6+Zq+HgcCsk3kj4uSQQR8weQ2QVj1o0Pk6PwYLohm206ZzNfubg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/mixitup/3.3.1/mixitup.min.js" integrity="sha512-nKZDK+ztK6Ug+2B6DZx+QtgeyAmo9YThZob8O3xgjqhw2IVQdAITFasl/jqbyDwclMkLXFOZRiytnUrXk/PM6A==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js" integrity="sha512-uURl+ZXMBrF4AwGaWmEetzrd+J5/8NRkWAvJx5sbPSSuOb0bZLqf+tOzniObO00BjHa/dD7gub9oCGMLPQHtQA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
