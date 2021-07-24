@@ -7,8 +7,7 @@
     "scripts": {
         "stylelint": "stylelint \"**/*.scss\"",
         "stylelint:fix": "stylelint \"**/*{.css,.scss}\" --fix",
-        "deploy": "gh-pages -d build",
-        "build": "yarn && gulp"
+        "deploy": "gh-pages -d build"
     },
     "keywords": [],
     "author": "",
