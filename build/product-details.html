@@ -1,0 +1,713 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Product Detalis</title>
+        <link rel="icon" href="images/favicon.ico" type="image/x-icon" />
+        <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon" />
+        <link rel="stylesheet" href="css/style.min.css" />
+    </head>
+
+    <body> <header class="header">
+    <div class="container container--long">
+        <nav class="header__inner">
+            <a class="logo" href="/">
+                <img
+                    class="logo__img"
+                    src="images/logo.png"
+                    width="146"
+                    height="39"
+                    alt="Logo Glee"
+                />
+            </a>
+            <ul class="menu menu--header">
+                <li class="menu__item">
+                    <a class="menu__link" href="/">Home +</a>
+                </li>
+                <li class="menu__item">
+                    <a class="menu__link" href="/about.html">About</a>
+                </li>
+                <li class="menu__item">
+                    <a class="menu__link" href="/product-list.html">Product</a>
+                </li>
+                <li class="menu__item">
+                    <a class="menu__link" href="/terms-conditions.html">Terms</a>
+                </li>
+                <li class="menu__item">
+                    <a class="menu__link" href="/blog.html">News</a>
+                </li>
+                <li class="menu__item">
+                    <a class="menu__link" href="/contact.html">Contact</a>
+                </li>
+            </ul>
+            <div class="user-nav">
+                <button class="user-nav__search" type="button">
+                    <span class="visually-hidden">Search</span>
+                    <svg>
+                        <use xlink:href="images/sprite.svg#search"></use>
+                    </svg>
+                </button>
+
+                <button class="user-nav__item user-nav__item--left" type="button">
+                    <span class="visually-hidden">Add to favourites</span>
+                    <span class="user-nav__wrap">
+                        <svg>
+                            <use xlink:href="images/sprite.svg#heart"></use>
+                        </svg>
+                        <span class="user-nav__count">0</span>
+                    </span>
+                </button>
+
+                <button class="user-nav__item user-nav__item--right" type="button">
+                    <span class="visually-hidden">Add to cart</span>
+                    <span class="user-nav__wrap">
+                        <svg>
+                            <use xlink:href="images/sprite.svg#cart"></use>
+                        </svg>
+                        <span class="user-nav__count">0</span>
+                    </span>
+                </button>
+
+                <button class="user-nav__menu" type="button">
+                    <span class="visually-hidden">Tab for ...</span>
+                    <svg>
+                        <use xlink:href="images/sprite.svg#menu"></use>
+                    </svg>
+                </button>
+            </div>
+            <button class="header__btn" type="button">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </nav>
+    </div>
+</header>
+
+
+<main>
+    <div class="top-section">
+    <h1 class="top-section__title">Product Detalis</h1>
+    <div class="breadcrumbs">
+    <ul class="breadcrumbs__list">
+        <li class="breadcrumbs__item">
+            <a class="breadcrumbs__link" href="/">Home</a>
+        </li>
+        <li class="breadcrumbs__item">
+            <span class="breadcrumbs__link">Product Detalis</span>
+        </li>
+    </ul>
+</div>
+
+</div>
+
+    <section class="product-details">
+        <div class="container">
+            <div class="product-details__inner">
+                <div class="product-details__img-wrap">
+                    <div class="product-details__wrap">
+                        <img
+                            class="product-details__img"
+                            src="images/product-details/1.png"
+                            alt="Pendant lamp"
+                        />
+                    </div>
+                    <div class="product-details__wrap product-details__wrap--big">
+                        <img
+                            class="product-details__img"
+                            src="images/product-details/4.png"
+                            alt="Pendant lamp"
+                        />
+                    </div>
+                    <div class="product-details__wrap">
+                        <img
+                            class="product-details__img"
+                            src="images/product-details/2.png"
+                            alt="Pendant lamp"
+                        />
+                    </div>
+                    <div class="product-details__wrap">
+                        <img
+                            class="product-details__img"
+                            src="images/product-details/3.png"
+                            alt="Pendant lamp"
+                        />
+                    </div>
+                </div>
+                <div class="product-details__info">
+                    <h2 class="product-details__title">Pendant lamp</h2>
+                    <div class="product-details__star" data-rateyo-rating="3"></div>
+                    <span class="product-details__price">23 <span>$</span></span>
+                    <p class="product-details__text">
+                        consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et
+                        dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+                        ullamco laboris nisi ut aliquip ex ea commodo
+                    </p>
+                    <div class="product-details__navigation">
+                        <form class="product-details__form">
+                            <div class="product-details__counter">
+                                <label for="product-counter" class="visually-hidden">
+                                    How many items have been selected
+                                </label>
+                                <button
+                                    class="product-details__meter product-details__meter--minus"
+                                    type="button"
+                                >
+                                    -
+                                </button>
+                                <input
+                                    class="product-details__meter product-details__meter--input"
+                                    id="product-counter"
+                                    min="1"
+                                    value="1"
+                                    name="counter[number]"
+                                    type="number"
+                                />
+                                <button
+                                    class="product-details__meter product-details__meter--plus"
+                                    type="button"
+                                >
+                                    +
+                                </button>
+                            </div>
+                            <button class="form-btn product-details__button" type="submit">
+                                Add to cart
+                            </button>
+                        </form>
+                    </div>
+                    <ul class="product-details__items">
+                        <li class="product-details__item">SKU: 014</li>
+                        <li class="product-details__item">Category: Lights</li>
+                        <li class="product-details__item">Tag: Decorative</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="product-description">
+                <ul class="product-description__navigation">
+                    <li class="product-description__button">
+                        <button
+                            class="product-description__btn product-description__btn--descr active"
+                            type="button"
+                        >
+                            Description
+                        </button>
+                    </li>
+                    <li class="product-description__button">
+                        <button
+                            class="product-description__btn product-description__btn--info"
+                            type="button"
+                        >
+                            Additional information
+                        </button>
+                    </li>
+                    <li class="product-description__button">
+                        <button
+                            class="product-description__btn product-description__btn--reviews"
+                            type="button"
+                        >
+                            Reviews (2)
+                        </button>
+                    </li>
+                </ul>
+                <ul class="product-description__items">
+                    <li class="product-description__item product-description__item--descr active">
+                        consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et
+                        dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+                        ullamco laboris nisi ut aliquip ex ea commodo Lorem ipsum dolor sit amet,
+                        consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et
+                        dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+                        ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                    </li>
+                    <li class="product-description__item product-description__item--info">
+                        consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et
+                        dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+                        ullamco laboris nisi ut aliquip ex ea commodo Lorem ipsum dolor sit amet,
+                        consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et
+                    </li>
+                    <li class="product-description__item product-description__item--reviews">
+                        consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et
+                        dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+                        dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+                        ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                    </li>
+                </ul>
+            </div>
+
+            <div class="product-related">
+                <h2 class='product-related__title'>Related products</h2>
+                <ul class="product-related__items">
+                    <li class="product-related__item">
+                        <article class="product-card">
+    <div class="product-card__img-wrap">
+        <img class="product-card__img" src="images/product-card/1.png" alt="Wooden radio" />
+    </div>
+    <div class="product-card__info">
+        <h3 class="product-card__title">Wooden radio</h3>
+        <div class="product-card__star" data-rateyo-rating="3"></div>
+        <span class="product-card__price"><span>$</span> 29.00</span>
+        <p class="product-card__text">@@text</p>
+        <ul class="product-card__navigation">
+            <li class="product-card__item">
+                <a class="product-card__btn" href="/product-details.html">
+                    <span class="visually-hidden">Search</span>
+                    <svg>
+                        <use xlink:href="images/sprite.svg#search"></use>
+                    </svg>
+                </a>
+            </li>
+            <li class="product-card__item">
+                <button class="product-card__btn" type="button">
+                    <span class="visually-hidden">Add to cart</span>
+                    <svg>
+                        <use xlink:href="images/sprite.svg#cart"></use>
+                    </svg>
+                </button>
+            </li>
+            <li class="product-card__item">
+                <button class="product-card__btn" type="button">
+                    <span class="visually-hidden">Add to favourites</span>
+                    <svg>
+                        <use xlink:href="images/sprite.svg#heart"></use>
+                    </svg>
+                </button>
+            </li>
+        </ul>
+    </div>
+</article>
+
+                    </li>
+                    <li class="product-related__item">
+                        <article class="product-card">
+    <div class="product-card__img-wrap">
+        <img class="product-card__img" src="images/product-card/2.png" alt="Wooden radio" />
+    </div>
+    <div class="product-card__info">
+        <h3 class="product-card__title">Wooden radio</h3>
+        <div class="product-card__star" data-rateyo-rating="3"></div>
+        <span class="product-card__price"><span>$</span> 29.00</span>
+        <p class="product-card__text">@@text</p>
+        <ul class="product-card__navigation">
+            <li class="product-card__item">
+                <a class="product-card__btn" href="/product-details.html">
+                    <span class="visually-hidden">Search</span>
+                    <svg>
+                        <use xlink:href="images/sprite.svg#search"></use>
+                    </svg>
+                </a>
+            </li>
+            <li class="product-card__item">
+                <button class="product-card__btn" type="button">
+                    <span class="visually-hidden">Add to cart</span>
+                    <svg>
+                        <use xlink:href="images/sprite.svg#cart"></use>
+                    </svg>
+                </button>
+            </li>
+            <li class="product-card__item">
+                <button class="product-card__btn" type="button">
+                    <span class="visually-hidden">Add to favourites</span>
+                    <svg>
+                        <use xlink:href="images/sprite.svg#heart"></use>
+                    </svg>
+                </button>
+            </li>
+        </ul>
+    </div>
+</article>
+
+                    </li>
+                    <li class="product-related__item">
+                        <article class="product-card">
+    <div class="product-card__img-wrap">
+        <img class="product-card__img" src="images/product-card/3.png" alt="Wooden radio" />
+    </div>
+    <div class="product-card__info">
+        <h3 class="product-card__title">Wooden radio</h3>
+        <div class="product-card__star" data-rateyo-rating="3"></div>
+        <span class="product-card__price"><span>$</span> 29.00</span>
+        <p class="product-card__text">@@text</p>
+        <ul class="product-card__navigation">
+            <li class="product-card__item">
+                <a class="product-card__btn" href="/product-details.html">
+                    <span class="visually-hidden">Search</span>
+                    <svg>
+                        <use xlink:href="images/sprite.svg#search"></use>
+                    </svg>
+                </a>
+            </li>
+            <li class="product-card__item">
+                <button class="product-card__btn" type="button">
+                    <span class="visually-hidden">Add to cart</span>
+                    <svg>
+                        <use xlink:href="images/sprite.svg#cart"></use>
+                    </svg>
+                </button>
+            </li>
+            <li class="product-card__item">
+                <button class="product-card__btn" type="button">
+                    <span class="visually-hidden">Add to favourites</span>
+                    <svg>
+                        <use xlink:href="images/sprite.svg#heart"></use>
+                    </svg>
+                </button>
+            </li>
+        </ul>
+    </div>
+</article>
+
+                    </li>
+                    <li class="product-related__item">
+                        <article class="product-card">
+    <div class="product-card__img-wrap">
+        <img class="product-card__img" src="images/product-card/4.png" alt="Wooden radio" />
+    </div>
+    <div class="product-card__info">
+        <h3 class="product-card__title">Wooden radio</h3>
+        <div class="product-card__star" data-rateyo-rating="3"></div>
+        <span class="product-card__price"><span>$</span> 29.00</span>
+        <p class="product-card__text">@@text</p>
+        <ul class="product-card__navigation">
+            <li class="product-card__item">
+                <a class="product-card__btn" href="/product-details.html">
+                    <span class="visually-hidden">Search</span>
+                    <svg>
+                        <use xlink:href="images/sprite.svg#search"></use>
+                    </svg>
+                </a>
+            </li>
+            <li class="product-card__item">
+                <button class="product-card__btn" type="button">
+                    <span class="visually-hidden">Add to cart</span>
+                    <svg>
+                        <use xlink:href="images/sprite.svg#cart"></use>
+                    </svg>
+                </button>
+            </li>
+            <li class="product-card__item">
+                <button class="product-card__btn" type="button">
+                    <span class="visually-hidden">Add to favourites</span>
+                    <svg>
+                        <use xlink:href="images/sprite.svg#heart"></use>
+                    </svg>
+                </button>
+            </li>
+        </ul>
+    </div>
+</article>
+
+                    </li>
+                    <li class="product-related__item">
+                        <article class="product-card">
+    <div class="product-card__img-wrap">
+        <img class="product-card__img" src="images/product-card/5.png" alt="Wooden radio" />
+    </div>
+    <div class="product-card__info">
+        <h3 class="product-card__title">Wooden radio</h3>
+        <div class="product-card__star" data-rateyo-rating="3"></div>
+        <span class="product-card__price"><span>$</span> 29.00</span>
+        <p class="product-card__text">@@text</p>
+        <ul class="product-card__navigation">
+            <li class="product-card__item">
+                <a class="product-card__btn" href="/product-details.html">
+                    <span class="visually-hidden">Search</span>
+                    <svg>
+                        <use xlink:href="images/sprite.svg#search"></use>
+                    </svg>
+                </a>
+            </li>
+            <li class="product-card__item">
+                <button class="product-card__btn" type="button">
+                    <span class="visually-hidden">Add to cart</span>
+                    <svg>
+                        <use xlink:href="images/sprite.svg#cart"></use>
+                    </svg>
+                </button>
+            </li>
+            <li class="product-card__item">
+                <button class="product-card__btn" type="button">
+                    <span class="visually-hidden">Add to favourites</span>
+                    <svg>
+                        <use xlink:href="images/sprite.svg#heart"></use>
+                    </svg>
+                </button>
+            </li>
+        </ul>
+    </div>
+</article>
+
+                    </li>
+                    <li class="product-related__item">
+                        <article class="product-card">
+    <div class="product-card__img-wrap">
+        <img class="product-card__img" src="images/product-card/6.png" alt="Wooden radio" />
+    </div>
+    <div class="product-card__info">
+        <h3 class="product-card__title">Wooden radio</h3>
+        <div class="product-card__star" data-rateyo-rating="3"></div>
+        <span class="product-card__price"><span>$</span> 29.00</span>
+        <p class="product-card__text">@@text</p>
+        <ul class="product-card__navigation">
+            <li class="product-card__item">
+                <a class="product-card__btn" href="/product-details.html">
+                    <span class="visually-hidden">Search</span>
+                    <svg>
+                        <use xlink:href="images/sprite.svg#search"></use>
+                    </svg>
+                </a>
+            </li>
+            <li class="product-card__item">
+                <button class="product-card__btn" type="button">
+                    <span class="visually-hidden">Add to cart</span>
+                    <svg>
+                        <use xlink:href="images/sprite.svg#cart"></use>
+                    </svg>
+                </button>
+            </li>
+            <li class="product-card__item">
+                <button class="product-card__btn" type="button">
+                    <span class="visually-hidden">Add to favourites</span>
+                    <svg>
+                        <use xlink:href="images/sprite.svg#heart"></use>
+                    </svg>
+                </button>
+            </li>
+        </ul>
+    </div>
+</article>
+
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <section class="articles articles--with-company">
+    <div class="container">
+        <div class="articles__top">
+            <h2 class="title articles__title">Our Insights & Articles</h2>
+            <a class="articles__next" href="#">
+                View All
+                <svg>
+                    <use xlink:href="images/sprite.svg#next"></use>
+                </svg>
+            </a>
+        </div>
+
+        <ul class="articles__items">
+            <li class="articles__item">
+                <link rel="stylesheet" href="../scss/components/_article-card.scss" />
+<article class="article-card">
+    <div class="article-card__img-wrap">
+        <img class="article-card__img" src="images/articles/1.png" alt="Product" />
+        <a class="article-card__subtitle" href="#">news</a>
+    </div>
+    <div class="article-card__info">
+        <a class="article-card__link" href="/blog-item.html">
+            <h3 class="article-card__title">Diusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam</h3>
+        </a>
+        <div class="article-card__bottom">
+            <time class="article-card__descr article-card__descr--date" datetime="2020-01-28">
+                28 january, 2020
+            </time>
+            <a class="article-card__descr article-card__descr--author" href="#">by admin</a>
+        </div>
+    </div>
+</article>
+
+            </li>
+            <li class="articles__item">
+                <link rel="stylesheet" href="../scss/components/_article-card.scss" />
+<article class="article-card">
+    <div class="article-card__img-wrap">
+        <img class="article-card__img" src="images/articles/2.png" alt="Product" />
+        <a class="article-card__subtitle" href="#">news</a>
+    </div>
+    <div class="article-card__info">
+        <a class="article-card__link" href="/blog-item.html">
+            <h3 class="article-card__title">Aonsectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore</h3>
+        </a>
+        <div class="article-card__bottom">
+            <time class="article-card__descr article-card__descr--date" datetime="2020-01-28">
+                28 january, 2020
+            </time>
+            <a class="article-card__descr article-card__descr--author" href="#">by admin</a>
+        </div>
+    </div>
+</article>
+
+            </li>
+            <li class="articles__item">
+                <link rel="stylesheet" href="../scss/components/_article-card.scss" />
+<article class="article-card">
+    <div class="article-card__img-wrap">
+        <img class="article-card__img" src="images/articles/3.png" alt="Product" />
+        <a class="article-card__subtitle" href="#">news</a>
+    </div>
+    <div class="article-card__info">
+        <a class="article-card__link" href="/blog-item.html">
+            <h3 class="article-card__title">Rncididunt ut labore et dolore magna aliqua. Ut enim</h3>
+        </a>
+        <div class="article-card__bottom">
+            <time class="article-card__descr article-card__descr--date" datetime="2020-01-28">
+                28 january, 2020
+            </time>
+            <a class="article-card__descr article-card__descr--author" href="#">by admin</a>
+        </div>
+    </div>
+</article>
+
+            </li>
+        </ul>
+    </div>
+</section>
+    <div class="company company--with-articles">
+    <div class="container">
+        <ul class="company__items">
+            <li class="company__item">
+                <img class="company__img" src="images/company/logo1.png" alt="logo" />
+            </li>
+            <li class="company__item">
+                <img class="company__img" src="images/company/logo2.png" alt="logo" />
+            </li>
+            <li class="company__item">
+                <img class="company__img" src="images/company/logo3.png" alt="logo" />
+            </li>
+            <li class="company__item">
+                <img class="company__img" src="images/company/logo4.png" alt="logo" />
+            </li>
+            <li class="company__item">
+                <img class="company__img" src="images/company/logo5.png" alt="logo" />
+            </li>
+            <li class="company__item">
+                <img class="company__img" src="images/company/logo1.png" alt="logo" />
+            </li>
+            <li class="company__item">
+                <img class="company__img" src="images/company/logo2.png" alt="logo" />
+            </li>
+            <li class="company__item">
+                <img class="company__img" src="images/company/logo3.png" alt="logo" />
+            </li>
+            <li class="company__item">
+                <img class="company__img" src="images/company/logo4.png" alt="logo" />
+            </li>
+            <li class="company__item">
+                <img class="company__img" src="images/company/logo5.png" alt="logo" />
+            </li>
+        </ul>
+    </div>
+</div>
+
+</main>
+
+<footer class="footer">
+    <div class="container">
+        <section class="footer__items">
+            <h2 class="visually-hidden">Footer</h2>
+            <address class="address">
+                <a class="logo footer__logo" href="#">
+                    <img
+                        class="logo__img"
+                        width="146"
+                        height="39"
+                        src="images/logo.png"
+                        alt="Logo Glee"
+                    />
+                </a>
+                <div class="address__item">
+                    <a class="address__link" href="#">
+                        <p>ADDRESS: 4772 Wines Lane</p>
+                        <p>Houston, TX 77032</p>
+                    </a>
+                </div>
+                <div class="address__item">
+                    <p>Telephone: <a href="tel:+8323475843">+832-347-5843</a></p>
+                    <p>Email: <a href="mailto:contact@Glee.com">contact@Glee.com</a></p>
+                </div>
+            </address>
+            <div class="footer__item">
+                <h3 class="footer__title">Services</h3>
+                <ul class="footer__list">
+                    <li class="footer__box">
+                        <a class="footer__link" href="#">About us</a>
+                    </li>
+                    <li class="footer__box">
+                        <a class="footer__link" href="#">Return Policy</a>
+                    </li>
+                    <li class="footer__box">
+                        <a class="footer__link" href="#">Our Blog</a>
+                    </li>
+                    <li class="footer__box">
+                        <a class="footer__link" href="#">Contact Us</a>
+                    </li>
+                    <li class="footer__box">
+                        <a class="footer__link" href="#">Terms & Condition</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="footer__item">
+                <h3 class="footer__title">Account</h3>
+                <ul class="footer__list">
+                    <li class="footer__box">
+                        <a class="footer__link" href="#">Your Account</a>
+                    </li>
+                    <li class="footer__box">
+                        <a class="footer__link" href="#">Checkout</a>
+                    </li>
+                    <li class="footer__box">
+                        <a class="footer__link" href="#">Login</a>
+                    </li>
+                    <li class="footer__box">
+                        <a class="footer__link" href="#">Register</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="footer__item">
+                <h3 class="footer__title">Newsletter</h3>
+                <p class="footer__text">Subscribe by our newsletter and get update protidin.</p>
+                <form class="subscribe-form">
+                    <label class="visually-hidden" for="email_input"> Enter your email </label>
+                    <input
+                        required
+                        class="subscribe-form__input"
+                        type="email"
+                        id="email_input"
+                        pattern="^([a-z0-9_-]+\.)*[a-z0-9_-]+@[a-z0-9_-]+(\.[a-z0-9_-]+)*\.[a-z]{2,6}$"
+                        name="request[email]"
+                        placeholder="Email address"
+                    />
+                    <button class="form-btn" type="submit">Subscribe</button>
+                </form>
+            </div>
+        </section>
+        <div class="footer__bottom">
+            <p class="footer__copyright">©2020 CopyRight Example. All rights reserved.</p>
+            <nav class='footer__nav'>
+                <ul class="menu menu--footer">
+                    <li class="menu__item">
+                        <a class="menu__link" href="#">Home</a>
+                    </li>
+                    <li class="menu__item">
+                        <a class="menu__link" href="#">About</a>
+                    </li>
+                    <li class="menu__item">
+                        <a class="menu__link" href="#">Blog</a>
+                    </li>
+                    <li class="menu__item">
+                        <a class="menu__link" href="#">Contact</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </div>
+</footer>
+ <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js" integrity="sha512-XtmMtDEcNz2j7ekrtHvOVR4iwwaD6o/FUJe6+Zq+HgcCsk3kj4uSQQR8weQ2QVj1o0Pk6PwYLohm206ZzNfubg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mixitup/3.3.1/mixitup.min.js" integrity="sha512-nKZDK+ztK6Ug+2B6DZx+QtgeyAmo9YThZob8O3xgjqhw2IVQdAITFasl/jqbyDwclMkLXFOZRiytnUrXk/PM6A==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js" integrity="sha512-uURl+ZXMBrF4AwGaWmEetzrd+J5/8NRkWAvJx5sbPSSuOb0bZLqf+tOzniObO00BjHa/dD7gub9oCGMLPQHtQA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/rateYo/2.3.4/jquery.rateyo.min.js" integrity="sha512-09bUVOnphTvb854qSgkpY/UGKLW9w7ISXGrN0FR/QdXTkjs0D+EfMFMTB+CGiIYvBoFXexYwGUD5FD8xVU89mw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/ion-rangeslider/2.3.1/js/ion.rangeSlider.min.js" integrity="sha512-kZsqvmw94Y8hyhwtWZJvDtobwQ9pLhF1DuIvcqSuracbRn6WJs1Ih+04fpH/8d1CFKysp7XA1tR0Aa2jKLTQUg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script src="js/index.min.js"></script>
+</body>
+</html>
